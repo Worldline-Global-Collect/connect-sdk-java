@@ -1,0 +1,222 @@
+/*
+ * This class was auto-generated from the API references found at
+ * https://apireference.connect.worldline-solutions.com/
+ */
+
+package com.worldline.connect.sdk.java.v1.merchant.products;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import com.worldline.connect.sdk.java.communication.ParamRequest;
+import com.worldline.connect.sdk.java.communication.RequestParam;
+
+/**
+ * Query parameters for
+ * <a href="https://apireference.connect.worldline-solutions.com/s2sapi/v1/en_US/java/products/get.html">Get payment product</a>
+ */
+public class GetProductParams implements ParamRequest {
+
+    private String countryCode;
+
+    private String currencyCode;
+
+    private String locale;
+
+    private Long amount;
+
+    private Boolean isRecurring;
+
+    private Boolean isInstallments;
+
+    private List<String> hide;
+
+    private Boolean forceBasicFlow;
+
+    /**
+     * ISO 3166-1 alpha-2 country code
+     */
+    public String getCountryCode() {
+        return countryCode;
+    }
+
+    /**
+     * ISO 3166-1 alpha-2 country code
+     */
+    public void setCountryCode(String value) {
+        this.countryCode = value;
+    }
+
+    /**
+     * Three-letter ISO currency code representing the currency for the amount
+     */
+    public String getCurrencyCode() {
+        return currencyCode;
+    }
+
+    /**
+     * Three-letter ISO currency code representing the currency for the amount
+     */
+    public void setCurrencyCode(String value) {
+        this.currencyCode = value;
+    }
+
+    /**
+     * Locale used in the GUI towards the consumer. Please make sure that a language pack is configured for the locale you are submitting. If you submit a locale that is not setup on your account we will use the default language pack for your account. You can easily upload additional language packs and set the default language pack in the Configuration Center.
+     */
+    public String getLocale() {
+        return locale;
+    }
+
+    /**
+     * Locale used in the GUI towards the consumer. Please make sure that a language pack is configured for the locale you are submitting. If you submit a locale that is not setup on your account we will use the default language pack for your account. You can easily upload additional language packs and set the default language pack in the Configuration Center.
+     */
+    public void setLocale(String value) {
+        this.locale = value;
+    }
+
+    /**
+     * Amount in cents and always having 2 decimals
+     */
+    public Long getAmount() {
+        return amount;
+    }
+
+    /**
+     * Amount in cents and always having 2 decimals
+     */
+    public void setAmount(Long value) {
+        this.amount = value;
+    }
+
+    /**
+     * This allows you to filter payment products based on their support for recurring or not
+     * <ul class="paragraph-width"><li>true
+     * <li>false
+     * </ul>
+     * If this is omitted all payment products are returned.
+     */
+    public Boolean getIsRecurring() {
+        return isRecurring;
+    }
+
+    /**
+     * This allows you to filter payment products based on their support for recurring or not
+     * <ul class="paragraph-width"><li>true
+     * <li>false
+     * </ul>
+     * If this is omitted all payment products are returned.
+     */
+    public void setIsRecurring(Boolean value) {
+        this.isRecurring = value;
+    }
+
+    /**
+     * This allows you to filter payment products based on their support for installments or not
+     * <ul class="paragraph-width"><li>true
+     * <li>false
+     * </ul>
+     * If this is omitted all payment products are returned.
+     */
+    public Boolean getIsInstallments() {
+        return isInstallments;
+    }
+
+    /**
+     * This allows you to filter payment products based on their support for installments or not
+     * <ul class="paragraph-width"><li>true
+     * <li>false
+     * </ul>
+     * If this is omitted all payment products are returned.
+     */
+    public void setIsInstallments(Boolean value) {
+        this.isInstallments = value;
+    }
+
+    /**
+     * Allows you to hide elements from the response, reducing the amount of data that needs to be returned to your client. Possible options are:
+     * <ul class="paragraph-width">
+     * <li>fields - Don't return any data on fields of the payment product
+     * <li>accountsOnFile - Don't return any accounts on file data
+     * <li>translations - Don't return any label texts associated with the payment products
+     * </ul>
+     */
+    public List<String> getHide() {
+        return hide;
+    }
+
+    /**
+     * Allows you to hide elements from the response, reducing the amount of data that needs to be returned to your client. Possible options are:
+     * <ul class="paragraph-width">
+     * <li>fields - Don't return any data on fields of the payment product
+     * <li>accountsOnFile - Don't return any accounts on file data
+     * <li>translations - Don't return any label texts associated with the payment products
+     * </ul>
+     */
+    public void setHide(List<String> value) {
+        this.hide = value;
+    }
+
+    /**
+     * Allows you to hide elements from the response, reducing the amount of data that needs to be returned to your client. Possible options are:
+     * <ul class="paragraph-width">
+     * <li>fields - Don't return any data on fields of the payment product
+     * <li>accountsOnFile - Don't return any accounts on file data
+     * <li>translations - Don't return any label texts associated with the payment products
+     * </ul>
+     */
+    public void addHide(String value) {
+        if (this.hide == null) {
+            this.hide = new LinkedList<>();
+        }
+        this.hide.add(value);
+    }
+
+    /**
+     * Relevant only for payment product 3012 (Bancontact). A boolean that indicates if you want to force the response to return the fields of the basic flow. This can be useful in corner cases where you have enabled the enhanced flow which supports payment with the Bancontact app, but need access to the product fields without creating a payment first.
+     */
+    public Boolean getForceBasicFlow() {
+        return forceBasicFlow;
+    }
+
+    /**
+     * Relevant only for payment product 3012 (Bancontact). A boolean that indicates if you want to force the response to return the fields of the basic flow. This can be useful in corner cases where you have enabled the enhanced flow which supports payment with the Bancontact app, but need access to the product fields without creating a payment first.
+     */
+    public void setForceBasicFlow(Boolean value) {
+        this.forceBasicFlow = value;
+    }
+
+    @Override
+    public List<RequestParam> toRequestParameters() {
+        List<RequestParam> result = new LinkedList<>();
+        if (countryCode != null) {
+            result.add(new RequestParam("countryCode", countryCode));
+        }
+        if (currencyCode != null) {
+            result.add(new RequestParam("currencyCode", currencyCode));
+        }
+        if (locale != null) {
+            result.add(new RequestParam("locale", locale));
+        }
+        if (amount != null) {
+            result.add(new RequestParam("amount", amount.toString()));
+        }
+        if (isRecurring != null) {
+            result.add(new RequestParam("isRecurring", isRecurring.toString()));
+        }
+        if (isInstallments != null) {
+            result.add(new RequestParam("isInstallments", isInstallments.toString()));
+        }
+        if (hide != null) {
+            for (String hideElement : hide) {
+                if (hideElement != null) {
+                    result.add(new RequestParam("hide", hideElement));
+                }
+            }
+        }
+        if (forceBasicFlow != null) {
+            result.add(new RequestParam("forceBasicFlow", forceBasicFlow.toString()));
+        }
+        return result;
+    }
+}
