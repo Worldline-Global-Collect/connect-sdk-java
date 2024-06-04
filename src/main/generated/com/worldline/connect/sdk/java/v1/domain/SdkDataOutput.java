@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class SdkDataOutput {
 
-    private String sdkTransactionId = null;
+    private String sdkTransactionId;
 
     /**
      * Universally unique transaction identifier assigned by the 3-D Secure SDK to identify this transaction.

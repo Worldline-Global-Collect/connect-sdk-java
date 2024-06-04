@@ -9,15 +9,15 @@ import java.util.List;
 
 public class ValidationBankAccountOutput {
 
-    private List<ValidationBankAccountCheck> checks = null;
+    private List<ValidationBankAccountCheck> checks;
 
-    private String newBankName = null;
+    private String newBankName;
 
-    private String reformattedAccountNumber = null;
+    private String reformattedAccountNumber;
 
-    private String reformattedBankCode = null;
+    private String reformattedBankCode;
 
-    private String reformattedBranchCode = null;
+    private String reformattedBranchCode;
 
     /**
      * Array of checks performed with the results of each check

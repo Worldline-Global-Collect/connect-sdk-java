@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MobilePaymentProductSession302SpecificOutput {
 
-    private String sessionObject = null;
+    private String sessionObject;
 
     /**
      * Object containing an opaque merchant session object.

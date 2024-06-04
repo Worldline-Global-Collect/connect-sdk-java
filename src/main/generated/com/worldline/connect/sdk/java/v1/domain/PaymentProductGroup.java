@@ -12,17 +12,17 @@ import java.util.List;
  */
 public class PaymentProductGroup {
 
-    private List<AccountOnFile> accountsOnFile = null;
+    private List<AccountOnFile> accountsOnFile;
 
-    private Boolean allowsInstallments = null;
+    private Boolean allowsInstallments;
 
-    private Boolean deviceFingerprintEnabled = null;
+    private Boolean deviceFingerprintEnabled;
 
-    private PaymentProductDisplayHints displayHints = null;
+    private PaymentProductDisplayHints displayHints;
 
-    private List<PaymentProductField> fields = null;
+    private List<PaymentProductField> fields;
 
-    private String id = null;
+    private String id;
 
     /**
      * Only populated in the Client API

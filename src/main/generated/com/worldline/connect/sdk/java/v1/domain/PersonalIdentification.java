@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PersonalIdentification {
 
-    private String idIssuingCountryCode = null;
+    private String idIssuingCountryCode;
 
-    private String idType = null;
+    private String idType;
 
-    private String idValue = null;
+    private String idValue;
 
     /**
      * ISO 3166-1 alpha-2 country code of the country that issued the identification document

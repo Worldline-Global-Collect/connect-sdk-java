@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class FraugsterResults {
 
-    private String fraudInvestigationPoints = null;
+    private String fraudInvestigationPoints;
 
-    private Integer fraudScore = null;
+    private Integer fraudScore;
 
     /**
      * Result of the Fraugster check

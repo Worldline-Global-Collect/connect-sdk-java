@@ -10,25 +10,25 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class GetCustomerDetailsResponse {
 
-    private String city = null;
+    private String city;
 
-    private String country = null;
+    private String country;
 
-    private String emailAddress = null;
+    private String emailAddress;
 
-    private String firstName = null;
+    private String firstName;
 
-    private String fiscalNumber = null;
+    private String fiscalNumber;
 
-    private String languageCode = null;
+    private String languageCode;
 
-    private String phoneNumber = null;
+    private String phoneNumber;
 
-    private String street = null;
+    private String street;
 
-    private String surname = null;
+    private String surname;
 
-    private String zip = null;
+    private String zip;
 
     /**
      * The city in which the customer resides.

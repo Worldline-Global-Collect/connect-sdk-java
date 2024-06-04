@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProductDisplayHints {
 
-    private Integer displayOrder = null;
+    private Integer displayOrder;
 
-    private String label = null;
+    private String label;
 
-    private String logo = null;
+    private String logo;
 
     /**
      * Determines the order in which the payment products and groups should be shown (sorted ascending)

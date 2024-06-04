@@ -5,7 +5,7 @@
 
 package com.worldline.connect.sdk.java.v1.merchant.payments;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.worldline.connect.sdk.java.communication.ParamRequest;
@@ -99,7 +99,7 @@ public class FindPaymentsParams implements ParamRequest {
 
     @Override
     public List<RequestParam> toRequestParameters() {
-        List<RequestParam> result = new LinkedList<>();
+        List<RequestParam> result = new ArrayList<>();
         if (hostedCheckoutId != null) {
             result.add(new RequestParam("hostedCheckoutId", hostedCheckoutId));
         }

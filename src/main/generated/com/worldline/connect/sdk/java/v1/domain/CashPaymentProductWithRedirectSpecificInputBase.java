@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CashPaymentProductWithRedirectSpecificInputBase {
 
-    private String returnUrl = null;
+    private String returnUrl;
 
     public String getReturnUrl() {
         return returnUrl;

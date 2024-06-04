@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class GetHostedCheckoutResponse {
 
-    private CreatedPaymentOutput createdPaymentOutput = null;
+    private CreatedPaymentOutput createdPaymentOutput;
 
-    private String status = null;
+    private String status;
 
     /**
      * When a payment has been created during the hosted checkout session this object will return the details.

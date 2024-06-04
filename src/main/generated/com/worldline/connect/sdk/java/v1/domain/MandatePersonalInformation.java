@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MandatePersonalInformation {
 
-    private MandatePersonalName name = null;
+    private MandatePersonalName name;
 
-    private String title = null;
+    private String title;
 
     /**
      * Object containing the name details of the customer

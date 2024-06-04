@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TokenEWallet extends AbstractToken {
 
-    private CustomerToken customer = null;
+    private CustomerToken customer;
 
-    private TokenEWalletData data = null;
+    private TokenEWalletData data;
 
     /**
      * Object containing the details of the customer

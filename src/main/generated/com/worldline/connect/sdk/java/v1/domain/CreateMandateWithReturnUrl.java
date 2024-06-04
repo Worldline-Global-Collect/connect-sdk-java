@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreateMandateWithReturnUrl extends CreateMandateBase {
 
-    private String returnUrl = null;
+    private String returnUrl;
 
     /**
      * Return URL to use if the mandate signing requires redirection.

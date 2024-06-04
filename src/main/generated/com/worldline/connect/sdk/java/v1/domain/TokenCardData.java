@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TokenCardData {
 
-    private CardWithoutCvv cardWithoutCvv = null;
+    private CardWithoutCvv cardWithoutCvv;
 
-    private String firstTransactionDate = null;
+    private String firstTransactionDate;
 
-    private String providerReference = null;
+    private String providerReference;
 
     /**
      * Object containing the card details (without CVV)

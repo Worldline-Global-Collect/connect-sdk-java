@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PayoutCustomer {
 
-    private Address address = null;
+    private Address address;
 
-    private CompanyInformation companyInformation = null;
+    private CompanyInformation companyInformation;
 
-    private ContactDetailsBase contactDetails = null;
+    private ContactDetailsBase contactDetails;
 
-    private String merchantCustomerId = null;
+    private String merchantCustomerId;
 
-    private PersonalName name = null;
+    private PersonalName name;
 
     /**
      * Object containing address details

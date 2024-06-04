@@ -7,21 +7,21 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class DecryptedPaymentData {
 
-    private String authMethod = null;
+    private String authMethod;
 
-    private String cardholderName = null;
+    private String cardholderName;
 
-    private String cryptogram = null;
+    private String cryptogram;
 
-    private String dpan = null;
+    private String dpan;
 
-    private Integer eci = null;
+    private Integer eci;
 
-    private String expiryDate = null;
+    private String expiryDate;
 
-    private String pan = null;
+    private String pan;
 
-    private String paymentMethod = null;
+    private String paymentMethod;
 
     /**
      * The type of payment credential which the customer used.

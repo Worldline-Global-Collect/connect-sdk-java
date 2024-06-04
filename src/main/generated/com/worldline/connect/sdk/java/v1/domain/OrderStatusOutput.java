@@ -9,19 +9,19 @@ import java.util.List;
 
 public class OrderStatusOutput {
 
-    private List<APIError> errors = null;
+    private List<APIError> errors;
 
-    private Boolean isCancellable = null;
+    private Boolean isCancellable;
 
-    private Boolean isRetriable = null;
+    private Boolean isRetriable;
 
-    private List<KeyValuePair> providerRawOutput = null;
+    private List<KeyValuePair> providerRawOutput;
 
-    private String statusCategory = null;
+    private String statusCategory;
 
-    private Integer statusCode = null;
+    private Integer statusCode;
 
-    private String statusCodeChangeDateTime = null;
+    private String statusCodeChangeDateTime;
 
     /**
      * Custom object contains the set of errors

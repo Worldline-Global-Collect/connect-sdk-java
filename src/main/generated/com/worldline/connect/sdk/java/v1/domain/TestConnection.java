@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TestConnection {
 
-    private String result = null;
+    private String result;
 
     /**
      * OK result on the connection to the payment engine.

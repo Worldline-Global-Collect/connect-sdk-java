@@ -7,35 +7,35 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractCardPaymentMethodSpecificInput extends AbstractPaymentMethodSpecificInput {
 
-    private String acquirerPromotionCode = null;
+    private String acquirerPromotionCode;
 
-    private String authorizationMode = null;
+    private String authorizationMode;
 
-    private String customerReference = null;
+    private String customerReference;
 
-    private String initialSchemeTransactionId = null;
+    private String initialSchemeTransactionId;
 
-    private CardRecurrenceDetails recurring = null;
+    private CardRecurrenceDetails recurring;
 
-    private String recurringPaymentSequenceIndicator = null;
+    private String recurringPaymentSequenceIndicator;
 
-    private Boolean requiresApproval = null;
+    private Boolean requiresApproval;
 
-    private Boolean skipAuthentication = null;
+    private Boolean skipAuthentication;
 
-    private Boolean skipFraudService = null;
+    private Boolean skipFraudService;
 
-    private String token = null;
+    private String token;
 
-    private Boolean tokenize = null;
+    private Boolean tokenize;
 
-    private String transactionChannel = null;
+    private String transactionChannel;
 
-    private String unscheduledCardOnFileIndicator = null;
+    private String unscheduledCardOnFileIndicator;
 
-    private String unscheduledCardOnFileRequestor = null;
+    private String unscheduledCardOnFileRequestor;
 
-    private String unscheduledCardOnFileSequenceIndicator = null;
+    private String unscheduledCardOnFileSequenceIndicator;
 
     public String getAcquirerPromotionCode() {
         return acquirerPromotionCode;

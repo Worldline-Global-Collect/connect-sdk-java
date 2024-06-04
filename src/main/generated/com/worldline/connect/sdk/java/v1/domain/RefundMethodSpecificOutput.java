@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RefundMethodSpecificOutput {
 
-    private Integer refundProductId = null;
+    private Integer refundProductId;
 
-    private Long totalAmountPaid = null;
+    private Long totalAmountPaid;
 
-    private Long totalAmountRefunded = null;
+    private Long totalAmountRefunded;
 
     /**
      * Refund product identifier<br>

@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class DisputeStatusOutput {
 
-    private Boolean isCancellable = null;
+    private Boolean isCancellable;
 
-    private String statusCategory = null;
+    private String statusCategory;
 
-    private Integer statusCode = null;
+    private Integer statusCode;
 
-    private String statusCodeChangeDateTime = null;
+    private String statusCodeChangeDateTime;
 
     /**
      * Flag indicating if the payment can be cancelled

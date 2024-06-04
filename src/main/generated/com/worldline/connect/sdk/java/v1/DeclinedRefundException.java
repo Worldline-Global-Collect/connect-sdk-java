@@ -5,6 +5,8 @@
 
 package com.worldline.connect.sdk.java.v1;
 
+import java.util.Optional;
+
 import com.worldline.connect.sdk.java.v1.domain.RefundErrorResponse;
 import com.worldline.connect.sdk.java.v1.domain.RefundResult;
 
@@ -14,25 +16,26 @@ import com.worldline.connect.sdk.java.v1.domain.RefundResult;
 @SuppressWarnings("serial")
 public class DeclinedRefundException extends DeclinedTransactionException {
 
-    private final RefundErrorResponse errors;
+    private final RefundErrorResponse response;
 
-    public DeclinedRefundException(int statusCode, String responseBody, RefundErrorResponse errors) {
-        super(buildMessage(errors), statusCode, responseBody, errors != null ? errors.getErrorId() : null, errors != null ? errors.getErrors() : null);
-        this.errors = errors;
+    public DeclinedRefundException(int statusCode, String responseBody, RefundErrorResponse response) {
+        super(buildMessage(response), statusCode, responseBody,
+                response != null ? response.getErrorId() : null,
+                response != null ? response.getErrors() : null);
+        this.response = response;
     }
 
-    private static String buildMessage(RefundErrorResponse errors) {
-        RefundResult refund = errors != null ? errors.getRefundResult() : null;
-        if (refund != null) {
-            return "declined refund '" + refund.getId() + "' with status '" + refund.getStatus() + "'";
-        }
-        return "the Worldline Global Collect platform returned a declined refund response";
+    private static String buildMessage(RefundErrorResponse response) {
+        return Optional.ofNullable(response)
+                .map(RefundErrorResponse::getRefundResult)
+                .map(refundResult -> String.format("declined refund '%s' with status '%s'", refundResult.getId(), refundResult.getStatus()))
+                .orElse("the Worldline Global Collect platform returned a declined refund response");
     }
 
     /**
-     * @return The result of creating a refund if available, otherwise returns {@code null}.
+     * @return The result of creating a refund if available, or {@code null} otherwise.
      */
     public RefundResult getRefundResult() {
-        return errors == null ? null : errors.getRefundResult();
+        return response == null ? null : response.getRefundResult();
     }
 }

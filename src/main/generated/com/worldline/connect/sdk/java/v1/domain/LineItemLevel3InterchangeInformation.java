@@ -7,21 +7,21 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class LineItemLevel3InterchangeInformation {
 
-    private Long discountAmount = null;
+    private Long discountAmount;
 
-    private Long lineAmountTotal = null;
+    private Long lineAmountTotal;
 
-    private String productCode = null;
+    private String productCode;
 
-    private Long productPrice = null;
+    private Long productPrice;
 
-    private String productType = null;
+    private String productType;
 
-    private Long quantity = null;
+    private Long quantity;
 
-    private Long taxAmount = null;
+    private Long taxAmount;
 
-    private String unit = null;
+    private String unit;
 
     /**
      * Discount on the line item, with the last two digits are implied decimal places

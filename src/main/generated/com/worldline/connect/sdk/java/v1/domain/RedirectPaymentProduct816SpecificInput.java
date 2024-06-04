@@ -10,7 +10,7 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class RedirectPaymentProduct816SpecificInput {
 
-    private BankAccountIban bankAccountIban = null;
+    private BankAccountIban bankAccountIban;
 
     /**
      * Object containing the bank account details of the customer

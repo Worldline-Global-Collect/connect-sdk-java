@@ -7,27 +7,27 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class Creditor {
 
-    private String additionalAddressInfo = null;
+    private String additionalAddressInfo;
 
-    private String city = null;
+    private String city;
 
-    private String countryCode = null;
+    private String countryCode;
 
-    private String houseNumber = null;
+    private String houseNumber;
 
-    private String iban = null;
+    private String iban;
 
-    private String id = null;
+    private String id;
 
-    private String name = null;
+    private String name;
 
-    private String referenceParty = null;
+    private String referenceParty;
 
-    private String referencePartyId = null;
+    private String referencePartyId;
 
-    private String street = null;
+    private String street;
 
-    private String zip = null;
+    private String zip;
 
     /**
      * Additional information about the creditor's address, like Suite II, Apartment 2a

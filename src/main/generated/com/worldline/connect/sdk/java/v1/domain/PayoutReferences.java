@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PayoutReferences {
 
-    private String invoiceNumber = null;
+    private String invoiceNumber;
 
-    private Long merchantOrderId = null;
+    private Long merchantOrderId;
 
-    private String merchantReference = null;
+    private String merchantReference;
 
     /**
      * Your invoice number (on printed invoice) that is also returned in our report files

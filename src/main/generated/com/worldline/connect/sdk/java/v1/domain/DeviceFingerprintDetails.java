@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class DeviceFingerprintDetails {
 
-    private String paymentId = null;
+    private String paymentId;
 
-    private String rawDeviceFingerprintOutput = null;
+    private String rawDeviceFingerprintOutput;
 
     /**
      * The ID of the payment that is linked to the Device Fingerprint data.

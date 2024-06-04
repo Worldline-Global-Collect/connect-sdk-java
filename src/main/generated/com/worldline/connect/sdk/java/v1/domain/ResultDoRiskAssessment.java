@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ResultDoRiskAssessment {
 
-    private String category = null;
+    private String category;
 
-    private String result = null;
+    private String result;
 
-    private RetailDecisionsCCFraudCheckOutput retaildecisionsCCFraudCheckOutput = null;
+    private RetailDecisionsCCFraudCheckOutput retaildecisionsCCFraudCheckOutput;
 
-    private ValidationBankAccountOutput validationBankAccountOutput = null;
+    private ValidationBankAccountOutput validationBankAccountOutput;
 
     /**
      * The Risk Services category with the following possible values:

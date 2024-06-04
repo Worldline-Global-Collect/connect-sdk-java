@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PersonalInformationToken {
 
-    private PersonalNameToken name = null;
+    private PersonalNameToken name;
 
     /**
      * Given name(s) or first name(s) of the customer

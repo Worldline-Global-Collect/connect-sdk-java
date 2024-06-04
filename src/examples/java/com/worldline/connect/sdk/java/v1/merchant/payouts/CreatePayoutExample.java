@@ -92,7 +92,7 @@ public class CreatePayoutExample {
             } catch (DeclinedPayoutException e) {
                 handleDeclinedPayout(e.getPayoutResult());
             } catch (ApiException e) {
-                handleApiErrors(e.getErrors());
+                handleErrorResponse(e.getErrorId(), e.getErrors());
             }
         }
     }
@@ -112,7 +112,7 @@ public class CreatePayoutExample {
     }
 
     @SuppressWarnings("unused")
-    private void handleApiErrors(List<APIError> errors) {
-        // handle the errors here
+    private void handleErrorResponse(String errorId, List<APIError> errors) {
+        // handle the error response here
     }
 }

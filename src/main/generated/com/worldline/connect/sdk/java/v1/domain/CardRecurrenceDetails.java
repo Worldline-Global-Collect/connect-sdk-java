@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CardRecurrenceDetails {
 
-    private String endDate = null;
+    private String endDate;
 
-    private Integer minFrequency = null;
+    private Integer minFrequency;
 
-    private String recurringPaymentSequenceIndicator = null;
+    private String recurringPaymentSequenceIndicator;
 
     /**
      * Date in YYYYMMDD after which there will be no further charges. If no value is provided we will set a default value of five years after we processed the first recurring transaction.

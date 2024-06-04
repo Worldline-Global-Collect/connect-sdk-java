@@ -9,9 +9,9 @@ import java.util.List;
 
 public class SessionRequest {
 
-    private PaymentProductFiltersClientSession paymentProductFilters = null;
+    private PaymentProductFiltersClientSession paymentProductFilters;
 
-    private List<String> tokens = null;
+    private List<String> tokens;
 
     /**
      * Restrict the payment products available for payment completion by restricting to and excluding certain payment products and payment product groups.

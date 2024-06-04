@@ -7,25 +7,25 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProductFieldDisplayHints {
 
-    private Boolean alwaysShow = null;
+    private Boolean alwaysShow;
 
-    private Integer displayOrder = null;
+    private Integer displayOrder;
 
-    private PaymentProductFieldFormElement formElement = null;
+    private PaymentProductFieldFormElement formElement;
 
-    private String label = null;
+    private String label;
 
-    private String link = null;
+    private String link;
 
-    private String mask = null;
+    private String mask;
 
-    private Boolean obfuscate = null;
+    private Boolean obfuscate;
 
-    private String placeholderLabel = null;
+    private String placeholderLabel;
 
-    private String preferredInputType = null;
+    private String preferredInputType;
 
-    private PaymentProductFieldTooltip tooltip = null;
+    private PaymentProductFieldTooltip tooltip;
 
     /**
      * <ul class="paragraph-width">

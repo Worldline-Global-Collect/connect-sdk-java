@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RefundMobileMethodSpecificOutput extends RefundMethodSpecificOutput {
 
-    private String network = null;
+    private String network;
 
     /**
      * The network that was used for the refund. The string that represents the network is identical to the strings that the payment product vendors use in their documentation.

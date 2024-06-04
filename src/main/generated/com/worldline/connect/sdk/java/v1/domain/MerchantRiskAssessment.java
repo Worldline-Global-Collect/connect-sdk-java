@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MerchantRiskAssessment {
 
-    private String websiteUrl = null;
+    private String websiteUrl;
 
     /**
      * The website from which the purchase was made

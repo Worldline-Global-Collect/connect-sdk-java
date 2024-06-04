@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class PaymentAccountOnFile {
 
-    private String createDate = null;
+    private String createDate;
 
-    private Integer numberOfCardOnFileCreationAttemptsLast24Hours = null;
+    private Integer numberOfCardOnFileCreationAttemptsLast24Hours;
 
     /**
      * The date (YYYYMMDD) when the payment account on file was first created.

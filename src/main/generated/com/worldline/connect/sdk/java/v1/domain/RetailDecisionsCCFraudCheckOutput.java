@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RetailDecisionsCCFraudCheckOutput {
 
-    private String fraudCode = null;
+    private String fraudCode;
 
-    private String fraudNeural = null;
+    private String fraudNeural;
 
-    private String fraudRCF = null;
+    private String fraudRCF;
 
     /**
      * Provides additional information about the fraud result

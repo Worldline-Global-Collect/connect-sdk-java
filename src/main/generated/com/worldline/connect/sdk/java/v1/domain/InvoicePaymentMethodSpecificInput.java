@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class InvoicePaymentMethodSpecificInput extends AbstractPaymentMethodSpecificInput {
 
-    private String additionalReference = null;
+    private String additionalReference;
 
     /**
      * Your (additional) reference identifier for this transaction. Data supplied in this property will also be returned in our report files, allowing you to reconcile the incoming funds.

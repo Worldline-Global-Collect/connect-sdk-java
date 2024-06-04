@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CustomerBase {
 
-    private CompanyInformation companyInformation = null;
+    private CompanyInformation companyInformation;
 
-    private String merchantCustomerId = null;
+    private String merchantCustomerId;
 
-    private String vatNumber = null;
+    private String vatNumber;
 
     /**
      * Object containing company information

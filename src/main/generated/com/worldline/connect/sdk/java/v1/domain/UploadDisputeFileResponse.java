@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class UploadDisputeFileResponse {
 
-    private String disputeId = null;
+    private String disputeId;
 
-    private String fileId = null;
+    private String fileId;
 
     /**
      * Dispute ID that is associated with the created dispute.

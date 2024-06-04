@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AccountOnFileAttribute extends KeyValuePair {
 
-    private String mustWriteReason = null;
+    private String mustWriteReason;
 
-    private String status = null;
+    private String status;
 
     /**
      * The reason why the status is MUST_WRITE. Currently only "IN_THE_PAST" is possible as value (for expiry date), but this can be extended with new values in the future.

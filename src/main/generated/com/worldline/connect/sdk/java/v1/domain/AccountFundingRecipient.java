@@ -10,17 +10,17 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class AccountFundingRecipient {
 
-    private String accountNumber = null;
+    private String accountNumber;
 
-    private String accountNumberType = null;
+    private String accountNumberType;
 
-    private Address address = null;
+    private Address address;
 
-    private String dateOfBirth = null;
+    private String dateOfBirth;
 
-    private AfrName name = null;
+    private AfrName name;
 
-    private String partialPan = null;
+    private String partialPan;
 
     /**
      * Should be populated with the value of the corresponding accountNumberType of the recipient.

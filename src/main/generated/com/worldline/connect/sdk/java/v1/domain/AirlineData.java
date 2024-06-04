@@ -9,55 +9,55 @@ import java.util.List;
 
 public class AirlineData {
 
-    private String agentNumericCode = null;
+    private String agentNumericCode;
 
-    private String code = null;
+    private String code;
 
-    private String flightDate = null;
+    private String flightDate;
 
-    private List<AirlineFlightLeg> flightLegs = null;
+    private List<AirlineFlightLeg> flightLegs;
 
-    private String invoiceNumber = null;
+    private String invoiceNumber;
 
-    private Boolean isETicket = null;
+    private Boolean isETicket;
 
-    private Boolean isRegisteredCustomer = null;
+    private Boolean isRegisteredCustomer;
 
-    private Boolean isRestrictedTicket = null;
+    private Boolean isRestrictedTicket;
 
-    private Boolean isThirdParty = null;
+    private Boolean isThirdParty;
 
-    private String issueDate = null;
+    private String issueDate;
 
-    private String merchantCustomerId = null;
+    private String merchantCustomerId;
 
-    private String name = null;
+    private String name;
 
-    private Integer numberInParty = null;
+    private Integer numberInParty;
 
-    private String passengerName = null;
+    private String passengerName;
 
-    private List<AirlinePassenger> passengers = null;
+    private List<AirlinePassenger> passengers;
 
-    private String placeOfIssue = null;
+    private String placeOfIssue;
 
-    private String pnr = null;
+    private String pnr;
 
-    private String pointOfSale = null;
+    private String pointOfSale;
 
-    private String posCityCode = null;
+    private String posCityCode;
 
-    private String ticketDeliveryMethod = null;
+    private String ticketDeliveryMethod;
 
-    private String ticketNumber = null;
+    private String ticketNumber;
 
-    private Integer totalFare = null;
+    private Integer totalFare;
 
-    private Integer totalFee = null;
+    private Integer totalFee;
 
-    private Integer totalTaxes = null;
+    private Integer totalTaxes;
 
-    private String travelAgencyName = null;
+    private String travelAgencyName;
 
     /**
      * Numeric code identifying the agent
@@ -256,14 +256,14 @@ public class AirlineData {
     }
 
     /**
-     * Total number of passengers in the party. If the the property <span class="property">numberInParty is not present, then the number of passengers will be used</span> on the WL Online Payment Acceptance Platform.
+     * Total number of passengers in the party. If the the property numberInParty is not present, then the number of passengers will be used on the WL Online Payment Acceptance Platform.
      */
     public Integer getNumberInParty() {
         return numberInParty;
     }
 
     /**
-     * Total number of passengers in the party. If the the property <span class="property">numberInParty is not present, then the number of passengers will be used</span> on the WL Online Payment Acceptance Platform.
+     * Total number of passengers in the party. If the the property numberInParty is not present, then the number of passengers will be used on the WL Online Payment Acceptance Platform.
      */
     public void setNumberInParty(Integer value) {
         this.numberInParty = value;
@@ -382,8 +382,8 @@ public class AirlineData {
     }
 
     /**
-     * The ticket or document number. On the <span>Ogone Payment Platform <span> and the </span>GlobalCollect Payment Platform it contains:<br>
-     * </span><ul class="paragraph-width"><li>Airline code: 3-digit airline code number
+     * The ticket or document number. On the Ogone Payment Platform  and the GlobalCollect Payment Platform it contains:<br>
+     * <ul class="paragraph-width"><li>Airline code: 3-digit airline code number
      * <li>Form code: A maximum of 3 digits indicating the type of document, the source of issue and the number of coupons it contains
      * <li>Serial number: A maximum of 8 digits allocated on a sequential basis, provided that the total number of digits allocated to the form code and serial number shall not exceed ten
      * <li>TICKETNUMBER can be replaced with PNR if the ticket number is unavailable
@@ -394,8 +394,8 @@ public class AirlineData {
     }
 
     /**
-     * The ticket or document number. On the <span>Ogone Payment Platform <span> and the </span>GlobalCollect Payment Platform it contains:<br>
-     * </span><ul class="paragraph-width"><li>Airline code: 3-digit airline code number
+     * The ticket or document number. On the Ogone Payment Platform  and the GlobalCollect Payment Platform it contains:<br>
+     * <ul class="paragraph-width"><li>Airline code: 3-digit airline code number
      * <li>Form code: A maximum of 3 digits indicating the type of document, the source of issue and the number of coupons it contains
      * <li>Serial number: A maximum of 8 digits allocated on a sequential basis, provided that the total number of digits allocated to the form code and serial number shall not exceed ten
      * <li>TICKETNUMBER can be replaced with PNR if the ticket number is unavailable

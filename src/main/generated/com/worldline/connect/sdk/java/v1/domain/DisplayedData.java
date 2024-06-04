@@ -9,11 +9,11 @@ import java.util.List;
 
 public class DisplayedData {
 
-    private String displayedDataType = null;
+    private String displayedDataType;
 
-    private String renderingData = null;
+    private String renderingData;
 
-    private List<KeyValuePair> showData = null;
+    private List<KeyValuePair> showData;
 
     /**
      * Action merchants needs to take in the online payment process. Possible values are:<br>

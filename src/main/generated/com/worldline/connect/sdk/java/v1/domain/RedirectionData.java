@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class RedirectionData {
 
-    private String returnUrl = null;
+    private String returnUrl;
 
-    private String variant = null;
+    private String variant;
 
     /**
      * The URL that the customer is redirect to after the payment flow has finished. You can add any number of key value pairs in the query string that, for instance help you to identify the customer when they return to your site. Please note that we will also append some additional key value pairs that will also help you with this identification process.<br>

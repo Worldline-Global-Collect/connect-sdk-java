@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class BankDetails {
 
-    private BankAccountBban bankAccountBban = null;
+    private BankAccountBban bankAccountBban;
 
-    private BankAccountIban bankAccountIban = null;
+    private BankAccountIban bankAccountIban;
 
     /**
      * Object that holds the Basic Bank Account Number (BBAN) data

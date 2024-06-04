@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RiskAssessmentCard extends RiskAssessment {
 
-    private Card card = null;
+    private Card card;
 
     /**
      * Object containing Card object

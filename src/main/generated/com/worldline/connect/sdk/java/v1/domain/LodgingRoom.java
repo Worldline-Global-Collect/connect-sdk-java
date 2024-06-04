@@ -10,23 +10,23 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class LodgingRoom {
 
-    private String dailyRoomRate = null;
+    private String dailyRoomRate;
 
-    private String dailyRoomRateCurrencyCode = null;
+    private String dailyRoomRateCurrencyCode;
 
-    private String dailyRoomTaxAmount = null;
+    private String dailyRoomTaxAmount;
 
-    private String dailyRoomTaxAmountCurrencyCode = null;
+    private String dailyRoomTaxAmountCurrencyCode;
 
-    private Integer numberOfNightsAtRoomRate = null;
+    private Integer numberOfNightsAtRoomRate;
 
-    private String roomLocation = null;
+    private String roomLocation;
 
-    private String roomNumber = null;
+    private String roomNumber;
 
-    private String typeOfBed = null;
+    private String typeOfBed;
 
-    private String typeOfRoom = null;
+    private String typeOfRoom;
 
     /**
      * Daily room rate exclusive of any taxes and fees<br>

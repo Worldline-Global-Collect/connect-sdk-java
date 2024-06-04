@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class GiftCardPurchase {
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private Integer numberOfGiftCards = null;
+    private Integer numberOfGiftCards;
 
     /**
      * Object containing information on an amount of money

@@ -9,9 +9,9 @@ import java.util.List;
 
 public class ErrorResponse {
 
-    private String errorId = null;
+    private String errorId;
 
-    private List<APIError> errors = null;
+    private List<APIError> errors;
 
     /**
      * Unique reference, for debugging purposes, of this error response

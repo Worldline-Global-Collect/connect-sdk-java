@@ -10,19 +10,21 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecificOutput {
 
-    private String authorisationCode = null;
+    private String authorisationCode;
 
-    private CardEssentials card = null;
+    private CardEssentials card;
 
-    private CardFraudResults fraudResults = null;
+    private CardFraudResults fraudResults;
 
-    private String initialSchemeTransactionId = null;
+    private String initialSchemeTransactionId;
 
-    private String schemeTransactionId = null;
+    private Boolean networkTokenUsed;
 
-    private ThreeDSecureResults threeDSecureResults = null;
+    private String schemeTransactionId;
 
-    private String token = null;
+    private ThreeDSecureResults threeDSecureResults;
+
+    private String token;
 
     /**
      * Card Authorization code as returned by the acquirer
@@ -78,6 +80,20 @@ public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecif
      */
     public void setInitialSchemeTransactionId(String value) {
         this.initialSchemeTransactionId = value;
+    }
+
+    /**
+     * Indicates if a network token was used during the payment.
+     */
+    public Boolean getNetworkTokenUsed() {
+        return networkTokenUsed;
+    }
+
+    /**
+     * Indicates if a network token was used during the payment.
+     */
+    public void setNetworkTokenUsed(Boolean value) {
+        this.networkTokenUsed = value;
     }
 
     /**

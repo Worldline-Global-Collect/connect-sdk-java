@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentCreationOutput extends PaymentCreationReferences {
 
-    private Boolean isCheckedRememberMe = null;
+    private Boolean isCheckedRememberMe;
 
-    private Boolean isNewToken = null;
+    private Boolean isNewToken;
 
-    private String token = null;
+    private String token;
 
-    private Boolean tokenizationSucceeded = null;
+    private Boolean tokenizationSucceeded;
 
     /**
      * Indicates whether the customer ticked the "Remember my details for future purchases" checkbox on the MyCheckout hosted payment pages

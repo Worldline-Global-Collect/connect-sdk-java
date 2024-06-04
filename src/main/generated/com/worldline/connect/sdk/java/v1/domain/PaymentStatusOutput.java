@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentStatusOutput extends OrderStatusOutput {
 
-    private Boolean isAuthorized = null;
+    private Boolean isAuthorized;
 
-    private Boolean isRefundable = null;
+    private Boolean isRefundable;
 
-    private String threeDSecureStatus = null;
+    private String threeDSecureStatus;
 
     /**
      * Indicates if the transaction has been authorized

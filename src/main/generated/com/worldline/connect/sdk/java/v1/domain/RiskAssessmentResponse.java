@@ -9,7 +9,7 @@ import java.util.List;
 
 public class RiskAssessmentResponse {
 
-    private List<ResultDoRiskAssessment> results = null;
+    private List<ResultDoRiskAssessment> results;
 
     /**
      * Object that contains the results of the performed fraudchecks

@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class GPayThreeDSecure {
 
-    private String challengeCanvasSize = null;
+    private String challengeCanvasSize;
 
-    private String challengeIndicator = null;
+    private String challengeIndicator;
 
-    private String exemptionRequest = null;
+    private String exemptionRequest;
 
-    private RedirectionData redirectionData = null;
+    private RedirectionData redirectionData;
 
-    private Boolean skipAuthentication = null;
+    private Boolean skipAuthentication;
 
     /**
      * Dimensions of the challenge window that potentially will be displayed to the customer. The challenge content is formatted to appropriately render in this window to provide the best possible user experience.<br>Preconfigured sizes are width x height in pixels of the window displayed in the customer browser window. Possible values are:<br><ul class="paragraph-width"><li>250x400 (default)</li><li>390x400</li><li>500x600</li><li>600x400</li><li>full-screen</li></ul>.

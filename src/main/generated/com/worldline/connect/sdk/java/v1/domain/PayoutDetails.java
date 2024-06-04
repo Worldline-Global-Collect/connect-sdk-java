@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PayoutDetails {
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private PayoutCustomer customer = null;
+    private PayoutCustomer customer;
 
-    private PayoutReferences references = null;
+    private PayoutReferences references;
 
     /**
      * Object containing amount and ISO currency code attributes

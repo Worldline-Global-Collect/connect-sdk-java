@@ -9,7 +9,7 @@ import java.util.List;
 
 public class FixedListValidator {
 
-    private List<String> allowedValues = null;
+    private List<String> allowedValues;
 
     /**
      * List of the allowed values that the field will be validated against

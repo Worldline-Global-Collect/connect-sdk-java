@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class RefundPaymentProduct840CustomerAccount {
 
-    private String customerAccountStatus = null;
+    private String customerAccountStatus;
 
-    private String customerAddressStatus = null;
+    private String customerAddressStatus;
 
-    private String payerId = null;
+    private String payerId;
 
     /**
      * Status of the PayPal account.<br>

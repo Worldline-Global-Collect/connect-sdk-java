@@ -7,29 +7,29 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class Seller {
 
-    private Address address = null;
+    private Address address;
 
-    private String channelCode = null;
+    private String channelCode;
 
-    private String description = null;
+    private String description;
 
-    private String externalReferenceId = null;
+    private String externalReferenceId;
 
-    private String geocode = null;
+    private String geocode;
 
-    private String id = null;
+    private String id;
 
-    private String invoiceNumber = null;
+    private String invoiceNumber;
 
-    private Boolean isForeignRetailer = null;
+    private Boolean isForeignRetailer;
 
-    private String mcc = null;
+    private String mcc;
 
-    private String name = null;
+    private String name;
 
-    private String phoneNumber = null;
+    private String phoneNumber;
 
-    private String type = null;
+    private String type;
 
     /**
      * Object containing the seller address details

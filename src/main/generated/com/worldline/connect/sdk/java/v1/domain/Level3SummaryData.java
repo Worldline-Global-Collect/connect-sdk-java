@@ -11,11 +11,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 @Deprecated
 public class Level3SummaryData {
 
-    private Long discountAmount = null;
+    private Long discountAmount;
 
-    private Long dutyAmount = null;
+    private Long dutyAmount;
 
-    private Long shippingAmount = null;
+    private Long shippingAmount;
 
     /**
      * Discount on the entire transaction, with the last 2 digits are implied decimal places

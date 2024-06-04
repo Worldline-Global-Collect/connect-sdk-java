@@ -9,17 +9,17 @@ import java.util.List;
 
 public class SessionResponse {
 
-    private String assetUrl = null;
+    private String assetUrl;
 
-    private String clientApiUrl = null;
+    private String clientApiUrl;
 
-    private String clientSessionId = null;
+    private String clientSessionId;
 
-    private String customerId = null;
+    private String customerId;
 
-    private List<String> invalidTokens = null;
+    private List<String> invalidTokens;
 
-    private String region = null;
+    private String region;
 
     /**
      * The datacenter-specific base url for assets. This value needs to be passed to the Client SDK to make sure that the client software connects to the right datacenter.

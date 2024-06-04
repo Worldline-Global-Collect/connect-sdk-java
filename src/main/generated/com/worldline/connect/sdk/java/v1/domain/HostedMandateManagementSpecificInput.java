@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class HostedMandateManagementSpecificInput {
 
-    private String locale = null;
+    private String locale;
 
-    private String returnUrl = null;
+    private String returnUrl;
 
-    private Boolean showResultPage = null;
+    private Boolean showResultPage;
 
-    private String variant = null;
+    private String variant;
 
     /**
      * Locale to use to present the hosted mandate pages to the customer. Please make sure that a language pack is configured for the locale you are submitting. If you submit a locale that is not setup on your account we will use the default language pack for your account. You can easily upload additional language packs and set the default language pack in the Configuration Center.

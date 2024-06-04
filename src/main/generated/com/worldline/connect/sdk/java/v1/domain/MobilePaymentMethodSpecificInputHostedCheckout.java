@@ -7,17 +7,17 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MobilePaymentMethodSpecificInputHostedCheckout extends AbstractPaymentMethodSpecificInput {
 
-    private String authorizationMode = null;
+    private String authorizationMode;
 
-    private String customerReference = null;
+    private String customerReference;
 
-    private MobilePaymentProduct302SpecificInputHostedCheckout paymentProduct302SpecificInput = null;
+    private MobilePaymentProduct302SpecificInputHostedCheckout paymentProduct302SpecificInput;
 
-    private MobilePaymentProduct320SpecificInputHostedCheckout paymentProduct320SpecificInput = null;
+    private MobilePaymentProduct320SpecificInputHostedCheckout paymentProduct320SpecificInput;
 
-    private Boolean requiresApproval = null;
+    private Boolean requiresApproval;
 
-    private Boolean skipFraudService = null;
+    private Boolean skipFraudService;
 
     /**
      * Determines the type of the authorization that will be used. Allowed values:

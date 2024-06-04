@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MobilePaymentMethodSpecificOutput extends AbstractPaymentMethodSpecificOutput {
 
-    private String authorisationCode = null;
+    private String authorisationCode;
 
-    private CardFraudResults fraudResults = null;
+    private CardFraudResults fraudResults;
 
-    private String network = null;
+    private String network;
 
-    private MobilePaymentData paymentData = null;
+    private MobilePaymentData paymentData;
 
-    private ThreeDSecureResults threeDSecureResults = null;
+    private ThreeDSecureResults threeDSecureResults;
 
     /**
      * Card Authorization code as returned by the acquirer

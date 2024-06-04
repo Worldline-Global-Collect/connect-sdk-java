@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RangeValidator {
 
-    private Integer maxValue = null;
+    private Integer maxValue;
 
-    private Integer minValue = null;
+    private Integer minValue;
 
     /**
      * Upper value of the range that is still valid

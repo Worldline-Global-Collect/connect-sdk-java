@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentApprovalResponse {
 
-    private ApprovePaymentCardPaymentMethodSpecificOutput cardPaymentMethodSpecificOutput = null;
+    private ApprovePaymentCardPaymentMethodSpecificOutput cardPaymentMethodSpecificOutput;
 
-    private ApprovePaymentMobilePaymentMethodSpecificOutput mobilePaymentMethodSpecificOutput = null;
+    private ApprovePaymentMobilePaymentMethodSpecificOutput mobilePaymentMethodSpecificOutput;
 
-    private Payment payment = null;
+    private Payment payment;
 
-    private ApprovePaymentCardPaymentMethodSpecificOutput paymentMethodSpecificOutput = null;
+    private ApprovePaymentCardPaymentMethodSpecificOutput paymentMethodSpecificOutput;
 
     /**
      * Object containing additional card payment method specific details

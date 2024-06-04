@@ -30,7 +30,7 @@ public class ApiException extends RuntimeException {
         this.statusCode = statusCode;
         this.responseBody = responseBody;
         this.errorId = errorId;
-        this.errors = errors == null ? Collections.<APIError>emptyList() : errors;
+        this.errors = errors == null ? Collections.emptyList() : errors;
     }
 
     /**
@@ -48,14 +48,14 @@ public class ApiException extends RuntimeException {
     }
 
     /**
-     * @return The error ID received from the Worldline Global Collect platform if available.
+     * @return The {@code errorId} received from the Worldline Global Collect platform if available.
      */
     public String getErrorId() {
         return errorId;
     }
 
     /**
-     * @return The error list received from the Worldline Global Collect platform if available. Never {@code null}.
+     * @return The {@code errors} received from the Worldline Global Collect platform if available. Never {@code null}.
      */
     public List<APIError> getErrors() {
         return errors;

@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TrustlyBankAccount {
 
-    private String accountLastDigits = null;
+    private String accountLastDigits;
 
-    private String bankName = null;
+    private String bankName;
 
-    private String clearinghouse = null;
+    private String clearinghouse;
 
-    private String personIdentificationNumber = null;
+    private String personIdentificationNumber;
 
     /**
      * The last digits of the account number

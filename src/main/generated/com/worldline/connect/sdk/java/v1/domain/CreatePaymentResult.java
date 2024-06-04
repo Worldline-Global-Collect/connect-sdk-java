@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreatePaymentResult {
 
-    private PaymentCreationOutput creationOutput = null;
+    private PaymentCreationOutput creationOutput;
 
-    private MerchantAction merchantAction = null;
+    private MerchantAction merchantAction;
 
-    private Payment payment = null;
+    private Payment payment;
 
     /**
      * Object containing the details of the created payment

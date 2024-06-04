@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractBankTransferPaymentMethodSpecificInput extends AbstractPaymentMethodSpecificInput {
 
-    private String additionalReference = null;
+    private String additionalReference;
 
     public String getAdditionalReference() {
         return additionalReference;

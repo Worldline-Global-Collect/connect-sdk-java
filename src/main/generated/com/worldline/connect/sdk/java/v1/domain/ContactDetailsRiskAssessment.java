@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ContactDetailsRiskAssessment {
 
-    private String emailAddress = null;
+    private String emailAddress;
 
     /**
      * Email address of the customer

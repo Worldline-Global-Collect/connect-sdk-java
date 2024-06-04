@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreateTokenResponse {
 
-    private Boolean isNewToken = null;
+    private Boolean isNewToken;
 
-    private String originalPaymentId = null;
+    private String originalPaymentId;
 
-    private String token = null;
+    private String token;
 
     /**
      * Indicates if a new token was created

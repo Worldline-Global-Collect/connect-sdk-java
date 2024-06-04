@@ -9,11 +9,11 @@ import java.util.List;
 
 public class CaptureStatusOutput {
 
-    private Boolean isRetriable = null;
+    private Boolean isRetriable;
 
-    private List<KeyValuePair> providerRawOutput = null;
+    private List<KeyValuePair> providerRawOutput;
 
-    private Integer statusCode = null;
+    private Integer statusCode;
 
     /**
      * Flag indicating whether a rejected payment may be retried by the merchant without incurring a fee 

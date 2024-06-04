@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ApprovePaymentCardPaymentMethodSpecificOutput {
 
-    private String voidResponseId = null;
+    private String voidResponseId;
 
     /**
      * Result of the authorization reversal request

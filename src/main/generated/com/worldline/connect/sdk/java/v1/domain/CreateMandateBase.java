@@ -7,19 +7,19 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreateMandateBase {
 
-    private String alias = null;
+    private String alias;
 
-    private MandateCustomer customer = null;
+    private MandateCustomer customer;
 
-    private String customerReference = null;
+    private String customerReference;
 
-    private String language = null;
+    private String language;
 
-    private String recurrenceType = null;
+    private String recurrenceType;
 
-    private String signatureType = null;
+    private String signatureType;
 
-    private String uniqueMandateReference = null;
+    private String uniqueMandateReference;
 
     /**
      * An alias for the mandate. This can be used to visually represent the mandate.<br>

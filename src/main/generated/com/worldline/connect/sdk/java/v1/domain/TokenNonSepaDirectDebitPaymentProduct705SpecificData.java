@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TokenNonSepaDirectDebitPaymentProduct705SpecificData {
 
-    private String authorisationId = null;
+    private String authorisationId;
 
-    private BankAccountBban bankAccountBban = null;
+    private BankAccountBban bankAccountBban;
 
     /**
      * Core reference number for the direct debit instruction in UK

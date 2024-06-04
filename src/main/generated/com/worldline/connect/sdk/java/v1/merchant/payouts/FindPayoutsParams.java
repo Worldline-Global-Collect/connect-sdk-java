@@ -5,7 +5,7 @@
 
 package com.worldline.connect.sdk.java.v1.merchant.payouts;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.worldline.connect.sdk.java.communication.ParamRequest;
@@ -83,7 +83,7 @@ public class FindPayoutsParams implements ParamRequest {
 
     @Override
     public List<RequestParam> toRequestParameters() {
-        List<RequestParam> result = new LinkedList<>();
+        List<RequestParam> result = new ArrayList<>();
         if (merchantReference != null) {
             result.add(new RequestParam("merchantReference", merchantReference));
         }

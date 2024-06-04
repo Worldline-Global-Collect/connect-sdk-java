@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TokenEWalletData {
 
-    private String billingAgreementId = null;
+    private String billingAgreementId;
 
     /**
      * Identification of the PayPal recurring billing agreement

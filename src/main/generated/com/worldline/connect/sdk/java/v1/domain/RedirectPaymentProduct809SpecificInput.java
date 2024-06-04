@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class RedirectPaymentProduct809SpecificInput {
 
-    private String expirationPeriod = null;
+    private String expirationPeriod;
 
-    private String issuerId = null;
+    private String issuerId;
 
     /**
      * This sets the maximum amount of minutes a customer has to complete the payment at the bank. After this period has expired it is impossible for the customer to make a payment and in case no payment has been made the transaction will be marked as unsuccessful and expired by the bank. Setting the expirationPeriod is convenient if you want to maximise the time a customer has to complete the payment. Please note that it is normal for a customer to take up to 5 minutes to complete a payment. Setting this value below 10 minutes is not advised.

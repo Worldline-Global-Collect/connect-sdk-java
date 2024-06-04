@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class BankAccountBbanRefund extends BankAccountBban {
 
-    private String bankCity = null;
+    private String bankCity;
 
-    private String patronymicName = null;
+    private String patronymicName;
 
-    private String swiftCode = null;
+    private String swiftCode;
 
     /**
      * City of the bank to refund to

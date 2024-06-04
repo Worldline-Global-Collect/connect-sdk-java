@@ -7,19 +7,19 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class APIError {
 
-    private String category = null;
+    private String category;
 
-    private String code = null;
+    private String code;
 
-    private Integer httpStatusCode = null;
+    private Integer httpStatusCode;
 
-    private String id = null;
+    private String id;
 
-    private String message = null;
+    private String message;
 
-    private String propertyName = null;
+    private String propertyName;
 
-    private String requestId = null;
+    private String requestId;
 
     /**
      * Category the error belongs to. The category should give an indication of the type of error you are dealing with.

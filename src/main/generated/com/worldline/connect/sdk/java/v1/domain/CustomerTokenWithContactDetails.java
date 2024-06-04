@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CustomerTokenWithContactDetails extends CustomerToken {
 
-    private ContactDetailsToken contactDetails = null;
+    private ContactDetailsToken contactDetails;
 
     /**
      * Object containing contact details like email address and phone number

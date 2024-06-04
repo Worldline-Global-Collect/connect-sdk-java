@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CardWithoutCvv extends CardEssentials {
 
-    private String issueNumber = null;
+    private String issueNumber;
 
     /**
      * Issue number on the card (if applicable)

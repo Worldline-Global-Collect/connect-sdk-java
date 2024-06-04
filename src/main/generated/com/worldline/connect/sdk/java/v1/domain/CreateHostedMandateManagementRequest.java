@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreateHostedMandateManagementRequest {
 
-    private HostedMandateInfo createMandateInfo = null;
+    private HostedMandateInfo createMandateInfo;
 
-    private HostedMandateManagementSpecificInput hostedMandateManagementSpecificInput = null;
+    private HostedMandateManagementSpecificInput hostedMandateManagementSpecificInput;
 
     /**
      * Object containing partial information needed for the creation of the mandate. The recurrencetype, signature type of the mandate and reference to the customer are mandatory. You can also supply any personal information you already know about the customer so they have to fill in less details.

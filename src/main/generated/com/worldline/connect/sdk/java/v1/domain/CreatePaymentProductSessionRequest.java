@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreatePaymentProductSessionRequest {
 
-    private MobilePaymentProductSession302SpecificInput paymentProductSession302SpecificInput = null;
+    private MobilePaymentProductSession302SpecificInput paymentProductSession302SpecificInput;
 
     /**
      * Object containing details for creating an Apple Pay session.

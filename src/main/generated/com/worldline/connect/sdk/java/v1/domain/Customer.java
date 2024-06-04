@@ -10,27 +10,27 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class Customer extends CustomerBase {
 
-    private CustomerAccount account = null;
+    private CustomerAccount account;
 
-    private String accountType = null;
+    private String accountType;
 
-    private Address billingAddress = null;
+    private Address billingAddress;
 
-    private ContactDetails contactDetails = null;
+    private ContactDetails contactDetails;
 
-    private CustomerDevice device = null;
+    private CustomerDevice device;
 
-    private String fiscalNumber = null;
+    private String fiscalNumber;
 
-    private Boolean isCompany = null;
+    private Boolean isCompany;
 
-    private Boolean isPreviousCustomer = null;
+    private Boolean isPreviousCustomer;
 
-    private String locale = null;
+    private String locale;
 
-    private PersonalInformation personalInformation = null;
+    private PersonalInformation personalInformation;
 
-    private AddressPersonal shippingAddress = null;
+    private AddressPersonal shippingAddress;
 
     /**
      * Object containing data related to the account the customer has with you

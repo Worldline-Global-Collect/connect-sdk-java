@@ -7,19 +7,19 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MicrosoftFraudResults {
 
-    private String clauseName = null;
+    private String clauseName;
 
-    private String deviceCountryCode = null;
+    private String deviceCountryCode;
 
-    private String deviceId = null;
+    private String deviceId;
 
-    private Integer fraudScore = null;
+    private Integer fraudScore;
 
-    private String policyApplied = null;
+    private String policyApplied;
 
-    private String trueIpAddress = null;
+    private String trueIpAddress;
 
-    private String userDeviceType = null;
+    private String userDeviceType;
 
     /**
      * Name of the clause within the applied policy that was triggered during the evaluation of this transaction.

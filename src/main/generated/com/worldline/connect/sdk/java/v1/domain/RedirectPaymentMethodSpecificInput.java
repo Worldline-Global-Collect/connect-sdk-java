@@ -7,27 +7,27 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RedirectPaymentMethodSpecificInput extends AbstractRedirectPaymentMethodSpecificInput {
 
-    private Boolean isRecurring = null;
+    private Boolean isRecurring;
 
-    private RedirectPaymentProduct4101SpecificInput paymentProduct4101SpecificInput = null;
+    private RedirectPaymentProduct4101SpecificInput paymentProduct4101SpecificInput;
 
-    private RedirectPaymentProduct809SpecificInput paymentProduct809SpecificInput = null;
+    private RedirectPaymentProduct809SpecificInput paymentProduct809SpecificInput;
 
-    private RedirectPaymentProduct816SpecificInput paymentProduct816SpecificInput = null;
+    private RedirectPaymentProduct816SpecificInput paymentProduct816SpecificInput;
 
-    private RedirectPaymentProduct840SpecificInput paymentProduct840SpecificInput = null;
+    private RedirectPaymentProduct840SpecificInput paymentProduct840SpecificInput;
 
-    private RedirectPaymentProduct861SpecificInput paymentProduct861SpecificInput = null;
+    private RedirectPaymentProduct861SpecificInput paymentProduct861SpecificInput;
 
-    private RedirectPaymentProduct863SpecificInput paymentProduct863SpecificInput = null;
+    private RedirectPaymentProduct863SpecificInput paymentProduct863SpecificInput;
 
-    private RedirectPaymentProduct869SpecificInput paymentProduct869SpecificInput = null;
+    private RedirectPaymentProduct869SpecificInput paymentProduct869SpecificInput;
 
-    private RedirectPaymentProduct882SpecificInput paymentProduct882SpecificInput = null;
+    private RedirectPaymentProduct882SpecificInput paymentProduct882SpecificInput;
 
-    private RedirectionData redirectionData = null;
+    private RedirectionData redirectionData;
 
-    private String returnUrl = null;
+    private String returnUrl;
 
     /**
      * <ul class="paragraph-width"><li>true

@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class BoletoBancarioRequirednessValidator {
 
-    private Integer fiscalNumberLength = null;
+    private Integer fiscalNumberLength;
 
     /**
      * When performing a payment with Boleto Bancario, some values are only required when the fiscalnumber has a specific length. The length the fiscalnumber has to have to make the field required is defined here.

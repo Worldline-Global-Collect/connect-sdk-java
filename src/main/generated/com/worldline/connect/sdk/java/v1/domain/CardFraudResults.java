@@ -10,13 +10,13 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CardFraudResults extends FraudResults {
 
-    private String avsResult = null;
+    private String avsResult;
 
-    private String cvvResult = null;
+    private String cvvResult;
 
-    private FraugsterResults fraugster = null;
+    private FraugsterResults fraugster;
 
-    private FraudResultsRetailDecisions retailDecisions = null;
+    private FraudResultsRetailDecisions retailDecisions;
 
     /**
      * Result of the Address Verification Service checks. Possible values are:

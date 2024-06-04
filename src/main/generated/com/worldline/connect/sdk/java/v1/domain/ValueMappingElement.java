@@ -9,11 +9,11 @@ import java.util.List;
 
 public class ValueMappingElement {
 
-    private List<PaymentProductFieldDisplayElement> displayElements = null;
+    private List<PaymentProductFieldDisplayElement> displayElements;
 
-    private String displayName = null;
+    private String displayName;
 
-    private String value = null;
+    private String value;
 
     /**
      * List of extra data of the value.

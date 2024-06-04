@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractPaymentMethodSpecificInput {
 
-    private Integer paymentProductId = null;
+    private Integer paymentProductId;
 
     /**
      * Payment product identifier<br>

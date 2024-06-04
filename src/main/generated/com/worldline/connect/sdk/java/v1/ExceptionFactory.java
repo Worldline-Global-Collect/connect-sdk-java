@@ -47,7 +47,7 @@ public class ExceptionFactory {
             return createException(statusCode, responseBody, errorResponse.getErrorId(), errorResponse.getErrors(), context);
         }
         if (errorObject == null) {
-            return createException(statusCode, responseBody, null, Collections.<APIError>emptyList(), context);
+            return createException(statusCode, responseBody, null, Collections.emptyList(), context);
         }
         throw new IllegalArgumentException("unsupported error object type: " + errorObject.getClass().getName());
     }
@@ -83,6 +83,7 @@ public class ExceptionFactory {
     private static boolean isIdempotenceError(List<APIError> errors, CallContext context) {
         return context != null
                 && context.getIdempotenceKey() != null
+                && errors != null
                 && errors.size() == 1
                 && "1409".equals(errors.get(0).getCode());
     }

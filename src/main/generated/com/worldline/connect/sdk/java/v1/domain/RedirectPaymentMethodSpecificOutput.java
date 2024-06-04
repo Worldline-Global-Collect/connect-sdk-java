@@ -7,23 +7,23 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RedirectPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecificOutput {
 
-    private BankAccountBban bankAccountBban = null;
+    private BankAccountBban bankAccountBban;
 
-    private BankAccountIban bankAccountIban = null;
+    private BankAccountIban bankAccountIban;
 
-    private String bic = null;
+    private String bic;
 
-    private FraudResults fraudResults = null;
+    private FraudResults fraudResults;
 
-    private PaymentProduct3201SpecificOutput paymentProduct3201SpecificOutput = null;
+    private PaymentProduct3201SpecificOutput paymentProduct3201SpecificOutput;
 
-    private PaymentProduct806SpecificOutput paymentProduct806SpecificOutput = null;
+    private PaymentProduct806SpecificOutput paymentProduct806SpecificOutput;
 
-    private PaymentProduct836SpecificOutput paymentProduct836SpecificOutput = null;
+    private PaymentProduct836SpecificOutput paymentProduct836SpecificOutput;
 
-    private PaymentProduct840SpecificOutput paymentProduct840SpecificOutput = null;
+    private PaymentProduct840SpecificOutput paymentProduct840SpecificOutput;
 
-    private String token = null;
+    private String token;
 
     /**
      * Object that holds the Basic Bank Account Number (BBAN) data

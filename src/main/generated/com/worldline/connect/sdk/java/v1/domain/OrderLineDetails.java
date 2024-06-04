@@ -7,29 +7,31 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class OrderLineDetails {
 
-    private Long discountAmount = null;
+    private Long discountAmount;
 
-    private Long googleProductCategoryId = null;
+    private Long googleProductCategoryId;
 
-    private Long lineAmountTotal = null;
+    private Long lineAmountTotal;
 
-    private String productCategory = null;
+    private String naicsCommodityCode;
 
-    private String productCode = null;
+    private String productCategory;
 
-    private String productName = null;
+    private String productCode;
 
-    private Long productPrice = null;
+    private String productName;
 
-    private String productSku = null;
+    private Long productPrice;
 
-    private String productType = null;
+    private String productSku;
 
-    private Long quantity = null;
+    private String productType;
 
-    private Long taxAmount = null;
+    private Long quantity;
 
-    private String unit = null;
+    private Long taxAmount;
+
+    private String unit;
 
     /**
      * Discount on the line item, with the last two digits implied as decimal places
@@ -71,6 +73,20 @@ public class OrderLineDetails {
      */
     public void setLineAmountTotal(Long value) {
         this.lineAmountTotal = value;
+    }
+
+    /**
+     * The UNSPC commodity code of the item.
+     */
+    public String getNaicsCommodityCode() {
+        return naicsCommodityCode;
+    }
+
+    /**
+     * The UNSPC commodity code of the item.
+     */
+    public void setNaicsCommodityCode(String value) {
+        this.naicsCommodityCode = value;
     }
 
     /**

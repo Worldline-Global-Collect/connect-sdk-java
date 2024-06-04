@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AmountOfMoney {
 
-    private Long amount = null;
+    private Long amount;
 
-    private String currencyCode = null;
+    private String currencyCode;
 
     /**
      * Amount in cents and always having 2 decimals

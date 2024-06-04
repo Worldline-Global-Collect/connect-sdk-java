@@ -10,7 +10,7 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CancelPaymentMobilePaymentMethodSpecificOutput {
 
-    private String voidResponseId = null;
+    private String voidResponseId;
 
     /**
      * Result of the authorization reversal request

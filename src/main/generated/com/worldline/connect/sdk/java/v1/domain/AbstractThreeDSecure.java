@@ -7,23 +7,23 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractThreeDSecure {
 
-    private AmountOfMoney authenticationAmount = null;
+    private AmountOfMoney authenticationAmount;
 
-    private String authenticationFlow = null;
+    private String authenticationFlow;
 
-    private String challengeCanvasSize = null;
+    private String challengeCanvasSize;
 
-    private String challengeIndicator = null;
+    private String challengeIndicator;
 
-    private String exemptionRequest = null;
+    private String exemptionRequest;
 
-    private ThreeDSecureData priorThreeDSecureData = null;
+    private ThreeDSecureData priorThreeDSecureData;
 
-    private SdkDataInput sdkData = null;
+    private SdkDataInput sdkData;
 
-    private Boolean skipAuthentication = null;
+    private Boolean skipAuthentication;
 
-    private String transactionRiskLevel = null;
+    private String transactionRiskLevel;
 
     public AmountOfMoney getAuthenticationAmount() {
         return authenticationAmount;

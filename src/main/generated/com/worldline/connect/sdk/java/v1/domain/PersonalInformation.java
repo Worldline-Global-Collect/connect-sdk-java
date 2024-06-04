@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PersonalInformation {
 
-    private String dateOfBirth = null;
+    private String dateOfBirth;
 
-    private String gender = null;
+    private String gender;
 
-    private PersonalIdentification identification = null;
+    private PersonalIdentification identification;
 
-    private PersonalName name = null;
+    private PersonalName name;
 
     /**
      * The date of birth of the customer<br>

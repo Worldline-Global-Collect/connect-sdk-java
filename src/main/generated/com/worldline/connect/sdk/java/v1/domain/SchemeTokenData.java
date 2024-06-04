@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class SchemeTokenData {
 
-    private String cardholderName = null;
+    private String cardholderName;
 
-    private String cryptogram = null;
+    private String cryptogram;
 
-    private String eci = null;
+    private String eci;
 
-    private String networkToken = null;
+    private String networkToken;
 
-    private String tokenExpiryDate = null;
+    private String tokenExpiryDate;
 
     /**
      * The cardholder's name on the card

@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RedirectPaymentProduct869SpecificInput {
 
-    private String issuerId = null;
+    private String issuerId;
 
-    private String residentIdName = null;
+    private String residentIdName;
 
-    private String residentIdNumber = null;
+    private String residentIdNumber;
 
     /**
      * ID of the issuing bank of the customer. A list of available issuerIDs can be obtained by using the retrieve payment product directory API.

@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreateMandateResponse {
 
-    private MandateResponse mandate = null;
+    private MandateResponse mandate;
 
-    private MandateMerchantAction merchantAction = null;
+    private MandateMerchantAction merchantAction;
 
     /**
      * Object containing information on a mandate

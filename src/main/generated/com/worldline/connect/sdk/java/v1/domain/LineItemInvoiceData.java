@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class LineItemInvoiceData {
 
-    private String description = null;
+    private String description;
 
-    private String merchantLinenumber = null;
+    private String merchantLinenumber;
 
-    private String merchantPagenumber = null;
+    private String merchantPagenumber;
 
-    private String nrOfItems = null;
+    private String nrOfItems;
 
-    private Long pricePerItem = null;
+    private Long pricePerItem;
 
     /**
      * Shopping cart item description

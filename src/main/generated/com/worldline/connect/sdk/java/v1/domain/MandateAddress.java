@@ -10,15 +10,15 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class MandateAddress {
 
-    private String city = null;
+    private String city;
 
-    private String countryCode = null;
+    private String countryCode;
 
-    private String houseNumber = null;
+    private String houseNumber;
 
-    private String street = null;
+    private String street;
 
-    private String zip = null;
+    private String zip;
 
     /**
      * City

@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ProtectionEligibility {
 
-    private String eligibility = null;
+    private String eligibility;
 
-    private String type = null;
+    private String type;
 
     /**
      * Possible values: <ul class="paragraph-width"> <li> Eligible <li> PartiallyEligible <li> Ineligible </ul>

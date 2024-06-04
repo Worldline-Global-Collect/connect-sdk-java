@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class OrderReferencesApprovePayment {
 
-    private String merchantReference = null;
+    private String merchantReference;
 
     /**
      * Your (unique) reference for the transaction that you can use to reconcile our report files

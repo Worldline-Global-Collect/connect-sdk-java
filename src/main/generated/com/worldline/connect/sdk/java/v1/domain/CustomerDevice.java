@@ -10,21 +10,21 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CustomerDevice {
 
-    private String acceptHeader = null;
+    private String acceptHeader;
 
-    private BrowserData browserData = null;
+    private BrowserData browserData;
 
-    private String defaultFormFill = null;
+    private String defaultFormFill;
 
-    private String deviceFingerprintTransactionId = null;
+    private String deviceFingerprintTransactionId;
 
-    private String ipAddress = null;
+    private String ipAddress;
 
-    private String locale = null;
+    private String locale;
 
-    private String timezoneOffsetUtcMinutes = null;
+    private String timezoneOffsetUtcMinutes;
 
-    private String userAgent = null;
+    private String userAgent;
 
     /**
      * The accept-header of the customer client from the HTTP Headers.

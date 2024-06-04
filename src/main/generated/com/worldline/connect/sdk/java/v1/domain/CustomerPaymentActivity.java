@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CustomerPaymentActivity {
 
-    private Integer numberOfPaymentAttemptsLast24Hours = null;
+    private Integer numberOfPaymentAttemptsLast24Hours;
 
-    private Integer numberOfPaymentAttemptsLastYear = null;
+    private Integer numberOfPaymentAttemptsLastYear;
 
-    private Integer numberOfPurchasesLast6Months = null;
+    private Integer numberOfPurchasesLast6Months;
 
     /**
      * Number of payment attempts (so including unsuccessful ones) made by this customer with you in the last 24 hours

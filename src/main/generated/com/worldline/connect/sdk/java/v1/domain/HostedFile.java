@@ -10,13 +10,13 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class HostedFile {
 
-    private String fileName = null;
+    private String fileName;
 
-    private String fileSize = null;
+    private String fileSize;
 
-    private String fileType = null;
+    private String fileType;
 
-    private String id = null;
+    private String id;
 
     /**
      * The name of the file.

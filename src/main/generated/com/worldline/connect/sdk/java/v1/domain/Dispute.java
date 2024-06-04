@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class Dispute {
 
-    private DisputeOutput disputeOutput = null;
+    private DisputeOutput disputeOutput;
 
-    private String id = null;
+    private String id;
 
-    private String paymentId = null;
+    private String paymentId;
 
-    private String status = null;
+    private String status;
 
-    private DisputeStatusOutput statusOutput = null;
+    private DisputeStatusOutput statusOutput;
 
     /**
      * This property contains the creationDetails and default information regarding a dispute.

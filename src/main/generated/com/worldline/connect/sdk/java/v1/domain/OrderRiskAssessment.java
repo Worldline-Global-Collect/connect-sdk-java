@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class OrderRiskAssessment {
 
-    private AdditionalOrderInputAirlineData additionalInput = null;
+    private AdditionalOrderInputAirlineData additionalInput;
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private CustomerRiskAssessment customer = null;
+    private CustomerRiskAssessment customer;
 
-    private ShippingRiskAssessment shipping = null;
+    private ShippingRiskAssessment shipping;
 
     /**
      * Object containing additional input on the order

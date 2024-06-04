@@ -7,19 +7,19 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class SdkDataInput {
 
-    private DeviceRenderOptions deviceRenderOptions = null;
+    private DeviceRenderOptions deviceRenderOptions;
 
-    private String sdkAppId = null;
+    private String sdkAppId;
 
-    private String sdkEncryptedData = null;
+    private String sdkEncryptedData;
 
-    private String sdkEphemeralPublicKey = null;
+    private String sdkEphemeralPublicKey;
 
-    private String sdkMaxTimeout = null;
+    private String sdkMaxTimeout;
 
-    private String sdkReferenceNumber = null;
+    private String sdkReferenceNumber;
 
-    private String sdkTransactionId = null;
+    private String sdkTransactionId;
 
     /**
      * Object containing rendering options of the device.

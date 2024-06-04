@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ThirdPartyStatusResponse {
 
-    private String thirdPartyStatus = null;
+    private String thirdPartyStatus;
 
     /**
      * The status returned by the third party.

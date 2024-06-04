@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProductField {
 
-    private PaymentProductFieldDataRestrictions dataRestrictions = null;
+    private PaymentProductFieldDataRestrictions dataRestrictions;
 
-    private PaymentProductFieldDisplayHints displayHints = null;
+    private PaymentProductFieldDisplayHints displayHints;
 
-    private String id = null;
+    private String id;
 
-    private String type = null;
+    private String type;
 
-    private Boolean usedForLookup = null;
+    private Boolean usedForLookup;
 
     /**
      * Object containing data restrictions that apply to this field, like minimum and/or maximum length

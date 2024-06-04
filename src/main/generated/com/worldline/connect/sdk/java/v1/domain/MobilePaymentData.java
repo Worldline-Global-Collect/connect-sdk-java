@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MobilePaymentData {
 
-    private String dpan = null;
+    private String dpan;
 
-    private String expiryDate = null;
+    private String expiryDate;
 
     /**
      * The obfuscated DPAN. Only the last four digits are visible.

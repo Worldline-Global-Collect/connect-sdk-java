@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class SepaDirectDebitPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecificOutput {
 
-    private FraudResults fraudResults = null;
+    private FraudResults fraudResults;
 
-    private PaymentProduct771SpecificOutput paymentProduct771SpecificOutput = null;
+    private PaymentProduct771SpecificOutput paymentProduct771SpecificOutput;
 
-    private String token = null;
+    private String token;
 
     /**
      * Object containing the results of the fraud screening

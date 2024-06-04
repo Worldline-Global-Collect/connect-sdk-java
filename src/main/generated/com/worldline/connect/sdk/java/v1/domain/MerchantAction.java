@@ -9,19 +9,19 @@ import java.util.List;
 
 public class MerchantAction {
 
-    private String actionType = null;
+    private String actionType;
 
-    private List<PaymentProductField> formFields = null;
+    private List<PaymentProductField> formFields;
 
-    private MobileThreeDSecureChallengeParameters mobileThreeDSecureChallengeParameters = null;
+    private MobileThreeDSecureChallengeParameters mobileThreeDSecureChallengeParameters;
 
-    private RedirectData redirectData = null;
+    private RedirectData redirectData;
 
-    private String renderingData = null;
+    private String renderingData;
 
-    private List<KeyValuePair> showData = null;
+    private List<KeyValuePair> showData;
 
-    private ThirdPartyData thirdPartyData = null;
+    private ThirdPartyData thirdPartyData;
 
     /**
      * Action merchants needs to take in the online payment process. Possible values are:<br>

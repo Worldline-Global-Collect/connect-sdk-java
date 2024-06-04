@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MandateMerchantAction {
 
-    private String actionType = null;
+    private String actionType;
 
-    private MandateRedirectData redirectData = null;
+    private MandateRedirectData redirectData;
 
     /**
      * Action merchants needs to take in the online mandate process. Possible values are:<br>

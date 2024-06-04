@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CancelPaymentResponse {
 
-    private CancelPaymentCardPaymentMethodSpecificOutput cardPaymentMethodSpecificOutput = null;
+    private CancelPaymentCardPaymentMethodSpecificOutput cardPaymentMethodSpecificOutput;
 
-    private CancelPaymentMobilePaymentMethodSpecificOutput mobilePaymentMethodSpecificOutput = null;
+    private CancelPaymentMobilePaymentMethodSpecificOutput mobilePaymentMethodSpecificOutput;
 
-    private Payment payment = null;
+    private Payment payment;
 
     /**
      * Object that holds specific information on cancelled card payments

@@ -9,11 +9,11 @@ import java.util.List;
 
 public class PayoutErrorResponse {
 
-    private String errorId = null;
+    private String errorId;
 
-    private List<APIError> errors = null;
+    private List<APIError> errors;
 
-    private PayoutResult payoutResult = null;
+    private PayoutResult payoutResult;
 
     /**
      * Unique reference, for debugging purposes, of this error response

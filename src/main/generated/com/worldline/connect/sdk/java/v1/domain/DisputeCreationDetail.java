@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class DisputeCreationDetail {
 
-    private String disputeCreationDate = null;
+    private String disputeCreationDate;
 
-    private String disputeOriginator = null;
+    private String disputeOriginator;
 
-    private String userName = null;
+    private String userName;
 
     /**
      * The date and time of creation of this dispute, in yyyyMMddHHmmss format.

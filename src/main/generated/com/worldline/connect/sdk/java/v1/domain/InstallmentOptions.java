@@ -12,11 +12,11 @@ import java.util.List;
  */
 public class InstallmentOptions {
 
-    private InstallmentDisplayHints displayHints = null;
+    private InstallmentDisplayHints displayHints;
 
-    private String id = null;
+    private String id;
 
-    private List<Installments> installmentPlans = null;
+    private List<Installments> installmentPlans;
 
     /**
      * Object containing information for the client on how best to display the installment options

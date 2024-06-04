@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class BankDetailsResponse {
 
-    private BankAccountBban bankAccountBban = null;
+    private BankAccountBban bankAccountBban;
 
-    private BankAccountIban bankAccountIban = null;
+    private BankAccountIban bankAccountIban;
 
-    private BankData bankData = null;
+    private BankData bankData;
 
-    private Swift swift = null;
+    private Swift swift;
 
     /**
      * Object that holds the Basic Bank Account Number (BBAN) data

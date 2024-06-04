@@ -7,21 +7,21 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class Address {
 
-    private String additionalInfo = null;
+    private String additionalInfo;
 
-    private String city = null;
+    private String city;
 
-    private String countryCode = null;
+    private String countryCode;
 
-    private String houseNumber = null;
+    private String houseNumber;
 
-    private String state = null;
+    private String state;
 
-    private String stateCode = null;
+    private String stateCode;
 
-    private String street = null;
+    private String street;
 
-    private String zip = null;
+    private String zip;
 
     /**
      * Additional address information. The additionalInfo is truncated after 10 characters for payments, refunds or payouts that are processed by the WL Online Payment Acceptance platform

@@ -7,19 +7,19 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentReferences {
 
-    private Long merchantOrderId = null;
+    private Long merchantOrderId;
 
-    private String merchantReference = null;
+    private String merchantReference;
 
-    private String paymentReference = null;
+    private String paymentReference;
 
-    private String providerId = null;
+    private String providerId;
 
-    private String providerMerchantId = null;
+    private String providerMerchantId;
 
-    private String providerReference = null;
+    private String providerReference;
 
-    private String referenceOrigPayment = null;
+    private String referenceOrigPayment;
 
     /**
      * Your order ID for this transaction that is also returned in our report files

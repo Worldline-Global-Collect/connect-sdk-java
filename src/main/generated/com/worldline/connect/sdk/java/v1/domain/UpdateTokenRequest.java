@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class UpdateTokenRequest {
 
-    private TokenCard card = null;
+    private TokenCard card;
 
-    private TokenEWallet eWallet = null;
+    private TokenEWallet eWallet;
 
-    private TokenNonSepaDirectDebit nonSepaDirectDebit = null;
+    private TokenNonSepaDirectDebit nonSepaDirectDebit;
 
-    private Integer paymentProductId = null;
+    private Integer paymentProductId;
 
-    private TokenSepaDirectDebitWithoutCreditor sepaDirectDebit = null;
+    private TokenSepaDirectDebitWithoutCreditor sepaDirectDebit;
 
     /**
      * Object containing card details

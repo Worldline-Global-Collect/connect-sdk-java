@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TokenCard extends AbstractToken {
 
-    private CustomerToken customer = null;
+    private CustomerToken customer;
 
-    private TokenCardData data = null;
+    private TokenCardData data;
 
     /**
      * Object containing the details of the customer

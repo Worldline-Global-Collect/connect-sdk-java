@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ConvertAmount {
 
-    private Long convertedAmount = null;
+    private Long convertedAmount;
 
     /**
      * Converted amount in cents and having 2 decimal

@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class LodgingCharge {
 
-    private Long chargeAmount = null;
+    private Long chargeAmount;
 
-    private String chargeAmountCurrencyCode = null;
+    private String chargeAmountCurrencyCode;
 
-    private String chargeType = null;
+    private String chargeType;
 
     /**
      * Amount of additional charges associated with the stay of the guest.<br>

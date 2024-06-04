@@ -9,21 +9,21 @@ import java.util.List;
 
 public class Order {
 
-    private AdditionalOrderInput additionalInput = null;
+    private AdditionalOrderInput additionalInput;
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private Customer customer = null;
+    private Customer customer;
 
-    private List<LineItem> items = null;
+    private List<LineItem> items;
 
-    private OrderReferences references = null;
+    private OrderReferences references;
 
-    private Seller seller = null;
+    private Seller seller;
 
-    private Shipping shipping = null;
+    private Shipping shipping;
 
-    private ShoppingCart shoppingCart = null;
+    private ShoppingCart shoppingCart;
 
     /**
      * Object containing additional input on the order

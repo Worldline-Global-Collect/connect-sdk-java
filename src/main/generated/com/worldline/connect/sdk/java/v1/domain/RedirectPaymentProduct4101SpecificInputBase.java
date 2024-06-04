@@ -10,7 +10,7 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class RedirectPaymentProduct4101SpecificInputBase extends AbstractRedirectPaymentProduct4101SpecificInput {
 
-    private String displayName = null;
+    private String displayName;
 
     /**
      * The merchant name as shown to the customer in some payment applications.

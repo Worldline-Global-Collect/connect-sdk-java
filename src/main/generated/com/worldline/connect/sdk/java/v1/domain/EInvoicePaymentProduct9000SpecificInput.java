@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class EInvoicePaymentProduct9000SpecificInput {
 
-    private BankAccountIban bankAccountIban = null;
+    private BankAccountIban bankAccountIban;
 
-    private String installmentId = null;
+    private String installmentId;
 
     /**
      * Object containing the bank account details of the customer.

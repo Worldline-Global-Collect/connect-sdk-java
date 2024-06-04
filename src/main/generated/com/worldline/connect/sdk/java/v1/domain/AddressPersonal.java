@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AddressPersonal extends Address {
 
-    private PersonalName name = null;
+    private PersonalName name;
 
     /**
      * Object that holds the name elements

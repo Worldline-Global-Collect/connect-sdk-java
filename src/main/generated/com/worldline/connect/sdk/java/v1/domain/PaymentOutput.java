@@ -7,31 +7,31 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentOutput extends OrderOutput {
 
-    private Long amountPaid = null;
+    private Long amountPaid;
 
-    private Long amountReversed = null;
+    private Long amountReversed;
 
-    private BankTransferPaymentMethodSpecificOutput bankTransferPaymentMethodSpecificOutput = null;
+    private BankTransferPaymentMethodSpecificOutput bankTransferPaymentMethodSpecificOutput;
 
-    private CardPaymentMethodSpecificOutput cardPaymentMethodSpecificOutput = null;
+    private CardPaymentMethodSpecificOutput cardPaymentMethodSpecificOutput;
 
-    private CashPaymentMethodSpecificOutput cashPaymentMethodSpecificOutput = null;
+    private CashPaymentMethodSpecificOutput cashPaymentMethodSpecificOutput;
 
-    private NonSepaDirectDebitPaymentMethodSpecificOutput directDebitPaymentMethodSpecificOutput = null;
+    private NonSepaDirectDebitPaymentMethodSpecificOutput directDebitPaymentMethodSpecificOutput;
 
-    private EInvoicePaymentMethodSpecificOutput eInvoicePaymentMethodSpecificOutput = null;
+    private EInvoicePaymentMethodSpecificOutput eInvoicePaymentMethodSpecificOutput;
 
-    private InvoicePaymentMethodSpecificOutput invoicePaymentMethodSpecificOutput = null;
+    private InvoicePaymentMethodSpecificOutput invoicePaymentMethodSpecificOutput;
 
-    private MobilePaymentMethodSpecificOutput mobilePaymentMethodSpecificOutput = null;
+    private MobilePaymentMethodSpecificOutput mobilePaymentMethodSpecificOutput;
 
-    private String paymentMethod = null;
+    private String paymentMethod;
 
-    private RedirectPaymentMethodSpecificOutput redirectPaymentMethodSpecificOutput = null;
+    private RedirectPaymentMethodSpecificOutput redirectPaymentMethodSpecificOutput;
 
-    private String reversalReason = null;
+    private String reversalReason;
 
-    private SepaDirectDebitPaymentMethodSpecificOutput sepaDirectDebitPaymentMethodSpecificOutput = null;
+    private SepaDirectDebitPaymentMethodSpecificOutput sepaDirectDebitPaymentMethodSpecificOutput;
 
     /**
      * Amount that has been paid

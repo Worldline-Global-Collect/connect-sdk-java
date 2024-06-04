@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreatePaymentProductSessionResponse {
 
-    private MobilePaymentProductSession302SpecificOutput paymentProductSession302SpecificOutput = null;
+    private MobilePaymentProductSession302SpecificOutput paymentProductSession302SpecificOutput;
 
     /**
      * Object containing the Apple Pay session object.

@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProductFieldDataRestrictions {
 
-    private Boolean isRequired = null;
+    private Boolean isRequired;
 
-    private PaymentProductFieldValidators validators = null;
+    private PaymentProductFieldValidators validators;
 
     /**
      * <ul class="paragraph-width">

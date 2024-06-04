@@ -10,17 +10,17 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class Installments {
 
-    private AmountOfMoney amountOfMoneyPerInstallment = null;
+    private AmountOfMoney amountOfMoneyPerInstallment;
 
-    private AmountOfMoney amountOfMoneyTotal = null;
+    private AmountOfMoney amountOfMoneyTotal;
 
-    private String frequencyOfInstallments = null;
+    private String frequencyOfInstallments;
 
-    private Integer installmentPlanCode = null;
+    private Integer installmentPlanCode;
 
-    private String interestRate = null;
+    private String interestRate;
 
-    private Long numberOfInstallments = null;
+    private Long numberOfInstallments;
 
     /**
      * The amount that will be paid per installment. The total amount of amountOfMoneyPerInstallment x numberOfInstallments can not be higher than the total amount of this transaction, although we will not validate that.<br>

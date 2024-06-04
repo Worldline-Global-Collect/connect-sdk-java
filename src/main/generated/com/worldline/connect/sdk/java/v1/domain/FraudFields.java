@@ -9,42 +9,42 @@ import java.util.List;
 
 public class FraudFields {
 
-    private Boolean addressesAreIdentical = null;
+    private Boolean addressesAreIdentical;
 
-    private String blackListData = null;
+    private String blackListData;
 
-    private Address cardOwnerAddress = null;
+    private Address cardOwnerAddress;
 
-    private String customerIpAddress = null;
+    private String customerIpAddress;
 
-    private String defaultFormFill = null;
+    private String defaultFormFill;
 
-    private Boolean deviceFingerprintActivated = null;
+    private Boolean deviceFingerprintActivated;
 
-    private String deviceFingerprintTransactionId = null;
+    private String deviceFingerprintTransactionId;
 
-    private String giftCardType = null;
+    private String giftCardType;
 
-    private String giftMessage = null;
+    private String giftMessage;
 
-    private Boolean hasForgottenPwd = null;
+    private Boolean hasForgottenPwd;
 
-    private Boolean hasPassword = null;
+    private Boolean hasPassword;
 
-    private Boolean isPreviousCustomer = null;
+    private Boolean isPreviousCustomer;
 
-    private String orderTimezone = null;
+    private String orderTimezone;
 
-    private String shipComments = null;
+    private String shipComments;
 
-    private String shipmentTrackingNumber = null;
+    private String shipmentTrackingNumber;
 
     @SuppressWarnings("deprecation")
-    private FraudFieldsShippingDetails shippingDetails = null;
+    private FraudFieldsShippingDetails shippingDetails;
 
-    private List<String> userData = null;
+    private List<String> userData;
 
-    private String website = null;
+    private String website;
 
     /**
      * Indicates that invoice and shipping addresses are equal.

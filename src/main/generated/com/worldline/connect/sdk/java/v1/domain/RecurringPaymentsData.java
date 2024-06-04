@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class RecurringPaymentsData {
 
-    private Frequency recurringInterval = null;
+    private Frequency recurringInterval;
 
-    private TrialInformation trialInformation = null;
+    private TrialInformation trialInformation;
 
     /**
      * The object containing the frequency and interval between recurring payments.

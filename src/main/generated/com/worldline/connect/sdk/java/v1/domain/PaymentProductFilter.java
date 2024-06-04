@@ -9,9 +9,9 @@ import java.util.List;
 
 public class PaymentProductFilter {
 
-    private List<String> groups = null;
+    private List<String> groups;
 
-    private List<Integer> products = null;
+    private List<Integer> products;
 
     /**
      * List containing all payment product groups that should either be restricted to in or excluded from the payment context. Currently, there is only one group, called 'cards'.

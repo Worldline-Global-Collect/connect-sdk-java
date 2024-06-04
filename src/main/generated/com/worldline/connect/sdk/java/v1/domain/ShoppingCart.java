@@ -9,17 +9,17 @@ import java.util.List;
 
 public class ShoppingCart {
 
-    private List<AmountBreakdown> amountBreakdown = null;
+    private List<AmountBreakdown> amountBreakdown;
 
-    private GiftCardPurchase giftCardPurchase = null;
+    private GiftCardPurchase giftCardPurchase;
 
-    private Boolean isPreOrder = null;
+    private Boolean isPreOrder;
 
-    private List<LineItem> items = null;
+    private List<LineItem> items;
 
-    private String preOrderItemAvailabilityDate = null;
+    private String preOrderItemAvailabilityDate;
 
-    private Boolean reOrderIndicator = null;
+    private Boolean reOrderIndicator;
 
     /**
      * Determines the type of the amount.

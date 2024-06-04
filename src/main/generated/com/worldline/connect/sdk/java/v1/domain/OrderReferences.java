@@ -7,17 +7,17 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class OrderReferences {
 
-    private String descriptor = null;
+    private String descriptor;
 
-    private OrderInvoiceData invoiceData = null;
+    private OrderInvoiceData invoiceData;
 
-    private Long merchantOrderId = null;
+    private Long merchantOrderId;
 
-    private String merchantReference = null;
+    private String merchantReference;
 
-    private String providerId = null;
+    private String providerId;
 
-    private String providerMerchantId = null;
+    private String providerMerchantId;
 
     /**
      * Descriptive text that is used towards to customer, either during an online checkout at a third party and/or on the statement of the customer. For card transactions this is usually referred to as a Soft Descriptor. The maximum allowed length varies per card acquirer:

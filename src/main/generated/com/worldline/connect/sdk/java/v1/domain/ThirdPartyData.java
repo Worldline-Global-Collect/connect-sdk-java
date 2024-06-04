@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ThirdPartyData {
 
-    private PaymentProduct863ThirdPartyData paymentProduct863 = null;
+    private PaymentProduct863ThirdPartyData paymentProduct863;
 
     /**
      * Contains the third party data for payment product 863 (WeChat Pay).

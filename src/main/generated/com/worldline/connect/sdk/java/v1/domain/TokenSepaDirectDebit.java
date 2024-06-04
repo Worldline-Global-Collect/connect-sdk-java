@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TokenSepaDirectDebit extends AbstractToken {
 
-    private CustomerTokenWithContactDetails customer = null;
+    private CustomerTokenWithContactDetails customer;
 
-    private MandateSepaDirectDebit mandate = null;
+    private MandateSepaDirectDebit mandate;
 
     /**
      * Object containing the details of the customer

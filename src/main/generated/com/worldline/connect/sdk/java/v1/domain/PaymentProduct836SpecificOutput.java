@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProduct836SpecificOutput {
 
-    private String securityIndicator = null;
+    private String securityIndicator;
 
     /**
      * Indicates if SofortBank could estabilish if the transaction could successfully be processed.

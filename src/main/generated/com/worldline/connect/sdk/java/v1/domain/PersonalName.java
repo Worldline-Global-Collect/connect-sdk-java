@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PersonalName extends PersonalNameBase {
 
-    private String title = null;
+    private String title;
 
     /**
      * Title of customer

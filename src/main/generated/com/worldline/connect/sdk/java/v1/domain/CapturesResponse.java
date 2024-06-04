@@ -9,7 +9,7 @@ import java.util.List;
 
 public class CapturesResponse {
 
-    private List<Capture> captures = null;
+    private List<Capture> captures;
 
     /**
      * The list of all captures performed on the requested payment.

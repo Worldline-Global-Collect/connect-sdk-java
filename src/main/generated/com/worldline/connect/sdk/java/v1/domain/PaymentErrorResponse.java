@@ -9,11 +9,11 @@ import java.util.List;
 
 public class PaymentErrorResponse {
 
-    private String errorId = null;
+    private String errorId;
 
-    private List<APIError> errors = null;
+    private List<APIError> errors;
 
-    private CreatePaymentResult paymentResult = null;
+    private CreatePaymentResult paymentResult;
 
     /**
      * Unique reference, for debugging purposes, of this error response

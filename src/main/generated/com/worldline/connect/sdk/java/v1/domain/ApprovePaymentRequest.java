@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ApprovePaymentRequest {
 
-    private Long amount = null;
+    private Long amount;
 
-    private ApprovePaymentNonSepaDirectDebitPaymentMethodSpecificInput directDebitPaymentMethodSpecificInput = null;
+    private ApprovePaymentNonSepaDirectDebitPaymentMethodSpecificInput directDebitPaymentMethodSpecificInput;
 
-    private OrderApprovePayment order = null;
+    private OrderApprovePayment order;
 
-    private ApprovePaymentSepaDirectDebitPaymentMethodSpecificInput sepaDirectDebitPaymentMethodSpecificInput = null;
+    private ApprovePaymentSepaDirectDebitPaymentMethodSpecificInput sepaDirectDebitPaymentMethodSpecificInput;
 
     /**
      * In case you want to approve the capture of a different lower amount you can specify this here (specified in cents, where single digit currencies are presumed to have 2 digits)

@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CustomerAccountRiskAssessment {
 
-    private Boolean hasForgottenPassword = null;
+    private Boolean hasForgottenPassword;
 
-    private Boolean hasPassword = null;
+    private Boolean hasPassword;
 
     /**
      * Specifies if the customer (initially) had forgotten their password

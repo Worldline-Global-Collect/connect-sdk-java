@@ -9,55 +9,55 @@ import java.util.List;
 
 public class PaymentProduct {
 
-    private List<AccountOnFile> accountsOnFile = null;
+    private List<AccountOnFile> accountsOnFile;
 
-    private String acquirerCountry = null;
+    private String acquirerCountry;
 
-    private Boolean allowsInstallments = null;
+    private Boolean allowsInstallments;
 
-    private Boolean allowsRecurring = null;
+    private Boolean allowsRecurring;
 
-    private Boolean allowsTokenization = null;
+    private Boolean allowsTokenization;
 
-    private AuthenticationIndicator authenticationIndicator = null;
+    private AuthenticationIndicator authenticationIndicator;
 
-    private Boolean autoTokenized = null;
+    private Boolean autoTokenized;
 
-    private Boolean canBeIframed = null;
+    private Boolean canBeIframed;
 
-    private Boolean deviceFingerprintEnabled = null;
+    private Boolean deviceFingerprintEnabled;
 
-    private PaymentProductDisplayHints displayHints = null;
+    private PaymentProductDisplayHints displayHints;
 
-    private List<PaymentProductField> fields = null;
+    private List<PaymentProductField> fields;
 
-    private String fieldsWarning = null;
+    private String fieldsWarning;
 
-    private Integer id = null;
+    private Integer id;
 
-    private Boolean isAuthenticationSupported = null;
+    private Boolean isAuthenticationSupported;
 
-    private Boolean isJavaScriptRequired = null;
+    private Boolean isJavaScriptRequired;
 
-    private Long maxAmount = null;
+    private Long maxAmount;
 
-    private Long minAmount = null;
+    private Long minAmount;
 
-    private String mobileIntegrationLevel = null;
+    private String mobileIntegrationLevel;
 
-    private String paymentMethod = null;
+    private String paymentMethod;
 
-    private PaymentProduct302SpecificData paymentProduct302SpecificData = null;
+    private PaymentProduct302SpecificData paymentProduct302SpecificData;
 
-    private PaymentProduct320SpecificData paymentProduct320SpecificData = null;
+    private PaymentProduct320SpecificData paymentProduct320SpecificData;
 
-    private PaymentProduct863SpecificData paymentProduct863SpecificData = null;
+    private PaymentProduct863SpecificData paymentProduct863SpecificData;
 
-    private String paymentProductGroup = null;
+    private String paymentProductGroup;
 
-    private Boolean supportsMandates = null;
+    private Boolean supportsMandates;
 
-    private Boolean usesRedirectionTo3rdParty = null;
+    private Boolean usesRedirectionTo3rdParty;
 
     /**
      * List of tokens for that payment product

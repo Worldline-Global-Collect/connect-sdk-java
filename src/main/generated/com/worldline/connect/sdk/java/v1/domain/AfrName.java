@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AfrName {
 
-    private String firstName = null;
+    private String firstName;
 
-    private String surname = null;
+    private String surname;
 
     /**
      * Given name(s) or first name(s) of the recipient of an account funding transaction.

@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RedirectDataBase {
 
-    private String RETURNMAC = null;
+    private String RETURNMAC;
 
-    private String redirectURL = null;
+    private String redirectURL;
 
     public String getRETURNMAC() {
         return RETURNMAC;

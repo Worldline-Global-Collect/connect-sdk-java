@@ -10,7 +10,7 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class RefundPaymentProduct840SpecificOutput {
 
-    private RefundPaymentProduct840CustomerAccount customerAccount = null;
+    private RefundPaymentProduct840CustomerAccount customerAccount;
 
     /**
      * Object containing the PayPal account details

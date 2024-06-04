@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractOrderStatus {
 
-    private String id = null;
+    private String id;
 
     /**
      * Every payment entity resource has an identifier or pointer associated with it. This id can be used to uniquely reach the resource.

@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AdditionalOrderInputAirlineData {
 
-    private AirlineData airlineData = null;
+    private AirlineData airlineData;
 
-    private LodgingData lodgingData = null;
+    private LodgingData lodgingData;
 
     /**
      * Object that holds airline specific data

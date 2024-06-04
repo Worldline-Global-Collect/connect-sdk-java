@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class ThreeDSecure extends AbstractThreeDSecure {
 
-    private ExternalCardholderAuthenticationData externalCardholderAuthenticationData = null;
+    private ExternalCardholderAuthenticationData externalCardholderAuthenticationData;
 
-    private RedirectionData redirectionData = null;
+    private RedirectionData redirectionData;
 
     /**
      * Object containing 3D secure details.

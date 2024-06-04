@@ -9,11 +9,11 @@ import java.util.List;
 
 public class RefundErrorResponse {
 
-    private String errorId = null;
+    private String errorId;
 
-    private List<APIError> errors = null;
+    private List<APIError> errors;
 
-    private RefundResult refundResult = null;
+    private RefundResult refundResult;
 
     /**
      * Unique reference, for debugging purposes, of this error response

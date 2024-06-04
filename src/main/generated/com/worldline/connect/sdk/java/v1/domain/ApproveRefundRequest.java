@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ApproveRefundRequest {
 
-    private Long amount = null;
+    private Long amount;
 
     /**
      * Refund amount to be approved

@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AmountBreakdown {
 
-    private Long amount = null;
+    private Long amount;
 
-    private String type = null;
+    private String type;
 
     /**
      * Amount in cents and always having 2 decimals

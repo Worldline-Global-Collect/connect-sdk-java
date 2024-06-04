@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TokenizePaymentRequest {
 
-    private String alias = null;
+    private String alias;
 
     /**
      * An alias for the token. This can be used to visually represent the token.<br>

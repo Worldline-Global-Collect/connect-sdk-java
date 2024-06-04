@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RefundCardMethodSpecificOutput extends RefundMethodSpecificOutput {
 
-    private String authorisationCode = null;
+    private String authorisationCode;
 
-    private CardEssentials card = null;
+    private CardEssentials card;
 
     /**
      * Card Authorization code as returned by the acquirer

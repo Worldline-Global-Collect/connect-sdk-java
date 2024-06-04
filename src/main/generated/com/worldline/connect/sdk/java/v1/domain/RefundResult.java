@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RefundResult extends AbstractOrderStatus {
 
-    private RefundOutput refundOutput = null;
+    private RefundOutput refundOutput;
 
-    private String status = null;
+    private String status;
 
-    private OrderStatusOutput statusOutput = null;
+    private OrderStatusOutput statusOutput;
 
     /**
      * Object containing refund details

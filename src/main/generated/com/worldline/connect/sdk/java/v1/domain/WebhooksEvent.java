@@ -7,25 +7,25 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class WebhooksEvent {
 
-    private String apiVersion = null;
+    private String apiVersion;
 
-    private String created = null;
+    private String created;
 
-    private DisputeResponse dispute = null;
+    private DisputeResponse dispute;
 
-    private String id = null;
+    private String id;
 
-    private String merchantId = null;
+    private String merchantId;
 
-    private PaymentResponse payment = null;
+    private PaymentResponse payment;
 
-    private PayoutResponse payout = null;
+    private PayoutResponse payout;
 
-    private RefundResponse refund = null;
+    private RefundResponse refund;
 
-    private TokenResponse token = null;
+    private TokenResponse token;
 
-    private String type = null;
+    private String type;
 
     public String getApiVersion() {
         return apiVersion;

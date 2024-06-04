@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProduct806SpecificOutput {
 
-    private Address billingAddress = null;
+    private Address billingAddress;
 
-    private TrustlyBankAccount customerAccount = null;
+    private TrustlyBankAccount customerAccount;
 
     /**
      * Object containing the billing address details of the customer

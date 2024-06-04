@@ -10,8 +10,7 @@ import java.util.List;
 import com.worldline.connect.sdk.java.v1.domain.APIError;
 
 /**
- * Represents an error response from the Worldline Global Collect platform when an idempotent request failed because the first request has not
- * finished yet.
+ * Represents an error response from the Worldline Global Collect platform when an idempotent request failed because the first request has not finished yet.
  */
 @SuppressWarnings("serial")
 public class IdempotenceException extends ApiException {

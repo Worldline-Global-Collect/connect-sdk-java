@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RefundEWalletMethodSpecificOutput extends RefundMethodSpecificOutput {
 
-    private RefundPaymentProduct840SpecificOutput paymentProduct840SpecificOutput = null;
+    private RefundPaymentProduct840SpecificOutput paymentProduct840SpecificOutput;
 
     /**
      * PayPal (payment product 840) specific details

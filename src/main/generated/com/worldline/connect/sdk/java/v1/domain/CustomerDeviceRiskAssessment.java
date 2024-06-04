@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CustomerDeviceRiskAssessment {
 
-    private String defaultFormFill = null;
+    private String defaultFormFill;
 
-    private String deviceFingerprintTransactionId = null;
+    private String deviceFingerprintTransactionId;
 
     /**
      * Degree of default form fill, with the following possible values:

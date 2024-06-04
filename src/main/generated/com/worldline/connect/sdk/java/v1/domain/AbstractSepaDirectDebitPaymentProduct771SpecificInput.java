@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractSepaDirectDebitPaymentProduct771SpecificInput {
 
-    private String mandateReference = null;
+    private String mandateReference;
 
     /**
      * @deprecated Use existingUniqueMandateReference or mandate.uniqueMandateReference instead

@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class RedirectPaymentProduct840SpecificInput extends AbstractRedirectPaymentProduct840SpecificInput {
 
-    private String custom = null;
+    private String custom;
 
-    private Boolean isShortcut = null;
+    private Boolean isShortcut;
 
     /**
      * A free text string that you can send to PayPal. With a special agreement between PayPal and you, PayPal uses the data in that property, for custom services they offer to you.

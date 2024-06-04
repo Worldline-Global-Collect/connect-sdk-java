@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class InAuth {
 
-    private String deviceCategory = null;
+    private String deviceCategory;
 
-    private String deviceId = null;
+    private String deviceId;
 
-    private String riskScore = null;
+    private String riskScore;
 
-    private String trueIpAddress = null;
+    private String trueIpAddress;
 
-    private String trueIpAddressCountry = null;
+    private String trueIpAddressCountry;
 
     /**
      * The type of device used by the customer. Example values:

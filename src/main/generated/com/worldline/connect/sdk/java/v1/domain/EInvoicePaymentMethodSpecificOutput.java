@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class EInvoicePaymentMethodSpecificOutput extends AbstractPaymentMethodSpecificOutput {
 
-    private FraudResults fraudResults = null;
+    private FraudResults fraudResults;
 
-    private EInvoicePaymentProduct9000SpecificOutput paymentProduct9000SpecificOutput = null;
+    private EInvoicePaymentProduct9000SpecificOutput paymentProduct9000SpecificOutput;
 
     /**
      * Object containing the results of the fraud screening

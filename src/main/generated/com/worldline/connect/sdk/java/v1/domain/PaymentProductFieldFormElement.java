@@ -9,9 +9,9 @@ import java.util.List;
 
 public class PaymentProductFieldFormElement {
 
-    private String type = null;
+    private String type;
 
-    private List<ValueMappingElement> valueMapping = null;
+    private List<ValueMappingElement> valueMapping;
 
     /**
      * Type of form element to be used. The following types can be returned:

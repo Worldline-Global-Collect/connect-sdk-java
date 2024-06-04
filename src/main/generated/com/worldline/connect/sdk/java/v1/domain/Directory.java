@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Directory {
 
-    private List<DirectoryEntry> entries = null;
+    private List<DirectoryEntry> entries;
 
     /**
      * List of entries in the directory

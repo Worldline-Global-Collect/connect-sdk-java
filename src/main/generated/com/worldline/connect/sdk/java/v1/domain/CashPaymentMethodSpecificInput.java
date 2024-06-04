@@ -8,19 +8,19 @@ package com.worldline.connect.sdk.java.v1.domain;
 public class CashPaymentMethodSpecificInput extends AbstractCashPaymentMethodSpecificInput {
 
     @SuppressWarnings("deprecation")
-    private CashPaymentProduct1503SpecificInput paymentProduct1503SpecificInput = null;
+    private CashPaymentProduct1503SpecificInput paymentProduct1503SpecificInput;
 
-    private CashPaymentProduct1504SpecificInput paymentProduct1504SpecificInput = null;
+    private CashPaymentProduct1504SpecificInput paymentProduct1504SpecificInput;
 
-    private CashPaymentProduct1521SpecificInput paymentProduct1521SpecificInput = null;
+    private CashPaymentProduct1521SpecificInput paymentProduct1521SpecificInput;
 
-    private CashPaymentProduct1522SpecificInput paymentProduct1522SpecificInput = null;
+    private CashPaymentProduct1522SpecificInput paymentProduct1522SpecificInput;
 
-    private CashPaymentProduct1523SpecificInput paymentProduct1523SpecificInput = null;
+    private CashPaymentProduct1523SpecificInput paymentProduct1523SpecificInput;
 
-    private CashPaymentProduct1524SpecificInput paymentProduct1524SpecificInput = null;
+    private CashPaymentProduct1524SpecificInput paymentProduct1524SpecificInput;
 
-    private CashPaymentProduct1526SpecificInput paymentProduct1526SpecificInput = null;
+    private CashPaymentProduct1526SpecificInput paymentProduct1526SpecificInput;
 
     /**
      * Object that holds the specific data for Boleto Bancario in Brazil (payment product 1503)

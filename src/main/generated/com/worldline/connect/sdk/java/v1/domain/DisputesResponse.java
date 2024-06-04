@@ -9,7 +9,7 @@ import java.util.List;
 
 public class DisputesResponse {
 
-    private List<Dispute> disputes = null;
+    private List<Dispute> disputes;
 
     /**
      * Array containing disputes and their characteristics.

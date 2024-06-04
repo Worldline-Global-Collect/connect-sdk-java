@@ -10,13 +10,13 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class GetInstallmentRequest {
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private String bin = null;
+    private String bin;
 
-    private String countryCode = null;
+    private String countryCode;
 
-    private Integer paymentProductId = null;
+    private Integer paymentProductId;
 
     /**
      * Object containing amount and ISO currency code attributes

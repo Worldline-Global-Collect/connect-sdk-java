@@ -9,7 +9,7 @@ import java.util.List;
 
 public class PaymentProductGroups {
 
-    private List<PaymentProductGroup> paymentProductGroups = null;
+    private List<PaymentProductGroup> paymentProductGroups;
 
     /**
      * Array containing payment product groups and their characteristics

@@ -7,23 +7,23 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class NonSepaDirectDebitPaymentMethodSpecificInput extends AbstractPaymentMethodSpecificInput {
 
-    private String dateCollect = null;
+    private String dateCollect;
 
-    private String directDebitText = null;
+    private String directDebitText;
 
-    private Boolean isRecurring = null;
+    private Boolean isRecurring;
 
-    private NonSepaDirectDebitPaymentProduct705SpecificInput paymentProduct705SpecificInput = null;
+    private NonSepaDirectDebitPaymentProduct705SpecificInput paymentProduct705SpecificInput;
 
-    private NonSepaDirectDebitPaymentProduct730SpecificInput paymentProduct730SpecificInput = null;
+    private NonSepaDirectDebitPaymentProduct730SpecificInput paymentProduct730SpecificInput;
 
-    private String recurringPaymentSequenceIndicator = null;
+    private String recurringPaymentSequenceIndicator;
 
-    private Boolean requiresApproval = null;
+    private Boolean requiresApproval;
 
-    private String token = null;
+    private String token;
 
-    private Boolean tokenize = null;
+    private Boolean tokenize;
 
     /**
      * Direct Debit payment collection date<br>

@@ -7,25 +7,25 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class Swift {
 
-    private String bic = null;
+    private String bic;
 
-    private String category = null;
+    private String category;
 
-    private String chipsUID = null;
+    private String chipsUID;
 
-    private String extraInfo = null;
+    private String extraInfo;
 
-    private String poBoxCountry = null;
+    private String poBoxCountry;
 
-    private String poBoxLocation = null;
+    private String poBoxLocation;
 
-    private String poBoxNumber = null;
+    private String poBoxNumber;
 
-    private String poBoxZip = null;
+    private String poBoxZip;
 
-    private String routingBic = null;
+    private String routingBic;
 
-    private String services = null;
+    private String services;
 
     /**
      * The BIC is the Business Identifier Code, also known as SWIFT or Bank Identifier code. It is a code with an internationally agreed format to Identify a specific bank or even branch. The BIC contains 8 or 11 positions: the first 4 contain the bank code, followed by the country code and location code.

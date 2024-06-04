@@ -9,7 +9,7 @@ import java.util.List;
 
 public class PaymentProduct302SpecificData {
 
-    private List<String> networks = null;
+    private List<String> networks;
 
     /**
      * The networks that can be used in the current payment context. The strings that represent the networks in the array are identical to the strings that Apple uses in their <a href="https://developer.apple.com/reference/passkit/pkpaymentnetwork" target="_blank">documentation</a>.

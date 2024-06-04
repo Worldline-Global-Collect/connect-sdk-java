@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CardEssentials {
 
-    private String cardNumber = null;
+    private String cardNumber;
 
-    private String cardholderName = null;
+    private String cardholderName;
 
-    private String expiryDate = null;
+    private String expiryDate;
 
     /**
      * The complete credit/debit card number

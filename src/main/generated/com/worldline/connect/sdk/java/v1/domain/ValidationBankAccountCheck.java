@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ValidationBankAccountCheck {
 
-    private String code = null;
+    private String code;
 
-    private String description = null;
+    private String description;
 
-    private String result = null;
+    private String result;
 
     /**
      * Code of the bank account validation check

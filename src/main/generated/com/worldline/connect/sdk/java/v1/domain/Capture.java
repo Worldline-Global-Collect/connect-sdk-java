@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class Capture extends AbstractOrderStatus {
 
-    private CaptureOutput captureOutput = null;
+    private CaptureOutput captureOutput;
 
-    private String status = null;
+    private String status;
 
-    private CaptureStatusOutput statusOutput = null;
+    private CaptureStatusOutput statusOutput;
 
     /**
      * Object containing capture details

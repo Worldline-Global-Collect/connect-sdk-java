@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class InstallmentDisplayHints {
 
-    private Integer displayOrder = null;
+    private Integer displayOrder;
 
-    private String label = null;
+    private String label;
 
-    private String logo = null;
+    private String logo;
 
     /**
      * Determines the order in which the installment options should be shown (sorted ascending). In countries like Turkey there are multiple loyalty programs that offer installments

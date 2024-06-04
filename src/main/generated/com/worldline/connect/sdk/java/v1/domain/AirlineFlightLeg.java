@@ -7,45 +7,45 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AirlineFlightLeg {
 
-    private String airlineClass = null;
+    private String airlineClass;
 
-    private String arrivalAirport = null;
+    private String arrivalAirport;
 
-    private String arrivalTime = null;
+    private String arrivalTime;
 
-    private String carrierCode = null;
+    private String carrierCode;
 
-    private String conjunctionTicket = null;
+    private String conjunctionTicket;
 
-    private String couponNumber = null;
+    private String couponNumber;
 
-    private String date = null;
+    private String date;
 
-    private String departureTime = null;
+    private String departureTime;
 
-    private String endorsementOrRestriction = null;
+    private String endorsementOrRestriction;
 
-    private String exchangeTicket = null;
+    private String exchangeTicket;
 
-    private String fare = null;
+    private String fare;
 
-    private String fareBasis = null;
+    private String fareBasis;
 
-    private Integer fee = null;
+    private Integer fee;
 
-    private String flightNumber = null;
+    private String flightNumber;
 
-    private Integer number = null;
+    private Integer number;
 
-    private String originAirport = null;
+    private String originAirport;
 
-    private String passengerClass = null;
+    private String passengerClass;
 
-    private String serviceClass = null;
+    private String serviceClass;
 
-    private String stopoverCode = null;
+    private String stopoverCode;
 
-    private Integer taxes = null;
+    private Integer taxes;
 
     /**
      * Reservation Booking Designator

@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProductFieldDisplayElement {
 
-    private String id = null;
+    private String id;
 
-    private String label = null;
+    private String label;
 
-    private String type = null;
+    private String type;
 
-    private String value = null;
+    private String value;
 
     /**
      * The ID of the display element.

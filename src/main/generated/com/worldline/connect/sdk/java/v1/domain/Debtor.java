@@ -10,27 +10,27 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class Debtor {
 
-    private String additionalAddressInfo = null;
+    private String additionalAddressInfo;
 
-    private String city = null;
+    private String city;
 
-    private String countryCode = null;
+    private String countryCode;
 
-    private String firstName = null;
+    private String firstName;
 
-    private String houseNumber = null;
+    private String houseNumber;
 
-    private String state = null;
+    private String state;
 
-    private String stateCode = null;
+    private String stateCode;
 
-    private String street = null;
+    private String street;
 
-    private String surname = null;
+    private String surname;
 
-    private String surnamePrefix = null;
+    private String surnamePrefix;
 
-    private String zip = null;
+    private String zip;
 
     /**
      * Additional information about the debtor's address, like Suite II, Apartment 2a

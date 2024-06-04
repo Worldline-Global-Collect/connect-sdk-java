@@ -10,19 +10,19 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class BrowserData {
 
-    private Integer colorDepth = null;
+    private Integer colorDepth;
 
-    private String innerHeight = null;
+    private String innerHeight;
 
-    private String innerWidth = null;
+    private String innerWidth;
 
-    private Boolean javaEnabled = null;
+    private Boolean javaEnabled;
 
-    private Boolean javaScriptEnabled = null;
+    private Boolean javaScriptEnabled;
 
-    private String screenHeight = null;
+    private String screenHeight;
 
-    private String screenWidth = null;
+    private String screenWidth;
 
     /**
      * ColorDepth in bits. Value is returned from the screen.colorDepth property.

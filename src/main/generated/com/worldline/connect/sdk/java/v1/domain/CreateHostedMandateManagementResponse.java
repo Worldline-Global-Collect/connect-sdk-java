@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreateHostedMandateManagementResponse {
 
-    private String RETURNMAC = null;
+    private String RETURNMAC;
 
-    private String hostedMandateManagementId = null;
+    private String hostedMandateManagementId;
 
-    private String partialRedirectUrl = null;
+    private String partialRedirectUrl;
 
     /**
      * When the customer is returned to your site we will append this property and value to the query-string. You should store this data, so you can identify the returning customer.

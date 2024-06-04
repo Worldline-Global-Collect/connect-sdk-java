@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreateDisputeRequest {
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private String contactPerson = null;
+    private String contactPerson;
 
-    private String emailAddress = null;
+    private String emailAddress;
 
-    private String replyTo = null;
+    private String replyTo;
 
-    private String requestMessage = null;
+    private String requestMessage;
 
     /**
      * The amount of money that is to be disputed.

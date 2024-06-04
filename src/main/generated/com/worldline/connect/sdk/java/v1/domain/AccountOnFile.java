@@ -12,13 +12,13 @@ import java.util.List;
  */
 public class AccountOnFile {
 
-    private List<AccountOnFileAttribute> attributes = null;
+    private List<AccountOnFileAttribute> attributes;
 
-    private AccountOnFileDisplayHints displayHints = null;
+    private AccountOnFileDisplayHints displayHints;
 
-    private Integer id = null;
+    private Integer id;
 
-    private Integer paymentProductId = null;
+    private Integer paymentProductId;
 
     /**
      * Array containing the details of the stored token

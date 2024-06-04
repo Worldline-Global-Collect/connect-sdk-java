@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MobilePaymentProduct320SpecificInputHostedCheckout {
 
-    private String merchantName = null;
+    private String merchantName;
 
-    private String merchantOrigin = null;
+    private String merchantOrigin;
 
-    private GPayThreeDSecure threeDSecure = null;
+    private GPayThreeDSecure threeDSecure;
 
     /**
      * Used as an input for the Google Pay payment sheet. Provide your company name in a human readable form.

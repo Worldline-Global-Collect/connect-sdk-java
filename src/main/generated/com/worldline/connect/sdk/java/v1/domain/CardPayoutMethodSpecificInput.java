@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CardPayoutMethodSpecificInput extends AbstractPayoutMethodSpecificInput {
 
-    private Card card = null;
+    private Card card;
 
-    private Integer paymentProductId = null;
+    private Integer paymentProductId;
 
-    private PayoutRecipient recipient = null;
+    private PayoutRecipient recipient;
 
-    private String token = null;
+    private String token;
 
     /**
      * Object containing the card details.

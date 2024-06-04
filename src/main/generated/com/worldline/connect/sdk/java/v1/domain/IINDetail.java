@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class IINDetail {
 
-    private Boolean isAllowedInContext = null;
+    private Boolean isAllowedInContext;
 
-    private Integer paymentProductId = null;
+    private Integer paymentProductId;
 
     /**
      * Populated only if you submitted a payment context.

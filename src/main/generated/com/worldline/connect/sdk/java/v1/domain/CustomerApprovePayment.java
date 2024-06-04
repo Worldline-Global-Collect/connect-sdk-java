@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CustomerApprovePayment {
 
-    private String accountType = null;
+    private String accountType;
 
     /**
      * Type of the customer account that is used to place this order. Can have one of the following values:

@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MandateSepaDirectDebit extends MandateSepaDirectDebitWithMandateId {
 
-    private Creditor creditor = null;
+    private Creditor creditor;
 
     /**
      * Object containing information on the creditor

@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CustomerToken extends CustomerBase {
 
-    private Address billingAddress = null;
+    private Address billingAddress;
 
-    private PersonalInformationToken personalInformation = null;
+    private PersonalInformationToken personalInformation;
 
     /**
      * Object containing the billing address details

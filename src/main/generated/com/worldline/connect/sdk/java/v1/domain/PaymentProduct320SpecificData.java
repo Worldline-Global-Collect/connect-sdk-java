@@ -9,9 +9,9 @@ import java.util.List;
 
 public class PaymentProduct320SpecificData {
 
-    private String gateway = null;
+    private String gateway;
 
-    private List<String> networks = null;
+    private List<String> networks;
 
     /**
      * The GlobalCollect gateway identifier. You should use this when creating a <a href="https://developers.google.com/pay/api/android/reference/object#Gateway" target="_blank">tokenization specification</a>.

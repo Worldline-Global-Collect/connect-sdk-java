@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class BankAccount {
 
-    private String accountHolderName = null;
+    private String accountHolderName;
 
     /**
      * Name in which the account is held.

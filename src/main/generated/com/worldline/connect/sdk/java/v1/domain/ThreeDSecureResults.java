@@ -10,31 +10,31 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class ThreeDSecureResults {
 
-    private String acsTransactionId = null;
+    private String acsTransactionId;
 
-    private String appliedExemption = null;
+    private String appliedExemption;
 
-    private AmountOfMoney authenticationAmount = null;
+    private AmountOfMoney authenticationAmount;
 
-    private String cavv = null;
+    private String cavv;
 
-    private String directoryServerTransactionId = null;
+    private String directoryServerTransactionId;
 
-    private String eci = null;
+    private String eci;
 
-    private ExemptionOutput exemptionOutput = null;
+    private ExemptionOutput exemptionOutput;
 
-    private Integer schemeRiskScore = null;
+    private Integer schemeRiskScore;
 
-    private SdkDataOutput sdkData = null;
+    private SdkDataOutput sdkData;
 
-    private ThreeDSecureData threeDSecureData = null;
+    private ThreeDSecureData threeDSecureData;
 
-    private String threeDSecureVersion = null;
+    private String threeDSecureVersion;
 
-    private String threeDServerTransactionId = null;
+    private String threeDServerTransactionId;
 
-    private String xid = null;
+    private String xid;
 
     /**
      * Identifier of the authenticated transaction at the ACS/Issuer

@@ -10,25 +10,25 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class PaymentProduct840CustomerAccount {
 
-    private String accountId = null;
+    private String accountId;
 
-    private String billingAgreementId = null;
+    private String billingAgreementId;
 
-    private String companyName = null;
+    private String companyName;
 
-    private String contactPhone = null;
+    private String contactPhone;
 
-    private String countryCode = null;
+    private String countryCode;
 
-    private String customerAccountStatus = null;
+    private String customerAccountStatus;
 
-    private String customerAddressStatus = null;
+    private String customerAddressStatus;
 
-    private String firstName = null;
+    private String firstName;
 
-    private String payerId = null;
+    private String payerId;
 
-    private String surname = null;
+    private String surname;
 
     /**
      * Username with which the PayPal account holder has registered at PayPal

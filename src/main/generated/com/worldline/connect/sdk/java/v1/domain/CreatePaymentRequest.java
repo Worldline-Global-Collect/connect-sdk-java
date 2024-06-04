@@ -7,31 +7,31 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreatePaymentRequest {
 
-    private BankTransferPaymentMethodSpecificInput bankTransferPaymentMethodSpecificInput = null;
+    private BankTransferPaymentMethodSpecificInput bankTransferPaymentMethodSpecificInput;
 
-    private CardPaymentMethodSpecificInput cardPaymentMethodSpecificInput = null;
+    private CardPaymentMethodSpecificInput cardPaymentMethodSpecificInput;
 
-    private CashPaymentMethodSpecificInput cashPaymentMethodSpecificInput = null;
+    private CashPaymentMethodSpecificInput cashPaymentMethodSpecificInput;
 
-    private NonSepaDirectDebitPaymentMethodSpecificInput directDebitPaymentMethodSpecificInput = null;
+    private NonSepaDirectDebitPaymentMethodSpecificInput directDebitPaymentMethodSpecificInput;
 
-    private EInvoicePaymentMethodSpecificInput eInvoicePaymentMethodSpecificInput = null;
+    private EInvoicePaymentMethodSpecificInput eInvoicePaymentMethodSpecificInput;
 
-    private String encryptedCustomerInput = null;
+    private String encryptedCustomerInput;
 
-    private FraudFields fraudFields = null;
+    private FraudFields fraudFields;
 
-    private InvoicePaymentMethodSpecificInput invoicePaymentMethodSpecificInput = null;
+    private InvoicePaymentMethodSpecificInput invoicePaymentMethodSpecificInput;
 
-    private Merchant merchant = null;
+    private Merchant merchant;
 
-    private MobilePaymentMethodSpecificInput mobilePaymentMethodSpecificInput = null;
+    private MobilePaymentMethodSpecificInput mobilePaymentMethodSpecificInput;
 
-    private Order order = null;
+    private Order order;
 
-    private RedirectPaymentMethodSpecificInput redirectPaymentMethodSpecificInput = null;
+    private RedirectPaymentMethodSpecificInput redirectPaymentMethodSpecificInput;
 
-    private SepaDirectDebitPaymentMethodSpecificInput sepaDirectDebitPaymentMethodSpecificInput = null;
+    private SepaDirectDebitPaymentMethodSpecificInput sepaDirectDebitPaymentMethodSpecificInput;
 
     /**
      * Object containing the specific input details for bank transfer payments

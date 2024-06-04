@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MobilePaymentProductSession302SpecificInput {
 
-    private String displayName = null;
+    private String displayName;
 
-    private String domainName = null;
+    private String domainName;
 
-    private String validationUrl = null;
+    private String validationUrl;
 
     /**
      * Used as an input for the Apple Pay payment button. Provide your company name in a human readable form.

@@ -7,29 +7,29 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreatePayoutRequest {
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private BankAccountBban bankAccountBban = null;
+    private BankAccountBban bankAccountBban;
 
-    private BankAccountIban bankAccountIban = null;
+    private BankAccountIban bankAccountIban;
 
-    private BankTransferPayoutMethodSpecificInput bankTransferPayoutMethodSpecificInput = null;
+    private BankTransferPayoutMethodSpecificInput bankTransferPayoutMethodSpecificInput;
 
-    private CardPayoutMethodSpecificInput cardPayoutMethodSpecificInput = null;
+    private CardPayoutMethodSpecificInput cardPayoutMethodSpecificInput;
 
-    private PayoutCustomer customer = null;
+    private PayoutCustomer customer;
 
-    private PayoutMerchant merchant = null;
+    private PayoutMerchant merchant;
 
-    private String payoutDate = null;
+    private String payoutDate;
 
-    private PayoutDetails payoutDetails = null;
+    private PayoutDetails payoutDetails;
 
-    private String payoutText = null;
+    private String payoutText;
 
-    private PayoutReferences references = null;
+    private PayoutReferences references;
 
-    private String swiftCode = null;
+    private String swiftCode;
 
     /**
      * Object containing amount and ISO currency code attributes

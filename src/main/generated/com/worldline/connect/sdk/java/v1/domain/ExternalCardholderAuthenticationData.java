@@ -10,27 +10,27 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class ExternalCardholderAuthenticationData {
 
-    private String acsTransactionId = null;
+    private String acsTransactionId;
 
-    private String appliedExemption = null;
+    private String appliedExemption;
 
-    private String cavv = null;
+    private String cavv;
 
-    private String cavvAlgorithm = null;
+    private String cavvAlgorithm;
 
-    private String directoryServerTransactionId = null;
+    private String directoryServerTransactionId;
 
-    private Integer eci = null;
+    private Integer eci;
 
-    private Integer schemeRiskScore = null;
+    private Integer schemeRiskScore;
 
-    private String threeDSecureVersion = null;
+    private String threeDSecureVersion;
 
-    private String threeDServerTransactionId = null;
+    private String threeDServerTransactionId;
 
-    private String validationResult = null;
+    private String validationResult;
 
-    private String xid = null;
+    private String xid;
 
     /**
      * Identifier of the authenticated transaction at the ACS/Issuer.

@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class OrderOutput {
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private PaymentReferences references = null;
+    private PaymentReferences references;
 
     /**
      * Object containing amount and ISO currency code attributes

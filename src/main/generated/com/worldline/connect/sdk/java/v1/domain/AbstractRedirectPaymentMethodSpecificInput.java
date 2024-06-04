@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractRedirectPaymentMethodSpecificInput extends AbstractPaymentMethodSpecificInput {
 
-    private Integer expirationPeriod = null;
+    private Integer expirationPeriod;
 
-    private String recurringPaymentSequenceIndicator = null;
+    private String recurringPaymentSequenceIndicator;
 
-    private Boolean requiresApproval = null;
+    private Boolean requiresApproval;
 
-    private String token = null;
+    private String token;
 
-    private Boolean tokenize = null;
+    private Boolean tokenize;
 
     public Integer getExpirationPeriod() {
         return expirationPeriod;

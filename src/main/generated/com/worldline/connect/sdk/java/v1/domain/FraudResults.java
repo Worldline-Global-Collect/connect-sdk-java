@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class FraudResults {
 
-    private String fraudServiceResult = null;
+    private String fraudServiceResult;
 
-    private InAuth inAuth = null;
+    private InAuth inAuth;
 
-    private MicrosoftFraudResults microsoftFraudProtection = null;
+    private MicrosoftFraudResults microsoftFraudProtection;
 
     /**
      * Results from the fraud prevention check. Possible values are:

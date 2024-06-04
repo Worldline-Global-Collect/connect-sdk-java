@@ -9,13 +9,13 @@ import java.util.List;
 
 public class DirectoryEntry {
 
-    private List<String> countryNames = null;
+    private List<String> countryNames;
 
-    private String issuerId = null;
+    private String issuerId;
 
-    private String issuerList = null;
+    private String issuerList;
 
-    private String issuerName = null;
+    private String issuerName;
 
     /**
      * Country name of the issuer, used to group issuers per country<br>

@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class HostedCheckoutSpecificOutput {
 
-    private String hostedCheckoutId = null;
+    private String hostedCheckoutId;
 
-    private String variant = null;
+    private String variant;
 
     /**
      * The ID of the Hosted Checkout Session in which the payment was made.

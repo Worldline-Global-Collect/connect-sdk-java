@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CancelApprovalPaymentResponse {
 
-    private Payment payment = null;
+    private Payment payment;
 
     /**
      * Object that holds the payment related properties

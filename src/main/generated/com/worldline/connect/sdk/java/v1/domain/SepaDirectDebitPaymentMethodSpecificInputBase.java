@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class SepaDirectDebitPaymentMethodSpecificInputBase extends AbstractSepaDirectDebitPaymentMethodSpecificInput {
 
-    private SepaDirectDebitPaymentProduct771SpecificInputBase paymentProduct771SpecificInput = null;
+    private SepaDirectDebitPaymentProduct771SpecificInputBase paymentProduct771SpecificInput;
 
     /**
      * Object containing information specific to SEPA Direct Debit

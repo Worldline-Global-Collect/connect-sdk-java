@@ -10,21 +10,23 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class Shipping {
 
-    private AddressPersonal address = null;
+    private AddressPersonal address;
 
-    private String addressIndicator = null;
+    private String addressIndicator;
 
-    private String comments = null;
+    private String comments;
 
-    private String emailAddress = null;
+    private String emailAddress;
 
-    private String firstUsageDate = null;
+    private String firstUsageDate;
 
-    private Boolean isFirstUsage = null;
+    private Boolean isFirstUsage;
 
-    private String trackingNumber = null;
+    private String shippedFromZip;
 
-    private String type = null;
+    private String trackingNumber;
+
+    private String type;
 
     /**
      * Object containing address information
@@ -126,6 +128,20 @@ public class Shipping {
      */
     public void setIsFirstUsage(Boolean value) {
         this.isFirstUsage = value;
+    }
+
+    /**
+     * The zip/postal code of the location from which the goods were shipped.
+     */
+    public String getShippedFromZip() {
+        return shippedFromZip;
+    }
+
+    /**
+     * The zip/postal code of the location from which the goods were shipped.
+     */
+    public void setShippedFromZip(String value) {
+        this.shippedFromZip = value;
     }
 
     /**

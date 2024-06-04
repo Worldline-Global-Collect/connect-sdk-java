@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProductFiltersHostedCheckout {
 
-    private PaymentProductFilter exclude = null;
+    private PaymentProductFilter exclude;
 
-    private PaymentProductFilter restrictTo = null;
+    private PaymentProductFilter restrictTo;
 
-    private Boolean tokensOnly = null;
+    private Boolean tokensOnly;
 
     /**
      * Contains the payment product ids and payment product groups that should be excluded from the payment products available for the payment. Note that excluding a payment product will ensure exclusion, even if the payment product is also present in the restrictTo filter, and that excluding a payment product group will exclude all payment products that are a part of that group, even if one or more of them are present in the restrictTo filters.

@@ -9,7 +9,7 @@ import java.util.List;
 
 public class PaymentProducts {
 
-    private List<PaymentProduct> paymentProducts = null;
+    private List<PaymentProduct> paymentProducts;
 
     /**
      * Array containing payment products and their characteristics

@@ -9,7 +9,7 @@ import java.util.List;
 
 public class RefundsResponse {
 
-    private List<RefundResult> refunds = null;
+    private List<RefundResult> refunds;
 
     /**
      * The list of all refunds performed on the requested payment.

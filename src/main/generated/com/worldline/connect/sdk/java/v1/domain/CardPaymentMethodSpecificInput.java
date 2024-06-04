@@ -7,29 +7,29 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CardPaymentMethodSpecificInput extends AbstractCardPaymentMethodSpecificInput {
 
-    private Card card = null;
+    private Card card;
 
-    private ExternalCardholderAuthenticationData externalCardholderAuthenticationData = null;
+    private ExternalCardholderAuthenticationData externalCardholderAuthenticationData;
 
-    private Boolean isRecurring = null;
+    private Boolean isRecurring;
 
-    private String merchantInitiatedReasonIndicator = null;
+    private String merchantInitiatedReasonIndicator;
 
-    private SchemeTokenData networkTokenData = null;
+    private SchemeTokenData networkTokenData;
 
-    private String returnUrl = null;
+    private String returnUrl;
 
-    private ThreeDSecure threeDSecure = null;
+    private ThreeDSecure threeDSecure;
 
     /**
-     * Object containing card details. The card details will be ignored in case the property <span class="property">networkTokenData is present.</span>
+     * Object containing card details. The card details will be ignored in case the property networkTokenData is present.
      */
     public Card getCard() {
         return card;
     }
 
     /**
-     * Object containing card details. The card details will be ignored in case the property <span class="property">networkTokenData is present.</span>
+     * Object containing card details. The card details will be ignored in case the property networkTokenData is present.
      */
     public void setCard(Card value) {
         this.card = value;

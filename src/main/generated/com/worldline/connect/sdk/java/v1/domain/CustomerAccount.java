@@ -10,29 +10,29 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CustomerAccount {
 
-    private CustomerAccountAuthentication authentication = null;
+    private CustomerAccountAuthentication authentication;
 
-    private String changeDate = null;
+    private String changeDate;
 
-    private Boolean changedDuringCheckout = null;
+    private Boolean changedDuringCheckout;
 
-    private String createDate = null;
+    private String createDate;
 
-    private Boolean hadSuspiciousActivity = null;
+    private Boolean hadSuspiciousActivity;
 
-    private Boolean hasForgottenPassword = null;
+    private Boolean hasForgottenPassword;
 
-    private Boolean hasPassword = null;
+    private Boolean hasPassword;
 
-    private String passwordChangeDate = null;
+    private String passwordChangeDate;
 
-    private Boolean passwordChangedDuringCheckout = null;
+    private Boolean passwordChangedDuringCheckout;
 
-    private PaymentAccountOnFile paymentAccountOnFile = null;
+    private PaymentAccountOnFile paymentAccountOnFile;
 
-    private String paymentAccountOnFileType = null;
+    private String paymentAccountOnFileType;
 
-    private CustomerPaymentActivity paymentActivity = null;
+    private CustomerPaymentActivity paymentActivity;
 
     /**
      * Object containing data on the authentication used by the customer to access their account

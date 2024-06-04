@@ -11,11 +11,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 @Deprecated
 public class FraudFieldsShippingDetails {
 
-    private String methodDetails = null;
+    private String methodDetails;
 
-    private Integer methodSpeed = null;
+    private Integer methodSpeed;
 
-    private Integer methodType = null;
+    private Integer methodType;
 
     /**
      * Details regarding the shipping method

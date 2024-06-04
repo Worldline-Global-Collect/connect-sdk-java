@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AirlinePassenger {
 
-    private String firstName = null;
+    private String firstName;
 
-    private String surname = null;
+    private String surname;
 
-    private String surnamePrefix = null;
+    private String surnamePrefix;
 
-    private String title = null;
+    private String title;
 
     /**
      * First name of the passenger (this property is used for fraud screening on the Ogone Payment Platform)

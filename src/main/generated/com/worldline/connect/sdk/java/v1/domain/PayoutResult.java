@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PayoutResult extends AbstractOrderStatus {
 
-    private OrderOutput payoutOutput = null;
+    private OrderOutput payoutOutput;
 
-    private String status = null;
+    private String status;
 
-    private OrderStatusOutput statusOutput = null;
+    private OrderStatusOutput statusOutput;
 
     /**
      * Object containing payout details

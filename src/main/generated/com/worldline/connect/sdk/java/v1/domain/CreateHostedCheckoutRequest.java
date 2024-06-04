@@ -7,27 +7,27 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CreateHostedCheckoutRequest {
 
-    private BankTransferPaymentMethodSpecificInputBase bankTransferPaymentMethodSpecificInput = null;
+    private BankTransferPaymentMethodSpecificInputBase bankTransferPaymentMethodSpecificInput;
 
-    private CardPaymentMethodSpecificInputBase cardPaymentMethodSpecificInput = null;
+    private CardPaymentMethodSpecificInputBase cardPaymentMethodSpecificInput;
 
-    private CashPaymentMethodSpecificInputBase cashPaymentMethodSpecificInput = null;
+    private CashPaymentMethodSpecificInputBase cashPaymentMethodSpecificInput;
 
-    private EInvoicePaymentMethodSpecificInputBase eInvoicePaymentMethodSpecificInput = null;
+    private EInvoicePaymentMethodSpecificInputBase eInvoicePaymentMethodSpecificInput;
 
-    private FraudFields fraudFields = null;
+    private FraudFields fraudFields;
 
-    private HostedCheckoutSpecificInput hostedCheckoutSpecificInput = null;
+    private HostedCheckoutSpecificInput hostedCheckoutSpecificInput;
 
-    private Merchant merchant = null;
+    private Merchant merchant;
 
-    private MobilePaymentMethodSpecificInputHostedCheckout mobilePaymentMethodSpecificInput = null;
+    private MobilePaymentMethodSpecificInputHostedCheckout mobilePaymentMethodSpecificInput;
 
-    private Order order = null;
+    private Order order;
 
-    private RedirectPaymentMethodSpecificInputBase redirectPaymentMethodSpecificInput = null;
+    private RedirectPaymentMethodSpecificInputBase redirectPaymentMethodSpecificInput;
 
-    private SepaDirectDebitPaymentMethodSpecificInputBase sepaDirectDebitPaymentMethodSpecificInput = null;
+    private SepaDirectDebitPaymentMethodSpecificInputBase sepaDirectDebitPaymentMethodSpecificInput;
 
     /**
      * Object containing the specific input details for bank transfer payments

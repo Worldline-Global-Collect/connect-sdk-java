@@ -43,7 +43,7 @@ public class CreateRefundCaptureExample {
             } catch (DeclinedRefundException e) {
                 handleDeclinedRefund(e.getRefundResult());
             } catch (ApiException e) {
-                handleApiErrors(e.getErrors());
+                handleErrorResponse(e.getErrorId(), e.getErrors());
             }
         }
     }
@@ -63,7 +63,7 @@ public class CreateRefundCaptureExample {
     }
 
     @SuppressWarnings("unused")
-    private void handleApiErrors(List<APIError> errors) {
-        // handle the errors here
+    private void handleErrorResponse(String errorId, List<APIError> errors) {
+        // handle the error response here
     }
 }

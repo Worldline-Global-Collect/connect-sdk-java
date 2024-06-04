@@ -10,13 +10,13 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class PaymentContext {
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private String countryCode = null;
+    private String countryCode;
 
-    private Boolean isInstallments = null;
+    private Boolean isInstallments;
 
-    private Boolean isRecurring = null;
+    private Boolean isRecurring;
 
     /**
      * The payment amount

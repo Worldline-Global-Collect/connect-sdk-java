@@ -5,7 +5,7 @@
 
 package com.worldline.connect.sdk.java.v1.merchant.products;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.worldline.connect.sdk.java.communication.ParamRequest;
@@ -167,7 +167,7 @@ public class GetProductParams implements ParamRequest {
      */
     public void addHide(String value) {
         if (this.hide == null) {
-            this.hide = new LinkedList<>();
+            this.hide = new ArrayList<>();
         }
         this.hide.add(value);
     }
@@ -188,7 +188,7 @@ public class GetProductParams implements ParamRequest {
 
     @Override
     public List<RequestParam> toRequestParameters() {
-        List<RequestParam> result = new LinkedList<>();
+        List<RequestParam> result = new ArrayList<>();
         if (countryCode != null) {
             result.add(new RequestParam("countryCode", countryCode));
         }

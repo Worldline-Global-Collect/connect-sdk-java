@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RedirectPaymentProduct863SpecificInput {
 
-    private String integrationType = null;
+    private String integrationType;
 
-    private String openId = null;
+    private String openId;
 
     /**
      * The type of integration with WeChat. Possible values:

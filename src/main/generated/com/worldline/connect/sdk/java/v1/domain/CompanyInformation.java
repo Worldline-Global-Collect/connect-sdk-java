@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CompanyInformation {
 
-    private String name = null;
+    private String name;
 
-    private String vatNumber = null;
+    private String vatNumber;
 
     /**
      * Name of company, as a customer

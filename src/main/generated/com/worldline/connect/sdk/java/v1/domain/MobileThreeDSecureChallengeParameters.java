@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MobileThreeDSecureChallengeParameters {
 
-    private String acsReferenceNumber = null;
+    private String acsReferenceNumber;
 
-    private String acsSignedContent = null;
+    private String acsSignedContent;
 
-    private String acsTransactionId = null;
+    private String acsTransactionId;
 
-    private String threeDServerTransactionId = null;
+    private String threeDServerTransactionId;
 
     /**
      * The unique identifier assigned by the EMVCo Secretariat upon testing and approval.

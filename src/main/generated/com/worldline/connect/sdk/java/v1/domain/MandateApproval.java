@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MandateApproval {
 
-    private String mandateSignatureDate = null;
+    private String mandateSignatureDate;
 
-    private String mandateSignaturePlace = null;
+    private String mandateSignaturePlace;
 
-    private Boolean mandateSigned = null;
+    private Boolean mandateSigned;
 
     /**
      * The date when the mandate was signed<br>

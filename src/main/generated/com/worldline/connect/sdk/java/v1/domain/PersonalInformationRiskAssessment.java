@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PersonalInformationRiskAssessment {
 
-    private PersonalNameRiskAssessment name = null;
+    private PersonalNameRiskAssessment name;
 
     /**
      * Object containing the name details of the customer

@@ -12,37 +12,37 @@ import java.util.List;
  */
 public class LodgingData {
 
-    private List<LodgingCharge> charges = null;
+    private List<LodgingCharge> charges;
 
-    private String checkInDate = null;
+    private String checkInDate;
 
-    private String checkOutDate = null;
+    private String checkOutDate;
 
-    private String folioNumber = null;
+    private String folioNumber;
 
-    private Boolean isConfirmedReservation = null;
+    private Boolean isConfirmedReservation;
 
-    private Boolean isFacilityFireSafetyConform = null;
+    private Boolean isFacilityFireSafetyConform;
 
-    private Boolean isNoShow = null;
+    private Boolean isNoShow;
 
-    private Boolean isPreferenceSmokingRoom = null;
+    private Boolean isPreferenceSmokingRoom;
 
-    private Integer numberOfAdults = null;
+    private Integer numberOfAdults;
 
-    private Integer numberOfNights = null;
+    private Integer numberOfNights;
 
-    private Integer numberOfRooms = null;
+    private Integer numberOfRooms;
 
-    private String programCode = null;
+    private String programCode;
 
-    private String propertyCustomerServicePhoneNumber = null;
+    private String propertyCustomerServicePhoneNumber;
 
-    private String propertyPhoneNumber = null;
+    private String propertyPhoneNumber;
 
-    private String renterName = null;
+    private String renterName;
 
-    private List<LodgingRoom> rooms = null;
+    private List<LodgingRoom> rooms;
 
     /**
      * Object that holds lodging related charges

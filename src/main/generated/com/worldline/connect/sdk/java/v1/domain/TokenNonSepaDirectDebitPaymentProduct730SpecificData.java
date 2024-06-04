@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TokenNonSepaDirectDebitPaymentProduct730SpecificData {
 
-    private BankAccountBban bankAccountBban = null;
+    private BankAccountBban bankAccountBban;
 
     /**
      * Object containing account holder name and bank account information

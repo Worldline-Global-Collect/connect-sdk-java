@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MandateCustomer {
 
-    private BankAccountIban bankAccountIban = null;
+    private BankAccountIban bankAccountIban;
 
-    private String companyName = null;
+    private String companyName;
 
-    private MandateContactDetails contactDetails = null;
+    private MandateContactDetails contactDetails;
 
-    private MandateAddress mandateAddress = null;
+    private MandateAddress mandateAddress;
 
-    private MandatePersonalInformation personalInformation = null;
+    private MandatePersonalInformation personalInformation;
 
     /**
      * Object containing IBAN information

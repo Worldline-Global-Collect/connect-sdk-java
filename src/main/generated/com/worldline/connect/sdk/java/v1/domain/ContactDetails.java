@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ContactDetails extends ContactDetailsBase {
 
-    private String faxNumber = null;
+    private String faxNumber;
 
-    private String mobilePhoneNumber = null;
+    private String mobilePhoneNumber;
 
-    private String phoneNumber = null;
+    private String phoneNumber;
 
-    private String workPhoneNumber = null;
+    private String workPhoneNumber;
 
     /**
      * Fax number of the customer

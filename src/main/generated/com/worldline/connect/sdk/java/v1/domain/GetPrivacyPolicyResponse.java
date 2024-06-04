@@ -10,7 +10,7 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class GetPrivacyPolicyResponse {
 
-    private String htmlContent = null;
+    private String htmlContent;
 
     /**
      * HTML content to be displayed to the user

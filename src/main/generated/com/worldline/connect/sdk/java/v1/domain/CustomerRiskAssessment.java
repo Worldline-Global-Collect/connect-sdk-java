@@ -10,23 +10,23 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CustomerRiskAssessment {
 
-    private CustomerAccountRiskAssessment account = null;
+    private CustomerAccountRiskAssessment account;
 
-    private String accountType = null;
+    private String accountType;
 
-    private Address billingAddress = null;
+    private Address billingAddress;
 
-    private ContactDetailsRiskAssessment contactDetails = null;
+    private ContactDetailsRiskAssessment contactDetails;
 
-    private CustomerDeviceRiskAssessment device = null;
+    private CustomerDeviceRiskAssessment device;
 
-    private Boolean isPreviousCustomer = null;
+    private Boolean isPreviousCustomer;
 
-    private String locale = null;
+    private String locale;
 
-    private PersonalInformationRiskAssessment personalInformation = null;
+    private PersonalInformationRiskAssessment personalInformation;
 
-    private AddressPersonal shippingAddress = null;
+    private AddressPersonal shippingAddress;
 
     /**
      * Object containing data related to the account the customer has with you

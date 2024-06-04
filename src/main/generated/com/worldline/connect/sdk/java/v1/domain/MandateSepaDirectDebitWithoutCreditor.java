@@ -7,17 +7,17 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MandateSepaDirectDebitWithoutCreditor {
 
-    private BankAccountIban bankAccountIban = null;
+    private BankAccountIban bankAccountIban;
 
-    private String customerContractIdentifier = null;
+    private String customerContractIdentifier;
 
-    private Debtor debtor = null;
+    private Debtor debtor;
 
-    private Boolean isRecurring = null;
+    private Boolean isRecurring;
 
-    private MandateApproval mandateApproval = null;
+    private MandateApproval mandateApproval;
 
-    private String preNotification = null;
+    private String preNotification;
 
     /**
      * Object containing Account holder and IBAN information

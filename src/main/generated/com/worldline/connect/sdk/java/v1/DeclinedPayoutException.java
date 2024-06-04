@@ -5,6 +5,8 @@
 
 package com.worldline.connect.sdk.java.v1;
 
+import java.util.Optional;
+
 import com.worldline.connect.sdk.java.v1.domain.PayoutErrorResponse;
 import com.worldline.connect.sdk.java.v1.domain.PayoutResult;
 
@@ -14,25 +16,26 @@ import com.worldline.connect.sdk.java.v1.domain.PayoutResult;
 @SuppressWarnings("serial")
 public class DeclinedPayoutException extends DeclinedTransactionException {
 
-    private final PayoutErrorResponse errors;
+    private final PayoutErrorResponse response;
 
-    public DeclinedPayoutException(int statusCode, String responseBody, PayoutErrorResponse errors) {
-        super(buildMessage(errors), statusCode, responseBody, errors != null ? errors.getErrorId() : null, errors != null ? errors.getErrors() : null);
-        this.errors = errors;
+    public DeclinedPayoutException(int statusCode, String responseBody, PayoutErrorResponse response) {
+        super(buildMessage(response), statusCode, responseBody,
+                response != null ? response.getErrorId() : null,
+                response != null ? response.getErrors() : null);
+        this.response = response;
     }
 
-    private static String buildMessage(PayoutErrorResponse errors) {
-        PayoutResult payout = errors != null ? errors.getPayoutResult() : null;
-        if (payout != null) {
-            return "declined payout '" + payout.getId() + "' with status '" + payout.getStatus() + "'";
-        }
-        return "the Worldline Global Collect platform returned a declined payout response";
+    private static String buildMessage(PayoutErrorResponse response) {
+        return Optional.ofNullable(response)
+                .map(PayoutErrorResponse::getPayoutResult)
+                .map(payoutResult -> String.format("declined payout '%s' with status '%s'", payoutResult.getId(), payoutResult.getStatus()))
+                .orElse("the Worldline Global Collect platform returned a declined payout response");
     }
 
     /**
-     * @return The result of creating a payout if available, otherwise returns {@code null}.
+     * @return The result of creating a payout if available, or {@code null} otherwise.
      */
     public PayoutResult getPayoutResult() {
-        return errors == null ? null : errors.getPayoutResult();
+        return response == null ? null : response.getPayoutResult();
     }
 }

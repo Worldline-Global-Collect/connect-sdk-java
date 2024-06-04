@@ -9,13 +9,13 @@ import java.util.List;
 
 public class FindPayoutsResponse {
 
-    private Integer limit = null;
+    private Integer limit;
 
-    private Integer offset = null;
+    private Integer offset;
 
-    private List<PayoutResult> payouts = null;
+    private List<PayoutResult> payouts;
 
-    private Integer totalCount = null;
+    private Integer totalCount;
 
     /**
      * The limit you used in the request.

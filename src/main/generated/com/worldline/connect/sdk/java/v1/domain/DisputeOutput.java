@@ -9,23 +9,23 @@ import java.util.List;
 
 public class DisputeOutput {
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private String contactPerson = null;
+    private String contactPerson;
 
-    private DisputeCreationDetail creationDetails = null;
+    private DisputeCreationDetail creationDetails;
 
-    private String emailAddress = null;
+    private String emailAddress;
 
-    private List<HostedFile> files = null;
+    private List<HostedFile> files;
 
-    private DisputeReference reference = null;
+    private DisputeReference reference;
 
-    private String replyTo = null;
+    private String replyTo;
 
-    private String requestMessage = null;
+    private String requestMessage;
 
-    private String responseMessage = null;
+    private String responseMessage;
 
     /**
      * Object containing amount and ISO currency code attributes

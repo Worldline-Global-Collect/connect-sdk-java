@@ -7,17 +7,17 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class BankAccountBban extends BankAccount {
 
-    private String accountNumber = null;
+    private String accountNumber;
 
-    private String bankCode = null;
+    private String bankCode;
 
-    private String bankName = null;
+    private String bankName;
 
-    private String branchCode = null;
+    private String branchCode;
 
-    private String checkDigit = null;
+    private String checkDigit;
 
-    private String countryCode = null;
+    private String countryCode;
 
     /**
      * Bank account number

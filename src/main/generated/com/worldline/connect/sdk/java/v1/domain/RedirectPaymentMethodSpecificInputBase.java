@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RedirectPaymentMethodSpecificInputBase extends AbstractRedirectPaymentMethodSpecificInput {
 
-    private RedirectPaymentProduct4101SpecificInputBase paymentProduct4101SpecificInput = null;
+    private RedirectPaymentProduct4101SpecificInputBase paymentProduct4101SpecificInput;
 
-    private RedirectPaymentProduct840SpecificInputBase paymentProduct840SpecificInput = null;
+    private RedirectPaymentProduct840SpecificInputBase paymentProduct840SpecificInput;
 
     /**
      * Object containing specific input required for payment product 4101 (UPI)

@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CardPaymentMethodSpecificInputBase extends AbstractCardPaymentMethodSpecificInput {
 
-    private ThreeDSecureBase threeDSecure = null;
+    private ThreeDSecureBase threeDSecure;
 
     /**
      * Object containing specific data regarding 3-D Secure

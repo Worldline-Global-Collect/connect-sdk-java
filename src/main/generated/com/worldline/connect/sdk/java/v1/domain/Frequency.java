@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class Frequency {
 
-    private String interval = null;
+    private String interval;
 
-    private Integer intervalFrequency = null;
+    private Integer intervalFrequency;
 
     /**
      * The interval between recurring payments specified as days, weeks, quarters, or years.

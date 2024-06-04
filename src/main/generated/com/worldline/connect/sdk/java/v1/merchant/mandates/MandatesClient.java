@@ -60,9 +60,9 @@ public class MandatesClient extends ApiResource {
      * @param body CreateMandateRequest
      * @param context CallContext
      * @return CreateMandateResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -115,9 +115,9 @@ public class MandatesClient extends ApiResource {
      * @param body CreateMandateRequest
      * @param context CallContext
      * @return CreateMandateResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -170,9 +170,9 @@ public class MandatesClient extends ApiResource {
      * @param uniqueMandateReference String
      * @param context CallContext
      * @return GetMandateResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -224,9 +224,9 @@ public class MandatesClient extends ApiResource {
      * @param uniqueMandateReference String
      * @param context CallContext
      * @return GetMandateResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -279,9 +279,9 @@ public class MandatesClient extends ApiResource {
      * @param uniqueMandateReference String
      * @param context CallContext
      * @return GetMandateResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -334,9 +334,9 @@ public class MandatesClient extends ApiResource {
      * @param uniqueMandateReference String
      * @param context CallContext
      * @return GetMandateResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,

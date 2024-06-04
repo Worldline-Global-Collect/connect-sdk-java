@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CompletePaymentRequest {
 
-    private CompletePaymentCardPaymentMethodSpecificInput cardPaymentMethodSpecificInput = null;
+    private CompletePaymentCardPaymentMethodSpecificInput cardPaymentMethodSpecificInput;
 
-    private Merchant merchant = null;
+    private Merchant merchant;
 
-    private Order order = null;
+    private Order order;
 
     /**
      * Object containing the specific input details for card payments

@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class TrialPeriod {
 
-    private Integer duration = null;
+    private Integer duration;
 
-    private String interval = null;
+    private String interval;
 
     /**
      * The number of days, weeks, months, or years before the trial period ends.

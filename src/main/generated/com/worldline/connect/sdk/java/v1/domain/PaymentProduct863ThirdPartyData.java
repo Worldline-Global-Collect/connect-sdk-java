@@ -7,19 +7,19 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProduct863ThirdPartyData {
 
-    private String appId = null;
+    private String appId;
 
-    private String nonceStr = null;
+    private String nonceStr;
 
-    private String packageSign = null;
+    private String packageSign;
 
-    private String paySign = null;
+    private String paySign;
 
-    private String prepayId = null;
+    private String prepayId;
 
-    private String signType = null;
+    private String signType;
 
-    private String timeStamp = null;
+    private String timeStamp;
 
     /**
      * The appId to use in third party calls to WeChat.

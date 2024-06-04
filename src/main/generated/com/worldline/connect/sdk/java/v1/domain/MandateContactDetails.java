@@ -10,7 +10,7 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class MandateContactDetails {
 
-    private String emailAddress = null;
+    private String emailAddress;
 
     /**
      * Email address of the customer

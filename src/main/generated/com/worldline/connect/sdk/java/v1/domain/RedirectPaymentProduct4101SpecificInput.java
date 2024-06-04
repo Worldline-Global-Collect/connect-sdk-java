@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class RedirectPaymentProduct4101SpecificInput {
 
-    private String displayName = null;
+    private String displayName;
 
-    private String integrationType = null;
+    private String integrationType;
 
-    private String virtualPaymentAddress = null;
+    private String virtualPaymentAddress;
 
     /**
      * The merchant name as shown to the customer in some payment applications.

@@ -12,9 +12,9 @@ import java.util.List;
  */
 public class GetCustomerDetailsRequest {
 
-    private String countryCode = null;
+    private String countryCode;
 
-    private List<KeyValuePair> values = null;
+    private List<KeyValuePair> values;
 
     /**
      * The code of the country where the customer should reside.

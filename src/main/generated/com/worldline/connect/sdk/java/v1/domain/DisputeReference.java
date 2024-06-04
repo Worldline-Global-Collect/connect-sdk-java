@@ -7,15 +7,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class DisputeReference {
 
-    private String merchantOrderId = null;
+    private String merchantOrderId;
 
-    private String merchantReference = null;
+    private String merchantReference;
 
-    private String paymentReference = null;
+    private String paymentReference;
 
-    private String providerId = null;
+    private String providerId;
 
-    private String providerReference = null;
+    private String providerReference;
 
     /**
      * The merchant’s order ID of the transaction to which this dispute is linked.

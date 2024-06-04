@@ -10,9 +10,9 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class SepaDirectDebitPaymentProduct771SpecificInput extends AbstractSepaDirectDebitPaymentProduct771SpecificInput {
 
-    private String existingUniqueMandateReference = null;
+    private String existingUniqueMandateReference;
 
-    private CreateMandateWithReturnUrl mandate = null;
+    private CreateMandateWithReturnUrl mandate;
 
     /**
      * The unique reference of the existing mandate to use in this payment.

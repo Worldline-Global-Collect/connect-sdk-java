@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProductFieldTooltip {
 
-    private String image = null;
+    private String image;
 
-    private String label = null;
+    private String label;
 
     /**
      * Relative URL that can be used to retrieve an image for the tooltip image. You can use our server-side resize functionality by appending '?size={{width}}x{{height}}' to the full URL, where width and height are specified in pixels. The resized image will always keep its correct aspect ratio.

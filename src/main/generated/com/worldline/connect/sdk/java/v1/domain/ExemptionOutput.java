@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class ExemptionOutput {
 
-    private String exemptionRaised = null;
+    private String exemptionRaised;
 
-    private String exemptionRejectionReason = null;
+    private String exemptionRejectionReason;
 
-    private String exemptionRequest = null;
+    private String exemptionRequest;
 
     /**
      * Type of strong customer authentication (SCA) exemption that was raised towards the acquirer for this transaction.

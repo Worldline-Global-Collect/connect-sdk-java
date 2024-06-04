@@ -11,15 +11,15 @@ package com.worldline.connect.sdk.java.v1.domain;
 @Deprecated
 public class LoanRecipient {
 
-    private String accountNumber = null;
+    private String accountNumber;
 
-    private String dateOfBirth = null;
+    private String dateOfBirth;
 
-    private String partialPan = null;
+    private String partialPan;
 
-    private String surname = null;
+    private String surname;
 
-    private String zip = null;
+    private String zip;
 
     /**
      * Should be filled with the last 10 digits of the bank account number of the recipient of the loan.

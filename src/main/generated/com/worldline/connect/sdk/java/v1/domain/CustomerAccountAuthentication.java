@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CustomerAccountAuthentication {
 
-    private String data = null;
+    private String data;
 
-    private String method = null;
+    private String method;
 
-    private String utcTimestamp = null;
+    private String utcTimestamp;
 
     /**
      * Data that documents and supports a specific authentication process submitted using the order.customer.account.authentication.method property. The data submitted using this property will be used by the issuer to validate the used authentication method.

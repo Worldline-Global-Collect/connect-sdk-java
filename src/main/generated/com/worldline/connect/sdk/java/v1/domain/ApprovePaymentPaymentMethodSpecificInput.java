@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ApprovePaymentPaymentMethodSpecificInput {
 
-    private String dateCollect = null;
+    private String dateCollect;
 
-    private String token = null;
+    private String token;
 
     /**
      * The desired date for the collection<br>

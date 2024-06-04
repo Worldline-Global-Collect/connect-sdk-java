@@ -7,25 +7,25 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class HostedCheckoutSpecificInput {
 
-    private Boolean isRecurring = null;
+    private Boolean isRecurring;
 
-    private String locale = null;
+    private String locale;
 
-    private PaymentProductFiltersHostedCheckout paymentProductFilters = null;
+    private PaymentProductFiltersHostedCheckout paymentProductFilters;
 
-    private RecurringPaymentsData recurringPaymentsData = null;
+    private RecurringPaymentsData recurringPaymentsData;
 
-    private Boolean returnCancelState = null;
+    private Boolean returnCancelState;
 
-    private String returnUrl = null;
+    private String returnUrl;
 
-    private Boolean showResultPage = null;
+    private Boolean showResultPage;
 
-    private String tokens = null;
+    private String tokens;
 
-    private Boolean validateShoppingCart = null;
+    private Boolean validateShoppingCart;
 
-    private String variant = null;
+    private String variant;
 
     /**
      * <ul class="paragraph-width"><li>true - Only payment products that support recurring payments will be shown. Any transactions created will also be tagged as being a first of a recurring sequence.

@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MandateSepaDirectDebitWithMandateId extends MandateSepaDirectDebitWithoutCreditor {
 
-    private String mandateId = null;
+    private String mandateId;
 
     /**
      * Unique mandate identifier

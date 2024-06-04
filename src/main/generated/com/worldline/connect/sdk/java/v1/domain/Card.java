@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class Card extends CardWithoutCvv {
 
-    private String cvv = null;
+    private String cvv;
 
-    private String partialPin = null;
+    private String partialPin;
 
     /**
      * Card Verification Value, a 3 or 4 digit code used as an additional security feature for card not present transactions.

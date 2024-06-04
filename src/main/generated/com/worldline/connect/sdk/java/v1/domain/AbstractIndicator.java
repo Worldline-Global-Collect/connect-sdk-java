@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractIndicator {
 
-    private String name = null;
+    private String name;
 
-    private String value = null;
+    private String value;
 
     public String getName() {
         return name;

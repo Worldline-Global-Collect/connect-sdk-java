@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractEInvoicePaymentMethodSpecificInput extends AbstractPaymentMethodSpecificInput {
 
-    private Boolean requiresApproval = null;
+    private Boolean requiresApproval;
 
     public Boolean getRequiresApproval() {
         return requiresApproval;

@@ -7,27 +7,27 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProductFieldValidators {
 
-    private BoletoBancarioRequirednessValidator boletoBancarioRequiredness = null;
+    private BoletoBancarioRequirednessValidator boletoBancarioRequiredness;
 
-    private EmptyValidator emailAddress = null;
+    private EmptyValidator emailAddress;
 
-    private EmptyValidator expirationDate = null;
+    private EmptyValidator expirationDate;
 
-    private FixedListValidator fixedList = null;
+    private FixedListValidator fixedList;
 
-    private EmptyValidator iban = null;
+    private EmptyValidator iban;
 
-    private LengthValidator length = null;
+    private LengthValidator length;
 
-    private EmptyValidator luhn = null;
+    private EmptyValidator luhn;
 
-    private RangeValidator range = null;
+    private RangeValidator range;
 
-    private RegularExpressionValidator regularExpression = null;
+    private RegularExpressionValidator regularExpression;
 
-    private EmptyValidator residentIdNumber = null;
+    private EmptyValidator residentIdNumber;
 
-    private EmptyValidator termsAndConditions = null;
+    private EmptyValidator termsAndConditions;
 
     /**
      * Indicates the requiredness of the field based on the fiscalnumber for Boleto Bancario

@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class LengthValidator {
 
-    private Integer maxLength = null;
+    private Integer maxLength;
 
-    private Integer minLength = null;
+    private Integer minLength;
 
     /**
      * The maximum allowed length

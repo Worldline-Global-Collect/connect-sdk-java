@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MobilePaymentProduct320SpecificInput {
 
-    private String cardholderName = null;
+    private String cardholderName;
 
-    private GPayThreeDSecure threeDSecure = null;
+    private GPayThreeDSecure threeDSecure;
 
     /**
      * The card holder's name on the card.<br>

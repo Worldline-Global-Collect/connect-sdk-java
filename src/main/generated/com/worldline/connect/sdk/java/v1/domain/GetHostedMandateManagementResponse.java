@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class GetHostedMandateManagementResponse {
 
-    private MandateResponse mandate = null;
+    private MandateResponse mandate;
 
-    private String status = null;
+    private String status;
 
     /**
      * When a mandate has been created during the hosted mandate management session this object will return the details.

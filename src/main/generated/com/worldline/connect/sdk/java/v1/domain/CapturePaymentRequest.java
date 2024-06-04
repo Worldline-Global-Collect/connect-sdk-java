@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CapturePaymentRequest {
 
-    private Long amount = null;
+    private Long amount;
 
-    private Boolean isFinal = null;
+    private Boolean isFinal;
 
     /**
      * Here you can specify the amount that you want to capture (specified in cents, where single digit currencies are presumed to have 2 digits).<br>

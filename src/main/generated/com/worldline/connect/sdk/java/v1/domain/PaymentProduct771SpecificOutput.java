@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProduct771SpecificOutput {
 
-    private String mandateReference = null;
+    private String mandateReference;
 
     /**
      * Unique reference to a Mandate

@@ -7,11 +7,11 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class OrderApprovePayment {
 
-    private AdditionalOrderInputAirlineData additionalInput = null;
+    private AdditionalOrderInputAirlineData additionalInput;
 
-    private CustomerApprovePayment customer = null;
+    private CustomerApprovePayment customer;
 
-    private OrderReferencesApprovePayment references = null;
+    private OrderReferencesApprovePayment references;
 
     /**
      * Object containing additional input on the order

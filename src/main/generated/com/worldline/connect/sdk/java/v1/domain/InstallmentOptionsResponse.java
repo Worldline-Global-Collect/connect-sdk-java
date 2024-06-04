@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class InstallmentOptionsResponse {
 
-    private List<InstallmentOptions> installmentOptions = null;
+    private List<InstallmentOptions> installmentOptions;
 
     /**
      * Array containing installment options their details and characteristics

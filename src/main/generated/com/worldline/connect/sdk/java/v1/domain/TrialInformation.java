@@ -10,15 +10,15 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class TrialInformation {
 
-    private AmountOfMoney amountOfMoneyAfterTrial = null;
+    private AmountOfMoney amountOfMoneyAfterTrial;
 
-    private String endDate = null;
+    private String endDate;
 
-    private Boolean isRecurring = null;
+    private Boolean isRecurring;
 
-    private TrialPeriod trialPeriod = null;
+    private TrialPeriod trialPeriod;
 
-    private Frequency trialPeriodRecurring = null;
+    private Frequency trialPeriodRecurring;
 
     /**
      * The object containing the amount and ISO currency code attributes of money to be paid after the trial period ends.<br><br>Note:<br><br>The property order.amountOfMoney should be populated with the amount to be paid during or for the trial period (no-cost or discounted time-constrained trial subscription period).

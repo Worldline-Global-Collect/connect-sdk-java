@@ -10,19 +10,19 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class CreatedPaymentOutput {
 
-    private DisplayedData displayedData = null;
+    private DisplayedData displayedData;
 
-    private Boolean isCheckedRememberMe = null;
+    private Boolean isCheckedRememberMe;
 
-    private Payment payment = null;
+    private Payment payment;
 
-    private PaymentCreationReferences paymentCreationReferences = null;
+    private PaymentCreationReferences paymentCreationReferences;
 
-    private String paymentStatusCategory = null;
+    private String paymentStatusCategory;
 
-    private Boolean tokenizationSucceeded = null;
+    private Boolean tokenizationSucceeded;
 
-    private String tokens = null;
+    private String tokens;
 
     /**
      * Object that contains the action, including the needed data, that you should perform next, like showing instruction, showing the transaction results or redirect to a third party to complete the payment

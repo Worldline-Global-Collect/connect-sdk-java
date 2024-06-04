@@ -12,11 +12,11 @@ import java.util.List;
  */
 public class DeviceRenderOptions {
 
-    private String sdkInterface = null;
+    private String sdkInterface;
 
-    private String sdkUiType = null;
+    private String sdkUiType;
 
-    private List<String> sdkUiTypes = null;
+    private List<String> sdkUiTypes;
 
     /**
      * Lists all of the SDK Interface types that the device supports for displaying specific challenge user interfaces within the SDK.<p></p><ul class="paragraph-width"><li>native = The app supports only a native user interface</li><li>html = The app supports only an HTML user interface</li><li>both = Both Native and HTML user interfaces are supported by the app</li></ul>

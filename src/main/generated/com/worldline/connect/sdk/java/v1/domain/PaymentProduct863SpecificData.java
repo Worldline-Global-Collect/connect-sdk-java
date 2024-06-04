@@ -9,7 +9,7 @@ import java.util.List;
 
 public class PaymentProduct863SpecificData {
 
-    private List<String> integrationTypes = null;
+    private List<String> integrationTypes;
 
     /**
      * The WeChat Pay integration types that can be used in the current payment context. Possible values:

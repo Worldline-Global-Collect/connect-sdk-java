@@ -15,11 +15,11 @@ import com.worldline.connect.sdk.java.v1.domain.APIError;
 @SuppressWarnings("serial")
 public abstract class DeclinedTransactionException extends ApiException {
 
-    public DeclinedTransactionException(int statusCode, String responseBody, String errorId, List<APIError> errors) {
+    protected DeclinedTransactionException(int statusCode, String responseBody, String errorId, List<APIError> errors) {
         super(statusCode, responseBody, errorId, errors);
     }
 
-    public DeclinedTransactionException(String message, int statusCode, String responseBody, String errorId, List<APIError> errors) {
+    protected DeclinedTransactionException(String message, int statusCode, String responseBody, String errorId, List<APIError> errors) {
         super(message, statusCode, responseBody, errorId, errors);
     }
 }

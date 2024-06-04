@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class ContactDetailsBase {
 
-    private String emailAddress = null;
+    private String emailAddress;
 
-    private String emailMessageType = null;
+    private String emailMessageType;
 
     /**
      * Email address of the customer

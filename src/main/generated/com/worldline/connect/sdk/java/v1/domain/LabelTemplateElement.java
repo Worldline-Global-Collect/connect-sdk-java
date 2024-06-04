@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class LabelTemplateElement {
 
-    private String attributeKey = null;
+    private String attributeKey;
 
-    private String mask = null;
+    private String mask;
 
     /**
      * Name of the attribute that is shown to the customer on selection pages or screens

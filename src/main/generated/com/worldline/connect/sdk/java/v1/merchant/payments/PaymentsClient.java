@@ -86,9 +86,9 @@ public class PaymentsClient extends ApiResource {
      * @param context CallContext
      * @return CreatePaymentResponse
      * @throws DeclinedPaymentException if the Worldline Global Collect platform declined / rejected the payment. The payment result will be available from the exception.
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -139,9 +139,9 @@ public class PaymentsClient extends ApiResource {
      * @param query FindPaymentsParams
      * @param context CallContext
      * @return FindPaymentsResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -191,9 +191,9 @@ public class PaymentsClient extends ApiResource {
      * @param paymentId String
      * @param context CallContext
      * @return PaymentResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -247,9 +247,9 @@ public class PaymentsClient extends ApiResource {
      * @param body CompletePaymentRequest
      * @param context CallContext
      * @return CompletePaymentResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -302,9 +302,9 @@ public class PaymentsClient extends ApiResource {
      * @param paymentId String
      * @param context CallContext
      * @return ThirdPartyStatusResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -358,9 +358,9 @@ public class PaymentsClient extends ApiResource {
      * @param body TokenizePaymentRequest
      * @param context CallContext
      * @return CreateTokenResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -413,9 +413,9 @@ public class PaymentsClient extends ApiResource {
      * @param paymentId String
      * @param context CallContext
      * @return PaymentResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -470,9 +470,9 @@ public class PaymentsClient extends ApiResource {
      * @param body ApprovePaymentRequest
      * @param context CallContext
      * @return PaymentApprovalResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -527,9 +527,9 @@ public class PaymentsClient extends ApiResource {
      * @param body CapturePaymentRequest
      * @param context CallContext
      * @return CaptureResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -582,9 +582,9 @@ public class PaymentsClient extends ApiResource {
      * @param paymentId String
      * @param context CallContext
      * @return CancelApprovalPaymentResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -637,9 +637,9 @@ public class PaymentsClient extends ApiResource {
      * @param paymentId String
      * @param context CallContext
      * @return CapturesResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -695,9 +695,9 @@ public class PaymentsClient extends ApiResource {
      * @param context CallContext
      * @return RefundResponse
      * @throws DeclinedRefundException if the Worldline Global Collect platform declined / rejected the refund. The refund result will be available from the exception.
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -750,9 +750,9 @@ public class PaymentsClient extends ApiResource {
      * @param paymentId String
      * @param context CallContext
      * @return RefundsResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -804,9 +804,9 @@ public class PaymentsClient extends ApiResource {
      * @param paymentId String
      * @param context CallContext
      * @return CancelPaymentResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -861,9 +861,9 @@ public class PaymentsClient extends ApiResource {
      * @param body CreateDisputeRequest
      * @param context CallContext
      * @return DisputeResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -916,9 +916,9 @@ public class PaymentsClient extends ApiResource {
      * @param paymentId String
      * @param context CallContext
      * @return DisputesResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -970,9 +970,9 @@ public class PaymentsClient extends ApiResource {
      * @param paymentId String
      * @param context CallContext
      * @return DeviceFingerprintDetails
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,

@@ -5,8 +5,9 @@
 
 package com.worldline.connect.sdk.java.v1;
 
+import java.util.Optional;
+
 import com.worldline.connect.sdk.java.v1.domain.CreatePaymentResult;
-import com.worldline.connect.sdk.java.v1.domain.Payment;
 import com.worldline.connect.sdk.java.v1.domain.PaymentErrorResponse;
 
 /**
@@ -15,25 +16,27 @@ import com.worldline.connect.sdk.java.v1.domain.PaymentErrorResponse;
 @SuppressWarnings("serial")
 public class DeclinedPaymentException extends DeclinedTransactionException {
 
-    private final PaymentErrorResponse errors;
+    private final PaymentErrorResponse response;
 
-    public DeclinedPaymentException(int statusCode, String responseBody, PaymentErrorResponse errors) {
-        super(buildMessage(errors), statusCode, responseBody, errors != null ? errors.getErrorId() : null, errors != null ? errors.getErrors() : null);
-        this.errors = errors;
+    public DeclinedPaymentException(int statusCode, String responseBody, PaymentErrorResponse response) {
+        super(buildMessage(response), statusCode, responseBody,
+                response != null ? response.getErrorId() : null,
+                response != null ? response.getErrors() : null);
+        this.response = response;
     }
 
-    private static String buildMessage(PaymentErrorResponse errors) {
-        Payment payment = errors != null && errors.getPaymentResult() != null ? errors.getPaymentResult().getPayment() : null;
-        if (payment != null) {
-            return "declined payment '" + payment.getId() + "' with status '" + payment.getStatus() + "'";
-        }
-        return "the Worldline Global Collect platform returned a declined payment response";
+    private static String buildMessage(PaymentErrorResponse response) {
+        return Optional.ofNullable(response)
+                .map(PaymentErrorResponse::getPaymentResult)
+                .map(CreatePaymentResult::getPayment)
+                .map(payment -> String.format("declined payment '%s' with status '%s'", payment.getId(), payment.getStatus()))
+                .orElse("the Worldline Global Collect platform returned a declined payment response");
     }
 
     /**
-     * @return The result of creating a payment if available, otherwise returns {@code null}.
+     * @return The result of creating a payment if available, or {@code null} otherwise.
      */
     public CreatePaymentResult getCreatePaymentResult() {
-        return errors == null ? null : errors.getPaymentResult();
+        return response == null ? null : response.getPaymentResult();
     }
 }

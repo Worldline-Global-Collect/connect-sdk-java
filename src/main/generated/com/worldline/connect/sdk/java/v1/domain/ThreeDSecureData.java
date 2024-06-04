@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class ThreeDSecureData {
 
-    private String acsTransactionId = null;
+    private String acsTransactionId;
 
-    private String method = null;
+    private String method;
 
-    private String utcTimestamp = null;
+    private String utcTimestamp;
 
     /**
      * The ACS Transaction ID for a prior 3-D Secure authenticated transaction (for example, the first recurring transaction that was authenticated with the customer)

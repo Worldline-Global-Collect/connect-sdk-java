@@ -10,11 +10,11 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class ShippingRiskAssessment {
 
-    private AddressPersonal address = null;
+    private AddressPersonal address;
 
-    private String comments = null;
+    private String comments;
 
-    private String trackingNumber = null;
+    private String trackingNumber;
 
     /**
      * Object containing address information

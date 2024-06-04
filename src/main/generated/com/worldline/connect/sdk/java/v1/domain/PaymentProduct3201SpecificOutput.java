@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProduct3201SpecificOutput {
 
-    private CardEssentials card = null;
+    private CardEssentials card;
 
     /**
      * Object containing card details

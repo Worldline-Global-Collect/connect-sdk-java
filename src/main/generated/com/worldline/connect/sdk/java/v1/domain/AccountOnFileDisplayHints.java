@@ -9,9 +9,9 @@ import java.util.List;
 
 public class AccountOnFileDisplayHints {
 
-    private List<LabelTemplateElement> labelTemplate = null;
+    private List<LabelTemplateElement> labelTemplate;
 
-    private String logo = null;
+    private String logo;
 
     /**
      * Array of attribute keys and their mask

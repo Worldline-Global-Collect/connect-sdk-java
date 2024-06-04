@@ -7,19 +7,19 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class TokenResponse {
 
-    private TokenCard card = null;
+    private TokenCard card;
 
-    private TokenEWallet eWallet = null;
+    private TokenEWallet eWallet;
 
-    private String id = null;
+    private String id;
 
-    private TokenNonSepaDirectDebit nonSepaDirectDebit = null;
+    private TokenNonSepaDirectDebit nonSepaDirectDebit;
 
-    private String originalPaymentId = null;
+    private String originalPaymentId;
 
-    private Integer paymentProductId = null;
+    private Integer paymentProductId;
 
-    private TokenSepaDirectDebit sepaDirectDebit = null;
+    private TokenSepaDirectDebit sepaDirectDebit;
 
     /**
      * Object containing card details

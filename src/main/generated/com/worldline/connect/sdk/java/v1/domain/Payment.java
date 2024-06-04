@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class Payment extends AbstractOrderStatus {
 
-    private HostedCheckoutSpecificOutput hostedCheckoutSpecificOutput = null;
+    private HostedCheckoutSpecificOutput hostedCheckoutSpecificOutput;
 
-    private PaymentOutput paymentOutput = null;
+    private PaymentOutput paymentOutput;
 
-    private String status = null;
+    private String status;
 
-    private PaymentStatusOutput statusOutput = null;
+    private PaymentStatusOutput statusOutput;
 
     /**
      * Hosted Checkout specific information. Populated if the payment was created on the GlobalCollect platform through a Hosted Checkout.

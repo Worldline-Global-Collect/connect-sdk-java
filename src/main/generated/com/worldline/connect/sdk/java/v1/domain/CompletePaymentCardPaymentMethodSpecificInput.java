@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CompletePaymentCardPaymentMethodSpecificInput {
 
-    private CardWithoutCvv card = null;
+    private CardWithoutCvv card;
 
     /**
      * Object containing card details

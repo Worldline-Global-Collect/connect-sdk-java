@@ -67,9 +67,9 @@ public class ProductsClient extends ApiResource {
      * @param query FindProductsParams
      * @param context CallContext
      * @return PaymentProducts
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -121,9 +121,9 @@ public class ProductsClient extends ApiResource {
      * @param query GetProductParams
      * @param context CallContext
      * @return PaymentProductResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -177,9 +177,9 @@ public class ProductsClient extends ApiResource {
      * @param query DirectoryParams
      * @param context CallContext
      * @return Directory
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -233,9 +233,9 @@ public class ProductsClient extends ApiResource {
      * @param body GetCustomerDetailsRequest
      * @param context CallContext
      * @return GetCustomerDetailsResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -290,9 +290,9 @@ public class ProductsClient extends ApiResource {
      * @param body DeviceFingerprintRequest
      * @param context CallContext
      * @return DeviceFingerprintResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -347,9 +347,9 @@ public class ProductsClient extends ApiResource {
      * @param query NetworksParams
      * @param context CallContext
      * @return PaymentProductNetworksResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
@@ -403,9 +403,9 @@ public class ProductsClient extends ApiResource {
      * @param body CreatePaymentProductSessionRequest
      * @param context CallContext
      * @return CreatePaymentProductSessionResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
-     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
      * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
      *            or there was a conflict (HTTP status code 404, 409 or 410)
      * @throws PlatformException if something went wrong at the Worldline Global Collect platform,

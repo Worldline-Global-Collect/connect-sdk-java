@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentProduct840SpecificOutput {
 
-    private Address billingAddress = null;
+    private Address billingAddress;
 
-    private PaymentProduct840CustomerAccount customerAccount = null;
+    private PaymentProduct840CustomerAccount customerAccount;
 
-    private Address customerAddress = null;
+    private Address customerAddress;
 
-    private ProtectionEligibility protectionEligibility = null;
+    private ProtectionEligibility protectionEligibility;
 
     /**
      * Object containing the billing address details of the customer

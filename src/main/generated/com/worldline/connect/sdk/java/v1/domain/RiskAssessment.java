@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RiskAssessment {
 
-    private FraudFields fraudFields = null;
+    private FraudFields fraudFields;
 
-    private MerchantRiskAssessment merchant = null;
+    private MerchantRiskAssessment merchant;
 
-    private OrderRiskAssessment order = null;
+    private OrderRiskAssessment order;
 
-    private Integer paymentProductId = null;
+    private Integer paymentProductId;
 
     /**
      * Object containing additional data that will be used to assess the risk of fraud

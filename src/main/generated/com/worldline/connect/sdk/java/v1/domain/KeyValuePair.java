@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class KeyValuePair {
 
-    private String key = null;
+    private String key;
 
-    private String value = null;
+    private String value;
 
     /**
      * Name of the key or property

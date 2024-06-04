@@ -7,25 +7,25 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AdditionalOrderInput {
 
-    private AccountFundingRecipient accountFundingRecipient = null;
+    private AccountFundingRecipient accountFundingRecipient;
 
-    private AirlineData airlineData = null;
+    private AirlineData airlineData;
 
-    private Installments installments = null;
-
-    @SuppressWarnings("deprecation")
-    private Level3SummaryData level3SummaryData = null;
+    private Installments installments;
 
     @SuppressWarnings("deprecation")
-    private LoanRecipient loanRecipient = null;
+    private Level3SummaryData level3SummaryData;
 
-    private LodgingData lodgingData = null;
+    @SuppressWarnings("deprecation")
+    private LoanRecipient loanRecipient;
 
-    private Long numberOfInstallments = null;
+    private LodgingData lodgingData;
 
-    private String orderDate = null;
+    private Long numberOfInstallments;
 
-    private OrderTypeInformation typeInformation = null;
+    private String orderDate;
+
+    private OrderTypeInformation typeInformation;
 
     /**
      * Object containing specific data regarding the recipient of an account funding transaction

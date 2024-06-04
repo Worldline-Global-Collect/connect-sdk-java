@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class OrderTypeInformation {
 
-    private String fundingType = null;
+    private String fundingType;
 
-    private String purchaseType = null;
+    private String purchaseType;
 
-    private String transactionType = null;
+    private String transactionType;
 
-    private String usageType = null;
+    private String usageType;
 
     /**
      * Identifies the funding type being authenticated. Possible values are:<ul class="paragraph-width">

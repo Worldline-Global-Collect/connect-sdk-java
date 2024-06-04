@@ -7,7 +7,7 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractRedirectPaymentProduct840SpecificInput {
 
-    private Boolean addressSelectionAtPayPal = null;
+    private Boolean addressSelectionAtPayPal;
 
     public Boolean getAddressSelectionAtPayPal() {
         return addressSelectionAtPayPal;

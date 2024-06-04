@@ -12,13 +12,13 @@ import java.util.List;
  */
 public class GetIINDetailsResponse {
 
-    private List<IINDetail> coBrands = null;
+    private List<IINDetail> coBrands;
 
-    private String countryCode = null;
+    private String countryCode;
 
-    private Boolean isAllowedInContext = null;
+    private Boolean isAllowedInContext;
 
-    private Integer paymentProductId = null;
+    private Integer paymentProductId;
 
     /**
      * Populated only if the card has multiple brands.

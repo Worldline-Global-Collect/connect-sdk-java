@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class BankData {
 
-    private String newBankName = null;
+    private String newBankName;
 
-    private String reformattedAccountNumber = null;
+    private String reformattedAccountNumber;
 
-    private String reformattedBankCode = null;
+    private String reformattedBankCode;
 
-    private String reformattedBranchCode = null;
+    private String reformattedBranchCode;
 
     /**
      * Bank name, matching the bank code of the request

@@ -9,13 +9,13 @@ import java.util.List;
 
 public class OrderInvoiceData {
 
-    private String additionalData = null;
+    private String additionalData;
 
-    private String invoiceDate = null;
+    private String invoiceDate;
 
-    private String invoiceNumber = null;
+    private String invoiceNumber;
 
-    private List<String> textQualifiers = null;
+    private List<String> textQualifiers;
 
     /**
      * Additional data for printed invoices

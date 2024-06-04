@@ -9,13 +9,13 @@ import java.util.List;
 
 public class FindPaymentsResponse {
 
-    private Integer limit = null;
+    private Integer limit;
 
-    private Integer offset = null;
+    private Integer offset;
 
-    private List<Payment> payments = null;
+    private List<Payment> payments;
 
-    private Integer totalCount = null;
+    private Integer totalCount;
 
     /**
      * The limit you used in the request.

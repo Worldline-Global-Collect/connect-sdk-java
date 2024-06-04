@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RefundCustomer {
 
-    private AddressPersonal address = null;
+    private AddressPersonal address;
 
-    private CompanyInformation companyInformation = null;
+    private CompanyInformation companyInformation;
 
-    private ContactDetailsBase contactDetails = null;
+    private ContactDetailsBase contactDetails;
 
-    private String fiscalNumber = null;
+    private String fiscalNumber;
 
     /**
      * Object containing address details

@@ -7,13 +7,13 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class LineItem {
 
-    private AmountOfMoney amountOfMoney = null;
+    private AmountOfMoney amountOfMoney;
 
-    private LineItemInvoiceData invoiceData = null;
+    private LineItemInvoiceData invoiceData;
 
-    private LineItemLevel3InterchangeInformation level3InterchangeInformation = null;
+    private LineItemLevel3InterchangeInformation level3InterchangeInformation;
 
-    private OrderLineDetails orderLineDetails = null;
+    private OrderLineDetails orderLineDetails;
 
     /**
      * Object containing amount and ISO currency code attributes<br>

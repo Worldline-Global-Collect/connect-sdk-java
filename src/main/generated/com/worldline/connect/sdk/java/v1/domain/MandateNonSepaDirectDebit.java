@@ -7,9 +7,9 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class MandateNonSepaDirectDebit {
 
-    private TokenNonSepaDirectDebitPaymentProduct705SpecificData paymentProduct705SpecificData = null;
+    private TokenNonSepaDirectDebitPaymentProduct705SpecificData paymentProduct705SpecificData;
 
-    private TokenNonSepaDirectDebitPaymentProduct730SpecificData paymentProduct730SpecificData = null;
+    private TokenNonSepaDirectDebitPaymentProduct730SpecificData paymentProduct730SpecificData;
 
     /**
      * Object containing specific data for Direct Debit UK

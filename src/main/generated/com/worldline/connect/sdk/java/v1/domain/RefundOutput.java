@@ -7,21 +7,21 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class RefundOutput extends OrderOutput {
 
-    private Long amountPaid = null;
+    private Long amountPaid;
 
-    private RefundBankMethodSpecificOutput bankRefundMethodSpecificOutput = null;
+    private RefundBankMethodSpecificOutput bankRefundMethodSpecificOutput;
 
-    private RefundCardMethodSpecificOutput cardRefundMethodSpecificOutput = null;
+    private RefundCardMethodSpecificOutput cardRefundMethodSpecificOutput;
 
-    private RefundCashMethodSpecificOutput cashRefundMethodSpecificOutput = null;
+    private RefundCashMethodSpecificOutput cashRefundMethodSpecificOutput;
 
-    private RefundEInvoiceMethodSpecificOutput eInvoiceRefundMethodSpecificOutput = null;
+    private RefundEInvoiceMethodSpecificOutput eInvoiceRefundMethodSpecificOutput;
 
-    private RefundEWalletMethodSpecificOutput eWalletRefundMethodSpecificOutput = null;
+    private RefundEWalletMethodSpecificOutput eWalletRefundMethodSpecificOutput;
 
-    private RefundMobileMethodSpecificOutput mobileRefundMethodSpecificOutput = null;
+    private RefundMobileMethodSpecificOutput mobileRefundMethodSpecificOutput;
 
-    private String paymentMethod = null;
+    private String paymentMethod;
 
     /**
      * Amount paid
