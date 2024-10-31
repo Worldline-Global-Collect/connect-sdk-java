@@ -12,7 +12,7 @@ public class MobilePaymentProduct320SpecificInput {
     private GPayThreeDSecure threeDSecure;
 
     /**
-     * The card holder's name on the card.<br>
+     * The card holder's name on the card. Minimum length of 2, maximum length of 51 characters.<br>
      * The encrypted payment data can be found in property paymentMethodData.tokenizationData.info.billingAddress.name of the <a href="https://developers.google.com/android/reference/com/google/android/gms/wallet/PaymentData">PaymentData</a>.toJson() result.
      */
     public String getCardholderName() {
@@ -20,7 +20,7 @@ public class MobilePaymentProduct320SpecificInput {
     }
 
     /**
-     * The card holder's name on the card.<br>
+     * The card holder's name on the card. Minimum length of 2, maximum length of 51 characters.<br>
      * The encrypted payment data can be found in property paymentMethodData.tokenizationData.info.billingAddress.name of the <a href="https://developers.google.com/android/reference/com/google/android/gms/wallet/PaymentData">PaymentData</a>.toJson() result.
      */
     public void setCardholderName(String value) {

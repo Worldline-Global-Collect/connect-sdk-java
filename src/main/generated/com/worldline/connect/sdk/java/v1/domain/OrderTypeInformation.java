@@ -9,6 +9,8 @@ public class OrderTypeInformation {
 
     private String fundingType;
 
+    private String paymentCode;
+
     private String purchaseType;
 
     private String transactionType;
@@ -43,6 +45,20 @@ public class OrderTypeInformation {
      */
     public void setFundingType(String value) {
         this.fundingType = value;
+    }
+
+    /**
+     * Payment code to support account funding transactions. Possible values are:<br><ul class="paragraph-width"><li>accountManagement</li><li>paymentAllowance</li><li>settlementOfAnnuity</li><li>unemploymentDisabilityBenefit</li><li>businessExpenses</li><li>bonusPayment</li><li>busTransportRelatedBusiness</li><li>cashManagementTransfer</li><li>paymentOfCableTVBill</li><li>governmentInstituteIssued</li><li>creditCardPayment</li><li>creditCardBill</li><li>charity</li><li>collectionPayment</li><li>commercialPayment</li><li>commission</li><li>compensation</li><li>copyright</li><li>debitCardPayment</li><li>deposit</li><li>dividend</li><li>studyFees</li><li>electricityBill</li><li>energies</li><li>generalFees</li><li>ferry</li><li>foreignExchange</li><li>gasBill</li><li>unemployedCompensation</li><li>governmentPayment</li><li>healthInsurance</li><li>reimbursementCreditCard</li><li>reimbursementDebitCard</li><li>carInsurancePremium</li><li>insuranceClaim</li><li>installment</li><li>insurancePremium</li><li>investmentPayment</li><li>intraCompany</li><li>interest</li><li>incomeTax</li><li>investment</li><li>laborInsurance</li><li>licenseFree</li><li>lifeInsurance</li><li>loan</li><li>medicalServices</li><li>mobilePersonToBusiness</li><li>mobilePersonToPerson</li><li>mobileTopUp</li><li>notSpecified</li><li>other</li><li>anotherTelecomBill</li><li>payroll</li><li>pensionFundContribution</li><li>pensionPayment</li><li>telephoneBill</li><li>propertyInsurance</li><li>generalLease</li><li>rent</li><li>railwayPayment</li><li>royalties</li><li>salary</li><li>savingsPayment</li><li>securities</li><li>socialSecurity</li><li>study</li><li>subscription</li><li>supplierPayment</li><li>taxRefund</li><li>taxPayment</li><li>telecommunicationsBill</li><li>tradeServices</li><li>treasuryPayment</li><li>travelPayment</li><li>utilityBill</li><li>valueAddedTaxPayment</li><li>withHolding</li><li>waterBill</li></ul>.
+     */
+    public String getPaymentCode() {
+        return paymentCode;
+    }
+
+    /**
+     * Payment code to support account funding transactions. Possible values are:<br><ul class="paragraph-width"><li>accountManagement</li><li>paymentAllowance</li><li>settlementOfAnnuity</li><li>unemploymentDisabilityBenefit</li><li>businessExpenses</li><li>bonusPayment</li><li>busTransportRelatedBusiness</li><li>cashManagementTransfer</li><li>paymentOfCableTVBill</li><li>governmentInstituteIssued</li><li>creditCardPayment</li><li>creditCardBill</li><li>charity</li><li>collectionPayment</li><li>commercialPayment</li><li>commission</li><li>compensation</li><li>copyright</li><li>debitCardPayment</li><li>deposit</li><li>dividend</li><li>studyFees</li><li>electricityBill</li><li>energies</li><li>generalFees</li><li>ferry</li><li>foreignExchange</li><li>gasBill</li><li>unemployedCompensation</li><li>governmentPayment</li><li>healthInsurance</li><li>reimbursementCreditCard</li><li>reimbursementDebitCard</li><li>carInsurancePremium</li><li>insuranceClaim</li><li>installment</li><li>insurancePremium</li><li>investmentPayment</li><li>intraCompany</li><li>interest</li><li>incomeTax</li><li>investment</li><li>laborInsurance</li><li>licenseFree</li><li>lifeInsurance</li><li>loan</li><li>medicalServices</li><li>mobilePersonToBusiness</li><li>mobilePersonToPerson</li><li>mobileTopUp</li><li>notSpecified</li><li>other</li><li>anotherTelecomBill</li><li>payroll</li><li>pensionFundContribution</li><li>pensionPayment</li><li>telephoneBill</li><li>propertyInsurance</li><li>generalLease</li><li>rent</li><li>railwayPayment</li><li>royalties</li><li>salary</li><li>savingsPayment</li><li>securities</li><li>socialSecurity</li><li>study</li><li>subscription</li><li>supplierPayment</li><li>taxRefund</li><li>taxPayment</li><li>telecommunicationsBill</li><li>tradeServices</li><li>treasuryPayment</li><li>travelPayment</li><li>utilityBill</li><li>valueAddedTaxPayment</li><li>withHolding</li><li>waterBill</li></ul>.
+     */
+    public void setPaymentCode(String value) {
+        this.paymentCode = value;
     }
 
     /**

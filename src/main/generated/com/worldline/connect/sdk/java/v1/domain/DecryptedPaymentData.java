@@ -50,7 +50,7 @@ public class DecryptedPaymentData {
     }
 
     /**
-     * Card holder's name on the card.
+     * The card holder's name on the card. Minimum length of 2, maximum length of 51 characters.
      * <ul class="paragraph-width">
      * <li>For Apple Pay, maps to the cardholderName property in the encrypted payment data.
      * <li>For Google Pay this is not available in the encrypted payment data, and can be omitted.
@@ -61,7 +61,7 @@ public class DecryptedPaymentData {
     }
 
     /**
-     * Card holder's name on the card.
+     * The card holder's name on the card. Minimum length of 2, maximum length of 51 characters.
      * <ul class="paragraph-width">
      * <li>For Apple Pay, maps to the cardholderName property in the encrypted payment data.
      * <li>For Google Pay this is not available in the encrypted payment data, and can be omitted.

@@ -13,8 +13,6 @@ public class RedirectPaymentMethodSpecificInput extends AbstractRedirectPaymentM
 
     private RedirectPaymentProduct809SpecificInput paymentProduct809SpecificInput;
 
-    private RedirectPaymentProduct816SpecificInput paymentProduct816SpecificInput;
-
     private RedirectPaymentProduct840SpecificInput paymentProduct840SpecificInput;
 
     private RedirectPaymentProduct861SpecificInput paymentProduct861SpecificInput;
@@ -73,20 +71,6 @@ public class RedirectPaymentMethodSpecificInput extends AbstractRedirectPaymentM
      */
     public void setPaymentProduct809SpecificInput(RedirectPaymentProduct809SpecificInput value) {
         this.paymentProduct809SpecificInput = value;
-    }
-
-    /**
-     * Object containing specific input required for German giropay payments (Payment product ID 816)
-     */
-    public RedirectPaymentProduct816SpecificInput getPaymentProduct816SpecificInput() {
-        return paymentProduct816SpecificInput;
-    }
-
-    /**
-     * Object containing specific input required for German giropay payments (Payment product ID 816)
-     */
-    public void setPaymentProduct816SpecificInput(RedirectPaymentProduct816SpecificInput value) {
-        this.paymentProduct816SpecificInput = value;
     }
 
     /**

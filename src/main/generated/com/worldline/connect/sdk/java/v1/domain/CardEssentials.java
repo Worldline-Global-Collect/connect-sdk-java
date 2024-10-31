@@ -28,14 +28,14 @@ public class CardEssentials {
     }
 
     /**
-     * The card holder's name on the card.
+     * The card holder's name on the card. Minimum length of 2, maximum length of 51 characters.
      */
     public String getCardholderName() {
         return cardholderName;
     }
 
     /**
-     * The card holder's name on the card.
+     * The card holder's name on the card. Minimum length of 2, maximum length of 51 characters.
      */
     public void setCardholderName(String value) {
         this.cardholderName = value;

@@ -7,9 +7,27 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CompanyInformation {
 
+    private String dateOfIncorporation;
+
     private String name;
 
     private String vatNumber;
+
+    /**
+     * The date of incorporation is the specific date when the company was registered with the relevant authority.<br>
+     * Format: YYYYMMDD
+     */
+    public String getDateOfIncorporation() {
+        return dateOfIncorporation;
+    }
+
+    /**
+     * The date of incorporation is the specific date when the company was registered with the relevant authority.<br>
+     * Format: YYYYMMDD
+     */
+    public void setDateOfIncorporation(String value) {
+        this.dateOfIncorporation = value;
+    }
 
     /**
      * Name of company, as a customer

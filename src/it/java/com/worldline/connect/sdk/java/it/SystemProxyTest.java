@@ -1,6 +1,7 @@
 package com.worldline.connect.sdk.java.it;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assumptions.assumeFalse;
 
 import java.io.IOException;
 import java.net.Authenticator;
@@ -39,12 +40,18 @@ class SystemProxyTest extends ItTest {
         }
 
         if (System.getProperty("http.proxyUser") == null) {
-            System.setProperty("http.proxyUser", System.getProperty("connect.api.proxy.username"));
-            setHttpProxyUser = true;
+            String proxyUsername = System.getProperty("acquiring.api.proxy.username");
+            if (proxyUsername != null) {
+                System.setProperty("http.proxyUser", proxyUsername);
+                setHttpProxyUser = true;
+            }
         }
         if (System.getProperty("http.proxyPass") == null) {
-            System.setProperty("http.proxyPass", System.getProperty("connect.api.proxy.password"));
-            setHttpProxyPass = true;
+            String proxyPassword = System.getProperty("acquiring.api.proxy.password");
+            if (proxyPassword != null) {
+                System.setProperty("http.proxyPass", proxyPassword);
+                setHttpProxyPass = true;
+            }
         }
     }
 
@@ -57,10 +64,10 @@ class SystemProxyTest extends ItTest {
 
         if (proxyHost == null && proxyPort == null) {
             String proxyURIString = System.getProperty("connect.api.proxy.uri");
-            if (proxyURIString == null) {
-                throw new IllegalStateException("Either system properties '" + proxyHostProperty + "' and '" + proxyPortProperty + "' must be set,"
-                        + " or system property connect.api.proxy.uri must be set");
-            }
+            assumeFalse(proxyURIString == null,
+                    "Either system properties '" + proxyHostProperty + "' and '" + proxyPortProperty + "' must be set,"
+                    + " or system property connect.api.proxy.uri must be set");
+
             URI proxyURI = new URI(proxyURIString);
             System.setProperty(proxyHostProperty, proxyURI.getHost());
             System.setProperty(proxyPortProperty, Integer.toString(proxyURI.getPort()));

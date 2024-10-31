@@ -1,5 +1,7 @@
 package com.worldline.connect.sdk.java.it;
 
+import static org.junit.jupiter.api.Assumptions.assumeFalse;
+
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -56,9 +58,7 @@ abstract class ItTest {
         String proxyURI = System.getProperty("connect.api.proxy.uri");
         String proxyUsername = System.getProperty("connect.api.proxy.username");
         String proxyPassword = System.getProperty("connect.api.proxy.password");
-        if (proxyURI == null) {
-            throw new IllegalStateException("System property 'connect.api.proxy.uri' must be set");
-        }
+        assumeFalse(proxyURI == null, "System property 'connect.api.proxy.uri' must be set");
 
         return getCommunicatorConfiguration()
                 .withProxyConfiguration(new ProxyConfiguration(new URI(proxyURI), proxyUsername, proxyPassword));
