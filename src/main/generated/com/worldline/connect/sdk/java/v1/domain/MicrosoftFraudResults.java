@@ -5,6 +5,8 @@
 
 package com.worldline.connect.sdk.java.v1.domain;
 
+import java.util.List;
+
 public class MicrosoftFraudResults {
 
     private String clauseName;
@@ -16,6 +18,8 @@ public class MicrosoftFraudResults {
     private Integer fraudScore;
 
     private String policyApplied;
+
+    private List<String> reasonCodes;
 
     private String trueIpAddress;
 
@@ -89,6 +93,20 @@ public class MicrosoftFraudResults {
      */
     public void setPolicyApplied(String value) {
         this.policyApplied = value;
+    }
+
+    /**
+     * List of one or more reason codes.
+     */
+    public List<String> getReasonCodes() {
+        return reasonCodes;
+    }
+
+    /**
+     * List of one or more reason codes.
+     */
+    public void setReasonCodes(List<String> value) {
+        this.reasonCodes = value;
     }
 
     /**

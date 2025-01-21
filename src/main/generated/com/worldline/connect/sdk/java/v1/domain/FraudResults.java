@@ -7,11 +7,27 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class FraudResults {
 
+    private CybersourceDecisionManager cybersourceDecisionManager;
+
     private String fraudServiceResult;
 
     private InAuth inAuth;
 
     private MicrosoftFraudResults microsoftFraudProtection;
+
+    /**
+     * This object contains the results of the Cybersource Decision Manager assessment. Cybersource is a fraud detection tool leveraging data networks, configurable rules, intelligence, and device fingerprinting to identify risky transactions.
+     */
+    public CybersourceDecisionManager getCybersourceDecisionManager() {
+        return cybersourceDecisionManager;
+    }
+
+    /**
+     * This object contains the results of the Cybersource Decision Manager assessment. Cybersource is a fraud detection tool leveraging data networks, configurable rules, intelligence, and device fingerprinting to identify risky transactions.
+     */
+    public void setCybersourceDecisionManager(CybersourceDecisionManager value) {
+        this.cybersourceDecisionManager = value;
+    }
 
     /**
      * Results from the fraud prevention check. Possible values are:
