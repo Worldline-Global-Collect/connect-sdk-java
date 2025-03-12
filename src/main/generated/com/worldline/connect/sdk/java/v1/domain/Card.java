@@ -26,14 +26,32 @@ public class Card extends CardWithoutCvv {
     }
 
     /**
-     * The first 2 digits of the card's PIN code. May be optionally submitted for South Korean cards (paymentProductIds 180, 181, 182, 183, 184, 185 and 186). Submitting this property may improve your authorization rate.
+     * The first 2 digits of the card's PIN code. May be optionally submitted for the following payment products:
+     * <ul class="paragraph-width"><li>BC Card (paymentProductId 180)</li>
+     * <li>Hana Card (paymentProductId 181)</li>
+     * <li>Hyundai Card (paymentProductId 182)</li>
+     * <li>KB Card (paymentProductId 183)</li>
+     * <li>Lotte Card (paymentProductId 184)</li>
+     * <li>NH Card (paymentProductId 185)</li>
+     * <li>Samsung Card (paymentProductId 186)</li>
+     * <li>Shinhan Card (paymentProductId 187)</li></ul>
+     * Submitting this property may improve your authorization rate.
      */
     public String getPartialPin() {
         return partialPin;
     }
 
     /**
-     * The first 2 digits of the card's PIN code. May be optionally submitted for South Korean cards (paymentProductIds 180, 181, 182, 183, 184, 185 and 186). Submitting this property may improve your authorization rate.
+     * The first 2 digits of the card's PIN code. May be optionally submitted for the following payment products:
+     * <ul class="paragraph-width"><li>BC Card (paymentProductId 180)</li>
+     * <li>Hana Card (paymentProductId 181)</li>
+     * <li>Hyundai Card (paymentProductId 182)</li>
+     * <li>KB Card (paymentProductId 183)</li>
+     * <li>Lotte Card (paymentProductId 184)</li>
+     * <li>NH Card (paymentProductId 185)</li>
+     * <li>Samsung Card (paymentProductId 186)</li>
+     * <li>Shinhan Card (paymentProductId 187)</li></ul>
+     * Submitting this property may improve your authorization rate.
      */
     public void setPartialPin(String value) {
         this.partialPin = value;

@@ -18,7 +18,11 @@ public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecif
 
     private String initialSchemeTransactionId;
 
+    private NetworkTokenData networkTokenData;
+
     private Boolean networkTokenUsed;
+
+    private String paymentAccountReference;
 
     private String schemeTransactionId;
 
@@ -83,6 +87,20 @@ public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecif
     }
 
     /**
+     * Object holding data that describes a network token.
+     */
+    public NetworkTokenData getNetworkTokenData() {
+        return networkTokenData;
+    }
+
+    /**
+     * Object holding data that describes a network token.
+     */
+    public void setNetworkTokenData(NetworkTokenData value) {
+        this.networkTokenData = value;
+    }
+
+    /**
      * Indicates if a network token was used during the payment.
      */
     public Boolean getNetworkTokenUsed() {
@@ -94,6 +112,20 @@ public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecif
      */
     public void setNetworkTokenUsed(Boolean value) {
         this.networkTokenUsed = value;
+    }
+
+    /**
+     * A unique reference to the primary account number. Payment Account Reference provides a consolidated view of transactions associated with a PAN and its affiliated tokens, making it easier to identify customers and their associated transactions across payment channels.
+     */
+    public String getPaymentAccountReference() {
+        return paymentAccountReference;
+    }
+
+    /**
+     * A unique reference to the primary account number. Payment Account Reference provides a consolidated view of transactions associated with a PAN and its affiliated tokens, making it easier to identify customers and their associated transactions across payment channels.
+     */
+    public void setPaymentAccountReference(String value) {
+        this.paymentAccountReference = value;
     }
 
     /**
