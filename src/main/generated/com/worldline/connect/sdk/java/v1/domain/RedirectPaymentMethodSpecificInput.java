@@ -13,6 +13,8 @@ public class RedirectPaymentMethodSpecificInput extends AbstractRedirectPaymentM
 
     private RedirectPaymentProduct809SpecificInput paymentProduct809SpecificInput;
 
+    private RedirectPaymentProduct838SpecificInput paymentProduct838SpecificInput;
+
     private RedirectPaymentProduct840SpecificInput paymentProduct840SpecificInput;
 
     private RedirectPaymentProduct861SpecificInput paymentProduct861SpecificInput;
@@ -71,6 +73,20 @@ public class RedirectPaymentMethodSpecificInput extends AbstractRedirectPaymentM
      */
     public void setPaymentProduct809SpecificInput(RedirectPaymentProduct809SpecificInput value) {
         this.paymentProduct809SpecificInput = value;
+    }
+
+    /**
+     * Object containing specific input required for Klarna payments (Payment product ID 838)
+     */
+    public RedirectPaymentProduct838SpecificInput getPaymentProduct838SpecificInput() {
+        return paymentProduct838SpecificInput;
+    }
+
+    /**
+     * Object containing specific input required for Klarna payments (Payment product ID 838)
+     */
+    public void setPaymentProduct838SpecificInput(RedirectPaymentProduct838SpecificInput value) {
+        this.paymentProduct838SpecificInput = value;
     }
 
     /**

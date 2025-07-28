@@ -14,11 +14,15 @@ public class Shipping {
 
     private String addressIndicator;
 
+    private String carrier;
+
     private String comments;
 
     private String emailAddress;
 
     private String firstUsageDate;
+
+    private String instructions;
 
     private Boolean isFirstUsage;
 
@@ -71,6 +75,20 @@ public class Shipping {
     }
 
     /**
+     * Indicates the carrier that will deliver the products.
+     */
+    public String getCarrier() {
+        return carrier;
+    }
+
+    /**
+     * Indicates the carrier that will deliver the products.
+     */
+    public void setCarrier(String value) {
+        this.carrier = value;
+    }
+
+    /**
      * Comments included during shipping
      */
     public String getComments() {
@@ -110,6 +128,20 @@ public class Shipping {
      */
     public void setFirstUsageDate(String value) {
         this.firstUsageDate = value;
+    }
+
+    /**
+     * <p>The delivery instructions or preferences for the shipment. The instructions that informed the delivery carrier about handling requirements, delivery methods, and any special considerations to ensure successful delivery. </p>Possible values:<ul> <li>signature-required = A signature is required upon delivery.</li><li>identification-required = Recipient needs to provide identification.</li><li>contactless-delivery = Delivery should be contactless.</li><li>leave-at-door = Leave the package at the recipient's door.</li><li>leave-at-curb = Leave the package at the curbside.</li><li>leave-with-neighbor = Leave the package with a neighbor.</li><li>express = Expedite the delivery process.</li><li>tracked = The delivery is tracked with real-time updates.</li><li>untracked = The delivery is untracked, with no real-time updates.</li></ul>
+     */
+    public String getInstructions() {
+        return instructions;
+    }
+
+    /**
+     * <p>The delivery instructions or preferences for the shipment. The instructions that informed the delivery carrier about handling requirements, delivery methods, and any special considerations to ensure successful delivery. </p>Possible values:<ul> <li>signature-required = A signature is required upon delivery.</li><li>identification-required = Recipient needs to provide identification.</li><li>contactless-delivery = Delivery should be contactless.</li><li>leave-at-door = Leave the package at the recipient's door.</li><li>leave-at-curb = Leave the package at the curbside.</li><li>leave-with-neighbor = Leave the package with a neighbor.</li><li>express = Expedite the delivery process.</li><li>tracked = The delivery is tracked with real-time updates.</li><li>untracked = The delivery is untracked, with no real-time updates.</li></ul>
+     */
+    public void setInstructions(String value) {
+        this.instructions = value;
     }
 
     /**

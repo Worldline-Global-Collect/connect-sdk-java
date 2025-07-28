@@ -11,6 +11,8 @@ public class CapturePaymentRequest {
 
     private Boolean isFinal;
 
+    private CapturePaymentOrder order;
+
     /**
      * Here you can specify the amount that you want to capture (specified in cents, where single digit currencies are presumed to have 2 digits).<br>
      * The amount can be lower than the amount that was authorized, but not higher.<br>
@@ -45,5 +47,19 @@ public class CapturePaymentRequest {
      */
     public void setIsFinal(Boolean value) {
         this.isFinal = value;
+    }
+
+    /**
+     * Order object containing order related data
+     */
+    public CapturePaymentOrder getOrder() {
+        return order;
+    }
+
+    /**
+     * Order object containing order related data
+     */
+    public void setOrder(CapturePaymentOrder value) {
+        this.order = value;
     }
 }

@@ -7,6 +7,8 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class PaymentReferences {
 
+    private String merchantCaptureReference;
+
     private Long merchantOrderId;
 
     private String merchantReference;
@@ -20,6 +22,20 @@ public class PaymentReferences {
     private String providerReference;
 
     private String referenceOrigPayment;
+
+    /**
+     * Your unique reference of the capture that is also returned in our report files. This is almost always used for your reconciliation of our report files.
+     */
+    public String getMerchantCaptureReference() {
+        return merchantCaptureReference;
+    }
+
+    /**
+     * Your unique reference of the capture that is also returned in our report files. This is almost always used for your reconciliation of our report files.
+     */
+    public void setMerchantCaptureReference(String value) {
+        this.merchantCaptureReference = value;
+    }
 
     /**
      * Your order ID for this transaction that is also returned in our report files

@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import com.worldline.connect.sdk.java.Client;
@@ -21,6 +22,7 @@ class RiskAssessmentsTest extends ItTest {
      * Smoke test for risk assessments service.
      */
     @Test
+    @Disabled("Risk assessments are not available for pre-prod sandbox accounts")
     void test() throws URISyntaxException, IOException {
         RiskAssessmentBankAccount body = new RiskAssessmentBankAccount();
 

@@ -28,46 +28,28 @@ public class Capture extends AbstractOrderStatus {
     }
 
     /**
-     * Current high-level status of the payment in a human-readable form. Possible values are :
-     * <ul class="paragraph-width">
-     * <li>CAPTURE_REQUESTED - The transaction is in the queue to be captured.
-     * <li>CAPTURED - The transaction has been captured and we have received online confirmation.
-     * <li>CANCELLED - You have cancelled the transaction.
-     * <li>REJECTED_CAPTURE - We or one of our downstream acquirers/providers have rejected the capture request.
-     * <li>REVERSED - The transaction has been reversed.
-     * </ul><br>
-     * Please see <a href="https://apireference.connect.worldline-solutions.com/s2sapi/v1/en_US/java/statuses.html">Statuses</a> for a full overview of possible values.
+     * Current high-level status of the captures in a human-readable form. Possible values are:<ul class="paragraph-width"><li>CREATED - The capture has been created on our side</li><li>CAPTURE_REQUESTED - The transaction is in the queue to be captured</li><li>CAPTURED - The transaction has been captured and we have received online confirmation</li><li>PAID - We have matched the incoming funds to the transaction</li><li>CANCELLED - You have cancelled the capture</li><li>REJECTED_CAPTURE - The capture has been rejected</li><li>REVERSED - The capture has been reversed</li><li>CHARGEBACK_NOTIFICATION - We have received a notification of chargeback and this status informs you that your account will be debited for a particular transaction</li><li>CHARGEBACKED - The transaction has been chargebacked</li></ul><br>Please see <a href="https://apireference.connect.worldline-solutions.com/s2sapi/v1/en_US/java/statuses.html">Statuses</a> for a full overview of possible values.
      */
     public String getStatus() {
         return status;
     }
 
     /**
-     * Current high-level status of the payment in a human-readable form. Possible values are :
-     * <ul class="paragraph-width">
-     * <li>CAPTURE_REQUESTED - The transaction is in the queue to be captured.
-     * <li>CAPTURED - The transaction has been captured and we have received online confirmation.
-     * <li>CANCELLED - You have cancelled the transaction.
-     * <li>REJECTED_CAPTURE - We or one of our downstream acquirers/providers have rejected the capture request.
-     * <li>REVERSED - The transaction has been reversed.
-     * </ul><br>
-     * Please see <a href="https://apireference.connect.worldline-solutions.com/s2sapi/v1/en_US/java/statuses.html">Statuses</a> for a full overview of possible values.
+     * Current high-level status of the captures in a human-readable form. Possible values are:<ul class="paragraph-width"><li>CREATED - The capture has been created on our side</li><li>CAPTURE_REQUESTED - The transaction is in the queue to be captured</li><li>CAPTURED - The transaction has been captured and we have received online confirmation</li><li>PAID - We have matched the incoming funds to the transaction</li><li>CANCELLED - You have cancelled the capture</li><li>REJECTED_CAPTURE - The capture has been rejected</li><li>REVERSED - The capture has been reversed</li><li>CHARGEBACK_NOTIFICATION - We have received a notification of chargeback and this status informs you that your account will be debited for a particular transaction</li><li>CHARGEBACKED - The transaction has been chargebacked</li></ul><br>Please see <a href="https://apireference.connect.worldline-solutions.com/s2sapi/v1/en_US/java/statuses.html">Statuses</a> for a full overview of possible values.
      */
     public void setStatus(String value) {
         this.status = value;
     }
 
     /**
-     * This object has the numeric representation of the current capture status, timestamp of last status change and performable action on the current payment resource.
-     * In case of failed payments and negative scenarios, detailed error information is listed.
+     * This object has the numeric representation of the current capture status, timestamp of last status change and performable action on the current capture resource. In case of failed captures and negative scenarios, detailed error information is listed.
      */
     public CaptureStatusOutput getStatusOutput() {
         return statusOutput;
     }
 
     /**
-     * This object has the numeric representation of the current capture status, timestamp of last status change and performable action on the current payment resource.
-     * In case of failed payments and negative scenarios, detailed error information is listed.
+     * This object has the numeric representation of the current capture status, timestamp of last status change and performable action on the current capture resource. In case of failed captures and negative scenarios, detailed error information is listed.
      */
     public void setStatusOutput(CaptureStatusOutput value) {
         this.statusOutput = value;

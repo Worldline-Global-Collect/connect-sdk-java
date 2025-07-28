@@ -45,6 +45,7 @@ public class AccountFundingRecipient {
      * <li>iban = International Bank Account Number, is a standard international numbering system for identifying bank accounts.
      * <li>bicNumber = Bank Identification Code is a number that is used to identify a specific bank.
      * <li>giftCard = Gift card is a type of prepaid card that contains a specific amount of money that can be used at participating stores and marketplaces.
+     * <li>phoneNumber = The phone number of the recipient.
      * </ul>
      */
     public String getAccountNumberType() {
@@ -60,6 +61,7 @@ public class AccountFundingRecipient {
      * <li>iban = International Bank Account Number, is a standard international numbering system for identifying bank accounts.
      * <li>bicNumber = Bank Identification Code is a number that is used to identify a specific bank.
      * <li>giftCard = Gift card is a type of prepaid card that contains a specific amount of money that can be used at participating stores and marketplaces.
+     * <li>phoneNumber = The phone number of the recipient.
      * </ul>
      */
     public void setAccountNumberType(String value) {

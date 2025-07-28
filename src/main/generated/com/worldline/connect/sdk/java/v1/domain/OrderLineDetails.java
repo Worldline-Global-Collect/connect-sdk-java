@@ -19,6 +19,8 @@ public class OrderLineDetails {
 
     private String productCode;
 
+    private String productImageUrl;
+
     private String productName;
 
     private Long productPrice;
@@ -26,6 +28,8 @@ public class OrderLineDetails {
     private String productSku;
 
     private String productType;
+
+    private String productUrl;
 
     private Long quantity;
 
@@ -120,6 +124,20 @@ public class OrderLineDetails {
     }
 
     /**
+     * The URL of the image of the purchased product.
+     */
+    public String getProductImageUrl() {
+        return productImageUrl;
+    }
+
+    /**
+     * The URL of the image of the purchased product.
+     */
+    public void setProductImageUrl(String value) {
+        this.productImageUrl = value;
+    }
+
+    /**
      * The name of the product. The '+' character is not allowed in this property for transactions that are processed by TechProcess Payment Platform.
      */
     public String getProductName() {
@@ -175,6 +193,20 @@ public class OrderLineDetails {
      */
     public void setProductType(String value) {
         this.productType = value;
+    }
+
+    /**
+     * The URL of the product page on your website.
+     */
+    public String getProductUrl() {
+        return productUrl;
+    }
+
+    /**
+     * The URL of the product page on your website.
+     */
+    public void setProductUrl(String value) {
+        this.productUrl = value;
     }
 
     /**

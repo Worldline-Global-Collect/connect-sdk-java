@@ -7,7 +7,12 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 import java.util.List;
 
+/**
+ * This object has the numeric representation of the current capture status, timestamp of last status change and performable action on the current capture resource. In case of failed captures and negative scenarios, detailed error information is listed.
+ */
 public class CaptureStatusOutput {
+
+    private Boolean isRefundable;
 
     private Boolean isRetriable;
 
@@ -15,8 +20,30 @@ public class CaptureStatusOutput {
 
     private Integer statusCode;
 
+    private String statusCodeChangeDateTime;
+
     /**
-     * Flag indicating whether a rejected payment may be retried by the merchant without incurring a fee 
+     * Flag indicating if a capture can be refunded 
+     * <ul class="paragraph-width"><li>true
+     * <li>false
+     * </ul>
+     */
+    public Boolean getIsRefundable() {
+        return isRefundable;
+    }
+
+    /**
+     * Flag indicating if a capture can be refunded 
+     * <ul class="paragraph-width"><li>true
+     * <li>false
+     * </ul>
+     */
+    public void setIsRefundable(Boolean value) {
+        this.isRefundable = value;
+    }
+
+    /**
+     * Flag indicating whether a rejected capture may be retried by you without incurring a fee 
      * <ul class="paragraph-width"><li>true
      * <li>false
      * </ul>
@@ -26,7 +53,7 @@ public class CaptureStatusOutput {
     }
 
     /**
-     * Flag indicating whether a rejected payment may be retried by the merchant without incurring a fee 
+     * Flag indicating whether a rejected capture may be retried by you without incurring a fee 
      * <ul class="paragraph-width"><li>true
      * <li>false
      * </ul>
@@ -61,5 +88,21 @@ public class CaptureStatusOutput {
      */
     public void setStatusCode(Integer value) {
         this.statusCode = value;
+    }
+
+    /**
+     * Date and time of capture<br>
+     *  Format: YYYYMMDDHH24MISS
+     */
+    public String getStatusCodeChangeDateTime() {
+        return statusCodeChangeDateTime;
+    }
+
+    /**
+     * Date and time of capture<br>
+     *  Format: YYYYMMDDHH24MISS
+     */
+    public void setStatusCodeChangeDateTime(String value) {
+        this.statusCodeChangeDateTime = value;
     }
 }

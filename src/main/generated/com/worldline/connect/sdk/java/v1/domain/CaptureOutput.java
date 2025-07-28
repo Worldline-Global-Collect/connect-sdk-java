@@ -17,14 +17,6 @@ public class CaptureOutput extends OrderOutput {
 
     private CashPaymentMethodSpecificOutput cashPaymentMethodSpecificOutput;
 
-    private NonSepaDirectDebitPaymentMethodSpecificOutput directDebitPaymentMethodSpecificOutput;
-
-    private EInvoicePaymentMethodSpecificOutput eInvoicePaymentMethodSpecificOutput;
-
-    private InvoicePaymentMethodSpecificOutput invoicePaymentMethodSpecificOutput;
-
-    private MobilePaymentMethodSpecificOutput mobilePaymentMethodSpecificOutput;
-
     private String paymentMethod;
 
     private RedirectPaymentMethodSpecificOutput redirectPaymentMethodSpecificOutput;
@@ -101,62 +93,6 @@ public class CaptureOutput extends OrderOutput {
      */
     public void setCashPaymentMethodSpecificOutput(CashPaymentMethodSpecificOutput value) {
         this.cashPaymentMethodSpecificOutput = value;
-    }
-
-    /**
-     * Object containing the non SEPA direct debit payment method details
-     */
-    public NonSepaDirectDebitPaymentMethodSpecificOutput getDirectDebitPaymentMethodSpecificOutput() {
-        return directDebitPaymentMethodSpecificOutput;
-    }
-
-    /**
-     * Object containing the non SEPA direct debit payment method details
-     */
-    public void setDirectDebitPaymentMethodSpecificOutput(NonSepaDirectDebitPaymentMethodSpecificOutput value) {
-        this.directDebitPaymentMethodSpecificOutput = value;
-    }
-
-    /**
-     * Object containing the e-invoice payment method details
-     */
-    public EInvoicePaymentMethodSpecificOutput getEInvoicePaymentMethodSpecificOutput() {
-        return eInvoicePaymentMethodSpecificOutput;
-    }
-
-    /**
-     * Object containing the e-invoice payment method details
-     */
-    public void setEInvoicePaymentMethodSpecificOutput(EInvoicePaymentMethodSpecificOutput value) {
-        this.eInvoicePaymentMethodSpecificOutput = value;
-    }
-
-    /**
-     * Object containing the invoice payment method details
-     */
-    public InvoicePaymentMethodSpecificOutput getInvoicePaymentMethodSpecificOutput() {
-        return invoicePaymentMethodSpecificOutput;
-    }
-
-    /**
-     * Object containing the invoice payment method details
-     */
-    public void setInvoicePaymentMethodSpecificOutput(InvoicePaymentMethodSpecificOutput value) {
-        this.invoicePaymentMethodSpecificOutput = value;
-    }
-
-    /**
-     * Object containing the mobile payment method details
-     */
-    public MobilePaymentMethodSpecificOutput getMobilePaymentMethodSpecificOutput() {
-        return mobilePaymentMethodSpecificOutput;
-    }
-
-    /**
-     * Object containing the mobile payment method details
-     */
-    public void setMobilePaymentMethodSpecificOutput(MobilePaymentMethodSpecificOutput value) {
-        this.mobilePaymentMethodSpecificOutput = value;
     }
 
     /**
