@@ -23,6 +23,8 @@ public class RedirectPaymentMethodSpecificOutput extends AbstractPaymentMethodSp
 
     private PaymentProduct840SpecificOutput paymentProduct840SpecificOutput;
 
+    private PaymentProduct866SpecificOutput paymentProduct866SpecificOutput;
+
     private String token;
 
     /**
@@ -135,6 +137,20 @@ public class RedirectPaymentMethodSpecificOutput extends AbstractPaymentMethodSp
      */
     public void setPaymentProduct840SpecificOutput(PaymentProduct840SpecificOutput value) {
         this.paymentProduct840SpecificOutput = value;
+    }
+
+    /**
+     * Alipay+ (payment product 866) specific details
+     */
+    public PaymentProduct866SpecificOutput getPaymentProduct866SpecificOutput() {
+        return paymentProduct866SpecificOutput;
+    }
+
+    /**
+     * Alipay+ (payment product 866) specific details
+     */
+    public void setPaymentProduct866SpecificOutput(PaymentProduct866SpecificOutput value) {
+        this.paymentProduct866SpecificOutput = value;
     }
 
     /**
