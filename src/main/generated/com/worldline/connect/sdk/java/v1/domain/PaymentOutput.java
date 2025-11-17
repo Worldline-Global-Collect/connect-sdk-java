@@ -5,9 +5,19 @@
 
 package com.worldline.connect.sdk.java.v1.domain;
 
+import java.util.List;
+
 public class PaymentOutput extends OrderOutput {
 
+    private Long amountCaptureRequested;
+
+    private Long amountCaptured;
+
     private Long amountPaid;
+
+    private Long amountRefundRequested;
+
+    private Long amountRefunded;
 
     private Long amountReversed;
 
@@ -25,6 +35,8 @@ public class PaymentOutput extends OrderOutput {
 
     private MobilePaymentMethodSpecificOutput mobilePaymentMethodSpecificOutput;
 
+    private List<PaymentOperation> operations;
+
     private String paymentMethod;
 
     private RedirectPaymentMethodSpecificOutput redirectPaymentMethodSpecificOutput;
@@ -32,6 +44,34 @@ public class PaymentOutput extends OrderOutput {
     private String reversalReason;
 
     private SepaDirectDebitPaymentMethodSpecificOutput sepaDirectDebitPaymentMethodSpecificOutput;
+
+    /**
+     * Amount that has been requested to be captured.
+     */
+    public Long getAmountCaptureRequested() {
+        return amountCaptureRequested;
+    }
+
+    /**
+     * Amount that has been requested to be captured.
+     */
+    public void setAmountCaptureRequested(Long value) {
+        this.amountCaptureRequested = value;
+    }
+
+    /**
+     * Amount that has been captured.
+     */
+    public Long getAmountCaptured() {
+        return amountCaptured;
+    }
+
+    /**
+     * Amount that has been captured.
+     */
+    public void setAmountCaptured(Long value) {
+        this.amountCaptured = value;
+    }
 
     /**
      * Amount that has been paid
@@ -45,6 +85,34 @@ public class PaymentOutput extends OrderOutput {
      */
     public void setAmountPaid(Long value) {
         this.amountPaid = value;
+    }
+
+    /**
+     * Amount that has been requested to be refunded.
+     */
+    public Long getAmountRefundRequested() {
+        return amountRefundRequested;
+    }
+
+    /**
+     * Amount that has been requested to be refunded.
+     */
+    public void setAmountRefundRequested(Long value) {
+        this.amountRefundRequested = value;
+    }
+
+    /**
+     * Amount that has been refunded.
+     */
+    public Long getAmountRefunded() {
+        return amountRefunded;
+    }
+
+    /**
+     * Amount that has been refunded.
+     */
+    public void setAmountRefunded(Long value) {
+        this.amountRefunded = value;
     }
 
     /**
@@ -157,6 +225,20 @@ public class PaymentOutput extends OrderOutput {
      */
     public void setMobilePaymentMethodSpecificOutput(MobilePaymentMethodSpecificOutput value) {
         this.mobilePaymentMethodSpecificOutput = value;
+    }
+
+    /**
+     * An object array containing information of captures and refunds.
+     */
+    public List<PaymentOperation> getOperations() {
+        return operations;
+    }
+
+    /**
+     * An object array containing information of captures and refunds.
+     */
+    public void setOperations(List<PaymentOperation> value) {
+        this.operations = value;
     }
 
     /**

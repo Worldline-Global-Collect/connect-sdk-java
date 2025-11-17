@@ -170,6 +170,7 @@ public class PaymentsClient extends ApiResource {
      * - <a href="https://apireference.connect.worldline-solutions.com/s2sapi/v1/en_US/java/payments/get.html">Get payment</a>
      *
      * @param paymentId String
+     * @param query GetPaymentParams
      * @return PaymentResponse
      * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
      * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
@@ -180,8 +181,8 @@ public class PaymentsClient extends ApiResource {
      *            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)
      * @throws ApiException if the Worldline Global Collect platform returned any other error
      */
-    public PaymentResponse get(String paymentId) {
-        return get(paymentId, null);
+    public PaymentResponse get(String paymentId, GetPaymentParams query) {
+        return get(paymentId, query, null);
     }
 
     /**
@@ -189,6 +190,7 @@ public class PaymentsClient extends ApiResource {
      * - <a href="https://apireference.connect.worldline-solutions.com/s2sapi/v1/en_US/java/payments/get.html">Get payment</a>
      *
      * @param paymentId String
+     * @param query GetPaymentParams
      * @param context CallContext
      * @return PaymentResponse
      * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
@@ -201,7 +203,7 @@ public class PaymentsClient extends ApiResource {
      *            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)
      * @throws ApiException if the Worldline Global Collect platform returned any other error
      */
-    public PaymentResponse get(String paymentId, CallContext context) {
+    public PaymentResponse get(String paymentId, GetPaymentParams query, CallContext context) {
         Map<String, String> pathContext = new TreeMap<>();
         pathContext.put("paymentId", paymentId);
         String uri = instantiateUri("/v1/{merchantId}/payments/{paymentId}", pathContext);
@@ -209,7 +211,7 @@ public class PaymentsClient extends ApiResource {
             return communicator.get(
                     uri,
                     getClientHeaders(),
-                    null,
+                    query,
                     PaymentResponse.class,
                     context);
         } catch (ResponseException e) {

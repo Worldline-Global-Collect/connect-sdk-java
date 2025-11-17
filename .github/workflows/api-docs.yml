@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           path: code
           persist-credentials: false
       - name: Setup Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '8'
           distribution: 'temurin'
@@ -26,7 +26,7 @@ jobs:
         run: mvn javadoc:javadoc -Dnotimestamp
         working-directory: code
       - name: Checkout pages
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: gh-pages
           path: pages
@@ -38,7 +38,7 @@ jobs:
           touch .nojekyll
 
           mkdir -p "apidocs/$SDK_VERSION_FOLDER"
-          rsync --quiet --archive --checksum --delete --exclude .git ../code/target/site/apidocs/ "apidocs/$SDK_VERSION_FOLDER/"
+          rsync --quiet --archive --checksum --delete --exclude .git ../code/target/reports/apidocs/ "apidocs/$SDK_VERSION_FOLDER/"
           if [ -e apidocs/latest ]; then rm -r apidocs/latest; fi
           pushd apidocs && ln -s "$SDK_VERSION_FOLDER" latest && popd
 

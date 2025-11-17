@@ -9,6 +9,8 @@ public class WebhooksEvent {
 
     private String apiVersion;
 
+    private CaptureResponse capture;
+
     private String created;
 
     private DisputeResponse dispute;
@@ -33,6 +35,14 @@ public class WebhooksEvent {
 
     public void setApiVersion(String value) {
         this.apiVersion = value;
+    }
+
+    public CaptureResponse getCapture() {
+        return capture;
+    }
+
+    public void setCapture(CaptureResponse value) {
+        this.capture = value;
     }
 
     public String getCreated() {

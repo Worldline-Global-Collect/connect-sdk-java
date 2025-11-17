@@ -3,7 +3,7 @@
  * https://apireference.connect.worldline-solutions.com/
  */
 
-package com.worldline.connect.sdk.java.v1.merchant.payments;
+package com.worldline.connect.sdk.java.v1.merchant.captures;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -12,17 +12,27 @@ import java.net.URL;
 import com.worldline.connect.sdk.java.Client;
 import com.worldline.connect.sdk.java.CommunicatorConfiguration;
 import com.worldline.connect.sdk.java.Factory;
-import com.worldline.connect.sdk.java.v1.domain.PaymentResponse;
+import com.worldline.connect.sdk.java.v1.domain.AmountOfMoney;
+import com.worldline.connect.sdk.java.v1.domain.CreateDisputeRequest;
+import com.worldline.connect.sdk.java.v1.domain.DisputeResponse;
 
-public class GetPaymentExample {
+public class CreateCaptureDisputeExample {
 
     @SuppressWarnings("unused")
     public void example() throws URISyntaxException, IOException {
         try (Client client = getClient()) {
-            GetPaymentParams query = new GetPaymentParams();
-            query.setReturnOperations(true);
+            AmountOfMoney amountOfMoney = new AmountOfMoney();
+            amountOfMoney.setAmount(1234L);
+            amountOfMoney.setCurrencyCode("USD");
 
-            PaymentResponse response = client.v1().merchant("merchantId").payments().get("paymentId", query);
+            CreateDisputeRequest body = new CreateDisputeRequest();
+            body.setAmountOfMoney(amountOfMoney);
+            body.setContactPerson("Wile Coyote");
+            body.setEmailAddress("wile.e.coyote@acmelabs.com");
+            body.setReplyTo("r.runner@acmelabs.com");
+            body.setRequestMessage("This is the message from the merchant to GlobalCollect. It is a a freeform text field.");
+
+            DisputeResponse response = client.v1().merchant("merchantId").captures().dispute("captureId", body);
         }
     }
 

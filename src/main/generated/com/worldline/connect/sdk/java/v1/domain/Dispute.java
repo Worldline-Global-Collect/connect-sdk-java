@@ -7,6 +7,8 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class Dispute {
 
+    private String captureId;
+
     private DisputeOutput disputeOutput;
 
     private String id;
@@ -16,6 +18,20 @@ public class Dispute {
     private String status;
 
     private DisputeStatusOutput statusOutput;
+
+    /**
+     * The ID of the capture that is being disputed.
+     */
+    public String getCaptureId() {
+        return captureId;
+    }
+
+    /**
+     * The ID of the capture that is being disputed.
+     */
+    public void setCaptureId(String value) {
+        this.captureId = value;
+    }
 
     /**
      * This property contains the creationDetails and default information regarding a dispute.

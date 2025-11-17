@@ -47,14 +47,14 @@ public class ExternalCardholderAuthenticationData {
     }
 
     /**
-     * Exemption code from Carte Bancaire (130) (unknown possible values so far -free format).
+     * When you request an exemptions via your non-Worldline 3D Secure provider successfully, you need to provide in this property the exemption that was granted, in combination with all 3DS results given by issuer.<br>Possible values:<ul><li>transaction-risk-analysis - You have determined that this transaction is of low risk and are willing to take the liability. Please note that your fraud rate needs to stay below thresholds to allow your use of this exemption.</li><li>low-value - The value of the transaction is below 30 EUR. Please note that the issuer will still require every 5th low-value transaction pithing 24 hours to be strongly authenticated. The issuer will also keep track of the cumulative amount authorized on the card. When this exceeds 100 EUR strong customer authentication is also required.</li><li>whitelist - You have been whitelisted by the customer at the issuer.</li></ul>
      */
     public String getAppliedExemption() {
         return appliedExemption;
     }
 
     /**
-     * Exemption code from Carte Bancaire (130) (unknown possible values so far -free format).
+     * When you request an exemptions via your non-Worldline 3D Secure provider successfully, you need to provide in this property the exemption that was granted, in combination with all 3DS results given by issuer.<br>Possible values:<ul><li>transaction-risk-analysis - You have determined that this transaction is of low risk and are willing to take the liability. Please note that your fraud rate needs to stay below thresholds to allow your use of this exemption.</li><li>low-value - The value of the transaction is below 30 EUR. Please note that the issuer will still require every 5th low-value transaction pithing 24 hours to be strongly authenticated. The issuer will also keep track of the cumulative amount authorized on the card. When this exceeds 100 EUR strong customer authentication is also required.</li><li>whitelist - You have been whitelisted by the customer at the issuer.</li></ul>
      */
     public void setAppliedExemption(String value) {
         this.appliedExemption = value;
@@ -154,6 +154,10 @@ public class ExternalCardholderAuthenticationData {
      * <li>1.0.2
      * <li>2.1.0
      * <li>2.2.0
+     * <li>2.3
+     * <li>2.3.0
+     * <li>2.3.1
+     * <li>2.3.1.1
      * </ul>
      */
     public String getThreeDSecureVersion() {
@@ -168,6 +172,10 @@ public class ExternalCardholderAuthenticationData {
      * <li>1.0.2
      * <li>2.1.0
      * <li>2.2.0
+     * <li>2.3
+     * <li>2.3.0
+     * <li>2.3.1
+     * <li>2.3.1.1
      * </ul>
      */
     public void setThreeDSecureVersion(String value) {
