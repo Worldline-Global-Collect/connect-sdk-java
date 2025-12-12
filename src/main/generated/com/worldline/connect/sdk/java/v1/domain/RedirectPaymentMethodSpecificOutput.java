@@ -19,8 +19,6 @@ public class RedirectPaymentMethodSpecificOutput extends AbstractPaymentMethodSp
 
     private PaymentProduct806SpecificOutput paymentProduct806SpecificOutput;
 
-    private PaymentProduct836SpecificOutput paymentProduct836SpecificOutput;
-
     private PaymentProduct840SpecificOutput paymentProduct840SpecificOutput;
 
     private PaymentProduct866SpecificOutput paymentProduct866SpecificOutput;
@@ -109,20 +107,6 @@ public class RedirectPaymentMethodSpecificOutput extends AbstractPaymentMethodSp
      */
     public void setPaymentProduct806SpecificOutput(PaymentProduct806SpecificOutput value) {
         this.paymentProduct806SpecificOutput = value;
-    }
-
-    /**
-     * Sofort (payment product 836) specific details
-     */
-    public PaymentProduct836SpecificOutput getPaymentProduct836SpecificOutput() {
-        return paymentProduct836SpecificOutput;
-    }
-
-    /**
-     * Sofort (payment product 836) specific details
-     */
-    public void setPaymentProduct836SpecificOutput(PaymentProduct836SpecificOutput value) {
-        this.paymentProduct836SpecificOutput = value;
     }
 
     /**

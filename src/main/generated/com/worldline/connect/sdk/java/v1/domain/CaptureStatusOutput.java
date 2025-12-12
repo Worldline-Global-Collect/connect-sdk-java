@@ -12,6 +12,8 @@ import java.util.List;
  */
 public class CaptureStatusOutput {
 
+    private Boolean isFinal;
+
     private Boolean isRefundable;
 
     private Boolean isRetriable;
@@ -21,6 +23,20 @@ public class CaptureStatusOutput {
     private Integer statusCode;
 
     private String statusCodeChangeDateTime;
+
+    /**
+     * This property indicates whether this is the final capture of this transaction.
+     */
+    public Boolean getIsFinal() {
+        return isFinal;
+    }
+
+    /**
+     * This property indicates whether this is the final capture of this transaction.
+     */
+    public void setIsFinal(Boolean value) {
+        this.isFinal = value;
+    }
 
     /**
      * Flag indicating if a capture can be refunded 

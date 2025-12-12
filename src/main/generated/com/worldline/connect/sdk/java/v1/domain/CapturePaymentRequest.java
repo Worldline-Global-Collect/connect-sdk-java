@@ -17,7 +17,8 @@ public class CapturePaymentRequest {
      * Here you can specify the amount that you want to capture (specified in cents, where single digit currencies are presumed to have 2 digits).<br>
      * The amount can be lower than the amount that was authorized, but not higher.<br>
      * If left empty, the full amount will be captured and the request will be final.<br>
-     * If the full amount is captured, the request will also be final.
+     * If the full amount is captured, the request will also be final.<br>
+     * On the GlobalCollect Payment Platform value must be greater than zero.
      */
     public Long getAmount() {
         return amount;
@@ -27,7 +28,8 @@ public class CapturePaymentRequest {
      * Here you can specify the amount that you want to capture (specified in cents, where single digit currencies are presumed to have 2 digits).<br>
      * The amount can be lower than the amount that was authorized, but not higher.<br>
      * If left empty, the full amount will be captured and the request will be final.<br>
-     * If the full amount is captured, the request will also be final.
+     * If the full amount is captured, the request will also be final.<br>
+     * On the GlobalCollect Payment Platform value must be greater than zero.
      */
     public void setAmount(Long value) {
         this.amount = value;

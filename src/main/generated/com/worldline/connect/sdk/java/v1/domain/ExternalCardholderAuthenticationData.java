@@ -103,14 +103,30 @@ public class ExternalCardholderAuthenticationData {
     }
 
     /**
-     * Electronic Commerce Indicator provides authentication validation results returned after AUTHENTICATIONVALIDATION
-     * <ul class="paragraph-width"><li>0 = No authentication, Internet (no liability shift, not a 3D Secure transaction)
-     * <li>1 = Authentication attempted (MasterCard)
-     * <li>2 = Successful authentication (MasterCard)
-     * <li>5 = Successful authentication (Visa, Diners Club, Amex)
-     * <li>6 = Authentication attempted (Visa, Diners Club, Amex)
-     * <li>7 = No authentication, Internet (no liability shift, not a 3D Secure transaction)
-     * <li>(empty) = Not checked or not enrolled
+     * <p><strong>ECI (Electronic Commerce Indicator)</strong> indicates the level of authentication obtained for a transaction. Possible values for each level of authentication are listed below.</p>
+     *  
+     * <ul class="paragraph-width">
+     * <li style="margin-bottom: 10px"><strong>For ValidationResult = Y (Successful Authentication)</strong>
+     * <ul>
+     * <li>MC &amp;#8594; ECI 02</li>
+     * <li>Visa, CB, Amex, JCB, DCI, UPI &amp;#8594; ECI 05</li>
+     * </ul>
+     * </li>
+     * <li style="margin-bottom: 10px"><strong>For ValidationResult = A (Attempt)</strong>
+     * <ul>
+     * <li>MC &amp;#8594; ECI 01</li>
+     * <li>Visa, Amex, JCB, DCI, UPI &amp;#8594; ECI 06</li>
+     * <li>CB &amp;#8594; 06 (or null from ACS - populate as 06)</li>
+     * </ul>
+     * </li>
+     * <li><strong>For ValidationResult = I (Exemption Accepted)</strong>- for all below values, ECI must be sent with the resulted CAVV
+     * <ul>
+     * <li>MC &amp;#8594; ECI 06 (PSD2 Exemption)</li>
+     * <li>Visa &amp;#8594; ECI 07 (TRA Exemption) or ECI 05 (other exemptions)</li>
+     * <li>CB, JCB, UPI &amp;#8594; ECI 05</li>
+     * <li>Amex, DCI &amp;#8594; ECI 05/0</li>
+     * </ul>
+     * </li>
      * </ul>
      */
     public Integer getEci() {
@@ -118,14 +134,30 @@ public class ExternalCardholderAuthenticationData {
     }
 
     /**
-     * Electronic Commerce Indicator provides authentication validation results returned after AUTHENTICATIONVALIDATION
-     * <ul class="paragraph-width"><li>0 = No authentication, Internet (no liability shift, not a 3D Secure transaction)
-     * <li>1 = Authentication attempted (MasterCard)
-     * <li>2 = Successful authentication (MasterCard)
-     * <li>5 = Successful authentication (Visa, Diners Club, Amex)
-     * <li>6 = Authentication attempted (Visa, Diners Club, Amex)
-     * <li>7 = No authentication, Internet (no liability shift, not a 3D Secure transaction)
-     * <li>(empty) = Not checked or not enrolled
+     * <p><strong>ECI (Electronic Commerce Indicator)</strong> indicates the level of authentication obtained for a transaction. Possible values for each level of authentication are listed below.</p>
+     *  
+     * <ul class="paragraph-width">
+     * <li style="margin-bottom: 10px"><strong>For ValidationResult = Y (Successful Authentication)</strong>
+     * <ul>
+     * <li>MC &amp;#8594; ECI 02</li>
+     * <li>Visa, CB, Amex, JCB, DCI, UPI &amp;#8594; ECI 05</li>
+     * </ul>
+     * </li>
+     * <li style="margin-bottom: 10px"><strong>For ValidationResult = A (Attempt)</strong>
+     * <ul>
+     * <li>MC &amp;#8594; ECI 01</li>
+     * <li>Visa, Amex, JCB, DCI, UPI &amp;#8594; ECI 06</li>
+     * <li>CB &amp;#8594; 06 (or null from ACS - populate as 06)</li>
+     * </ul>
+     * </li>
+     * <li><strong>For ValidationResult = I (Exemption Accepted)</strong>- for all below values, ECI must be sent with the resulted CAVV
+     * <ul>
+     * <li>MC &amp;#8594; ECI 06 (PSD2 Exemption)</li>
+     * <li>Visa &amp;#8594; ECI 07 (TRA Exemption) or ECI 05 (other exemptions)</li>
+     * <li>CB, JCB, UPI &amp;#8594; ECI 05</li>
+     * <li>Amex, DCI &amp;#8594; ECI 05/0</li>
+     * </ul>
+     * </li>
      * </ul>
      */
     public void setEci(Integer value) {
@@ -203,14 +235,24 @@ public class ExternalCardholderAuthenticationData {
     }
 
     /**
-     * The 3D Secure authentication result from your 3D Secure provider.
+     * The transaction status given by the 3D Secure provider. Possible values below: 
+     * <ul>
+     * <li>Y: Cardholder successfully authenticated</li>
+     * <li>A: Authentication attempt (merchant attempted, issuer not participating or ACS unavailable)</li>
+     * <li>I: Informational only (SCA exemption accepted)</li>
+     * </ul>
      */
     public String getValidationResult() {
         return validationResult;
     }
 
     /**
-     * The 3D Secure authentication result from your 3D Secure provider.
+     * The transaction status given by the 3D Secure provider. Possible values below: 
+     * <ul>
+     * <li>Y: Cardholder successfully authenticated</li>
+     * <li>A: Authentication attempt (merchant attempted, issuer not participating or ACS unavailable)</li>
+     * <li>I: Informational only (SCA exemption accepted)</li>
+     * </ul>
      */
     public void setValidationResult(String value) {
         this.validationResult = value;

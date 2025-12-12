@@ -15,6 +15,8 @@ public class RefundRequest {
 
     private String refundDate;
 
+    private String refundReason;
+
     private RefundReferences refundReferences;
 
     /**
@@ -73,6 +75,36 @@ public class RefundRequest {
      */
     public void setRefundDate(String value) {
         this.refundDate = value;
+    }
+
+    /**
+     * <p>The reasons for the refund request. Possible values are:</p>
+     *  <ul> 
+     * <li>RETURN</li> 
+     * <li>CORRECTION</li>
+     *  <li>PRE_DISPUTE</li>
+     *  <li>SUBSCRIPTION</li>
+     *  <li>SERVICE_LATE_CANCELLATION</li>
+     *  <li>OTHER</li>
+     * </ul>
+     */
+    public String getRefundReason() {
+        return refundReason;
+    }
+
+    /**
+     * <p>The reasons for the refund request. Possible values are:</p>
+     *  <ul> 
+     * <li>RETURN</li> 
+     * <li>CORRECTION</li>
+     *  <li>PRE_DISPUTE</li>
+     *  <li>SUBSCRIPTION</li>
+     *  <li>SERVICE_LATE_CANCELLATION</li>
+     *  <li>OTHER</li>
+     * </ul>
+     */
+    public void setRefundReason(String value) {
+        this.refundReason = value;
     }
 
     /**
