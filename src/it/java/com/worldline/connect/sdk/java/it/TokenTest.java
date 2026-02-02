@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import org.junit.jupiter.api.Test;
 
@@ -24,6 +26,8 @@ class TokenTest extends ItTest {
      */
     @Test
     void test() throws URISyntaxException, IOException {
+        String expiryDate = DateTimeFormatter.ofPattern("MMyy").format(LocalDate.now().plusMonths(6));
+
         CreateTokenRequest createTokenRequest = new CreateTokenRequest();
         createTokenRequest.setPaymentProductId(1);
         TokenCard card = new TokenCard();
@@ -40,7 +44,7 @@ class TokenTest extends ItTest {
         cardWithoutCvv.setCardholderName("Jan");
         cardWithoutCvv.setIssueNumber("12");
         cardWithoutCvv.setCardNumber("4567350000427977");
-        cardWithoutCvv.setExpiryDate("1225");
+        cardWithoutCvv.setExpiryDate(expiryDate);
 
         try (Client client = getClient()) {
             CreateTokenResponse createTokenResponse = client.v1().merchant(getMerchantId()).tokens().create(createTokenRequest);
