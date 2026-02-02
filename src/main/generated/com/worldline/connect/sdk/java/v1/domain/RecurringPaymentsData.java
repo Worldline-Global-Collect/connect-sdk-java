@@ -10,9 +10,43 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class RecurringPaymentsData {
 
+    private PaymentProduct302SpecificInput paymentProduct302SpecificInput;
+
+    private String recurringEndDate;
+
     private Frequency recurringInterval;
 
+    private String recurringStartDate;
+
     private TrialInformation trialInformation;
+
+    /**
+     * The object containing information specific to Apple Pay
+     */
+    public PaymentProduct302SpecificInput getPaymentProduct302SpecificInput() {
+        return paymentProduct302SpecificInput;
+    }
+
+    /**
+     * The object containing information specific to Apple Pay
+     */
+    public void setPaymentProduct302SpecificInput(PaymentProduct302SpecificInput value) {
+        this.paymentProduct302SpecificInput = value;
+    }
+
+    /**
+     * The date that the recurring payment ends in YYYYMMDD format.
+     */
+    public String getRecurringEndDate() {
+        return recurringEndDate;
+    }
+
+    /**
+     * The date that the recurring payment ends in YYYYMMDD format.
+     */
+    public void setRecurringEndDate(String value) {
+        this.recurringEndDate = value;
+    }
 
     /**
      * The object containing the frequency and interval between recurring payments.
@@ -26,6 +60,20 @@ public class RecurringPaymentsData {
      */
     public void setRecurringInterval(Frequency value) {
         this.recurringInterval = value;
+    }
+
+    /**
+     * The date that the first recurring payment starts in YYYYMMDD format.
+     */
+    public String getRecurringStartDate() {
+        return recurringStartDate;
+    }
+
+    /**
+     * The date that the first recurring payment starts in YYYYMMDD format.
+     */
+    public void setRecurringStartDate(String value) {
+        this.recurringStartDate = value;
     }
 
     /**

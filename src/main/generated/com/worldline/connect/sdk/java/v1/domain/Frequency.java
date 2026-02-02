@@ -15,14 +15,16 @@ public class Frequency {
     private Integer intervalFrequency;
 
     /**
-     * The interval between recurring payments specified as days, weeks, quarters, or years.
+     * <p>The interval between recurring payments specified as days, weeks, quarters, or years.</p> 
+     *  <p>Allowed values:</p> <ul><li>days</li><li>weeks</li><li>months</li><li>quarters</li><li>years</li></ul>
      */
     public String getInterval() {
         return interval;
     }
 
     /**
-     * The interval between recurring payments specified as days, weeks, quarters, or years.
+     * <p>The interval between recurring payments specified as days, weeks, quarters, or years.</p> 
+     *  <p>Allowed values:</p> <ul><li>days</li><li>weeks</li><li>months</li><li>quarters</li><li>years</li></ul>
      */
     public void setInterval(String value) {
         this.interval = value;

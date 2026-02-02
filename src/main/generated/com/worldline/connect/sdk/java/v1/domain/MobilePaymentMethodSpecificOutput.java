@@ -11,11 +11,17 @@ public class MobilePaymentMethodSpecificOutput extends AbstractPaymentMethodSpec
 
     private CardFraudResults fraudResults;
 
+    private String initialSchemeTransactionId;
+
     private String network;
 
     private MobilePaymentData paymentData;
 
+    private String schemeTransactionId;
+
     private ThreeDSecureResults threeDSecureResults;
+
+    private String token;
 
     /**
      * Card Authorization code as returned by the acquirer
@@ -43,6 +49,20 @@ public class MobilePaymentMethodSpecificOutput extends AbstractPaymentMethodSpec
      */
     public void setFraudResults(CardFraudResults value) {
         this.fraudResults = value;
+    }
+
+    /**
+     * The unique scheme transactionId of the initial transaction that was performed with SCA.<br>Should be stored by the merchant to allow it to be submitted in future transactions.
+     */
+    public String getInitialSchemeTransactionId() {
+        return initialSchemeTransactionId;
+    }
+
+    /**
+     * The unique scheme transactionId of the initial transaction that was performed with SCA.<br>Should be stored by the merchant to allow it to be submitted in future transactions.
+     */
+    public void setInitialSchemeTransactionId(String value) {
+        this.initialSchemeTransactionId = value;
     }
 
     /**
@@ -74,6 +94,20 @@ public class MobilePaymentMethodSpecificOutput extends AbstractPaymentMethodSpec
     }
 
     /**
+     * The unique scheme transactionId of this transaction.<br>Should be stored by the merchant to allow it to be submitted in future transactions. Use this value in case the initialSchemeTransactionId property is empty.
+     */
+    public String getSchemeTransactionId() {
+        return schemeTransactionId;
+    }
+
+    /**
+     * The unique scheme transactionId of this transaction.<br>Should be stored by the merchant to allow it to be submitted in future transactions. Use this value in case the initialSchemeTransactionId property is empty.
+     */
+    public void setSchemeTransactionId(String value) {
+        this.schemeTransactionId = value;
+    }
+
+    /**
      * 3D Secure results object
      */
     public ThreeDSecureResults getThreeDSecureResults() {
@@ -85,5 +119,19 @@ public class MobilePaymentMethodSpecificOutput extends AbstractPaymentMethodSpec
      */
     public void setThreeDSecureResults(ThreeDSecureResults value) {
         this.threeDSecureResults = value;
+    }
+
+    /**
+     * If a token was used for or created during the payment, then the ID of that token.
+     */
+    public String getToken() {
+        return token;
+    }
+
+    /**
+     * If a token was used for or created during the payment, then the ID of that token.
+     */
+    public void setToken(String value) {
+        this.token = value;
     }
 }

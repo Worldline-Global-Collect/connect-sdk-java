@@ -16,6 +16,8 @@ public class TrialInformation {
 
     private Boolean isRecurring;
 
+    private String startDate;
+
     private TrialPeriod trialPeriod;
 
     private Frequency trialPeriodRecurring;
@@ -60,6 +62,20 @@ public class TrialInformation {
      */
     public void setIsRecurring(Boolean value) {
         this.isRecurring = value;
+    }
+
+    /**
+     * The date that the trial period starts in YYYYMMDD format.
+     */
+    public String getStartDate() {
+        return startDate;
+    }
+
+    /**
+     * The date that the trial period starts in YYYYMMDD format.
+     */
+    public void setStartDate(String value) {
+        this.startDate = value;
     }
 
     /**

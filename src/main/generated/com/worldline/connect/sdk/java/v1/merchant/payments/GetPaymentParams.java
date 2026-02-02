@@ -20,14 +20,14 @@ public class GetPaymentParams implements ParamRequest {
     private Boolean returnOperations;
 
     /**
-     * If set to true, in the response of this call you will get an array called operations, that will include objects for captures and refunds associated with the given paymentId.
+     * This property only works for the multiple partial captures payments. If set to true, in the response of this call you will get an array called operations, that will include objects for captures and refunds associated with the given paymentId.
      */
     public Boolean getReturnOperations() {
         return returnOperations;
     }
 
     /**
-     * If set to true, in the response of this call you will get an array called operations, that will include objects for captures and refunds associated with the given paymentId.
+     * This property only works for the multiple partial captures payments. If set to true, in the response of this call you will get an array called operations, that will include objects for captures and refunds associated with the given paymentId.
      */
     public void setReturnOperations(Boolean value) {
         this.returnOperations = value;

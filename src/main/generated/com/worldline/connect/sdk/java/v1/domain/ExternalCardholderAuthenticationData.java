@@ -115,6 +115,7 @@ public class ExternalCardholderAuthenticationData {
      * <li style="margin-bottom: 10px"><strong>For ValidationResult = A (Attempt)</strong>
      * <ul>
      * <li>MC &amp;#8594; ECI 01</li>
+     * <li>MC &amp;#8594; ECI 04</li>
      * <li>Visa, Amex, JCB, DCI, UPI &amp;#8594; ECI 06</li>
      * <li>CB &amp;#8594; 06 (or null from ACS - populate as 06)</li>
      * </ul>
@@ -146,6 +147,7 @@ public class ExternalCardholderAuthenticationData {
      * <li style="margin-bottom: 10px"><strong>For ValidationResult = A (Attempt)</strong>
      * <ul>
      * <li>MC &amp;#8594; ECI 01</li>
+     * <li>MC &amp;#8594; ECI 04</li>
      * <li>Visa, Amex, JCB, DCI, UPI &amp;#8594; ECI 06</li>
      * <li>CB &amp;#8594; 06 (or null from ACS - populate as 06)</li>
      * </ul>
