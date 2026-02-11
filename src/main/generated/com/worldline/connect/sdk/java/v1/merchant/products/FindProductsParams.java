@@ -140,6 +140,7 @@ public class FindProductsParams implements ParamRequest {
      * <li>productsWithoutFields - Don't return products that require any additional data to be captured
      * <li>productsWithoutInstructions - Don't return products that show instructions
      * <li>productsWithRedirects - Don't return products that require a redirect to a 3rd party. Note that products that involve potential redirects related to 3D Secure authentication are not hidden
+     * <li>clickToPayConfigurationFields - Don't return configuration parameters for each scheme supporting Click to Pay
      * </ul>
      */
     public List<String> getHide() {
@@ -155,6 +156,7 @@ public class FindProductsParams implements ParamRequest {
      * <li>productsWithoutFields - Don't return products that require any additional data to be captured
      * <li>productsWithoutInstructions - Don't return products that show instructions
      * <li>productsWithRedirects - Don't return products that require a redirect to a 3rd party. Note that products that involve potential redirects related to 3D Secure authentication are not hidden
+     * <li>clickToPayConfigurationFields - Don't return configuration parameters for each scheme supporting Click to Pay
      * </ul>
      */
     public void setHide(List<String> value) {
@@ -170,6 +172,7 @@ public class FindProductsParams implements ParamRequest {
      * <li>productsWithoutFields - Don't return products that require any additional data to be captured
      * <li>productsWithoutInstructions - Don't return products that show instructions
      * <li>productsWithRedirects - Don't return products that require a redirect to a 3rd party. Note that products that involve potential redirects related to 3D Secure authentication are not hidden
+     * <li>clickToPayConfigurationFields - Don't return configuration parameters for each scheme supporting Click to Pay
      * </ul>
      */
     public void addHide(String value) {

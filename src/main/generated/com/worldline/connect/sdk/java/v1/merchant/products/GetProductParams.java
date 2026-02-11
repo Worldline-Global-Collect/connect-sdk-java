@@ -139,6 +139,7 @@ public class GetProductParams implements ParamRequest {
      * <li>fields - Don't return any data on fields of the payment product
      * <li>accountsOnFile - Don't return any accounts on file data
      * <li>translations - Don't return any label texts associated with the payment products
+     * <li>clickToPayConfigurationFields - Don't return configuration parameters for each scheme supporting Click to Pay
      * </ul>
      */
     public List<String> getHide() {
@@ -151,6 +152,7 @@ public class GetProductParams implements ParamRequest {
      * <li>fields - Don't return any data on fields of the payment product
      * <li>accountsOnFile - Don't return any accounts on file data
      * <li>translations - Don't return any label texts associated with the payment products
+     * <li>clickToPayConfigurationFields - Don't return configuration parameters for each scheme supporting Click to Pay
      * </ul>
      */
     public void setHide(List<String> value) {
@@ -163,6 +165,7 @@ public class GetProductParams implements ParamRequest {
      * <li>fields - Don't return any data on fields of the payment product
      * <li>accountsOnFile - Don't return any accounts on file data
      * <li>translations - Don't return any label texts associated with the payment products
+     * <li>clickToPayConfigurationFields - Don't return configuration parameters for each scheme supporting Click to Pay
      * </ul>
      */
     public void addHide(String value) {

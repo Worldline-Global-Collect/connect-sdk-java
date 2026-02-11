@@ -14,7 +14,11 @@ public class PaymentProductGroup {
 
     private List<AccountOnFile> accountsOnFile;
 
+    private Boolean allowsClickToPay;
+
     private Boolean allowsInstallments;
+
+    private ClickToPayConfiguration clickToPayConfiguration;
 
     private Boolean deviceFingerprintEnabled;
 
@@ -39,6 +43,28 @@ public class PaymentProductGroup {
     }
 
     /**
+     * Indicates if the product supports Click to Pay: 
+     * <ul>
+     * <li>true - This payment supports Click to Pay</li>
+     * <li>false - This payment does not support Click to Pay</li>
+     * </ul>
+     */
+    public Boolean getAllowsClickToPay() {
+        return allowsClickToPay;
+    }
+
+    /**
+     * Indicates if the product supports Click to Pay: 
+     * <ul>
+     * <li>true - This payment supports Click to Pay</li>
+     * <li>false - This payment does not support Click to Pay</li>
+     * </ul>
+     */
+    public void setAllowsClickToPay(Boolean value) {
+        this.allowsClickToPay = value;
+    }
+
+    /**
      * Indicates if the product supports installments
      * <ul class="paragraph-width">
      * <li>true - This payment supports installments
@@ -58,6 +84,20 @@ public class PaymentProductGroup {
      */
     public void setAllowsInstallments(Boolean value) {
         this.allowsInstallments = value;
+    }
+
+    /**
+     * Object containing the configuration parameters for each scheme supporting Click to Pay for the provided country and currency combination. These parameters initialize SRC System SDK for the scheme. This object is only returned for card products with allowsClickToPay set to true.
+     */
+    public ClickToPayConfiguration getClickToPayConfiguration() {
+        return clickToPayConfiguration;
+    }
+
+    /**
+     * Object containing the configuration parameters for each scheme supporting Click to Pay for the provided country and currency combination. These parameters initialize SRC System SDK for the scheme. This object is only returned for card products with allowsClickToPay set to true.
+     */
+    public void setClickToPayConfiguration(ClickToPayConfiguration value) {
+        this.clickToPayConfiguration = value;
     }
 
     /**

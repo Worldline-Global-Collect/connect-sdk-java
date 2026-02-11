@@ -12,6 +12,10 @@ public class CashPaymentMethodSpecificInput extends AbstractCashPaymentMethodSpe
 
     private CashPaymentProduct1504SpecificInput paymentProduct1504SpecificInput;
 
+    private CashPaymentProduct1506SpecificInput paymentProduct1506SpecificInput;
+
+    private CashPaymentProduct1508SpecificInput paymentProduct1508SpecificInput;
+
     private CashPaymentProduct1521SpecificInput paymentProduct1521SpecificInput;
 
     private CashPaymentProduct1522SpecificInput paymentProduct1522SpecificInput;
@@ -54,6 +58,34 @@ public class CashPaymentMethodSpecificInput extends AbstractCashPaymentMethodSpe
      */
     public void setPaymentProduct1504SpecificInput(CashPaymentProduct1504SpecificInput value) {
         this.paymentProduct1504SpecificInput = value;
+    }
+
+    /**
+     * Object that holds the specific data for Pago Facil in Argentina (payment product 1506)
+     */
+    public CashPaymentProduct1506SpecificInput getPaymentProduct1506SpecificInput() {
+        return paymentProduct1506SpecificInput;
+    }
+
+    /**
+     * Object that holds the specific data for Pago Facil in Argentina (payment product 1506)
+     */
+    public void setPaymentProduct1506SpecificInput(CashPaymentProduct1506SpecificInput value) {
+        this.paymentProduct1506SpecificInput = value;
+    }
+
+    /**
+     * Object that holds the specific data for Rapipago in Argentina (payment product 1508)
+     */
+    public CashPaymentProduct1508SpecificInput getPaymentProduct1508SpecificInput() {
+        return paymentProduct1508SpecificInput;
+    }
+
+    /**
+     * Object that holds the specific data for Rapipago in Argentina (payment product 1508)
+     */
+    public void setPaymentProduct1508SpecificInput(CashPaymentProduct1508SpecificInput value) {
+        this.paymentProduct1508SpecificInput = value;
     }
 
     /**

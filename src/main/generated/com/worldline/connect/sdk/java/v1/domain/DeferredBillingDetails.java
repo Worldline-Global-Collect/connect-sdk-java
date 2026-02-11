@@ -10,11 +10,27 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class DeferredBillingDetails extends BaseBillingDetails {
 
+    private Long deferredPaymentAmount;
+
     private String deferredPaymentDate;
 
     private String freeCancellationDate;
 
     private String freeCancellationDateTimeZone;
+
+    /**
+     * Amount in cents and always having 2 decimals. The amount to be paid on the deferred payment date. If omitted, defaults to the total order amount.
+     */
+    public Long getDeferredPaymentAmount() {
+        return deferredPaymentAmount;
+    }
+
+    /**
+     * Amount in cents and always having 2 decimals. The amount to be paid on the deferred payment date. If omitted, defaults to the total order amount.
+     */
+    public void setDeferredPaymentAmount(Long value) {
+        this.deferredPaymentAmount = value;
+    }
 
     /**
      * The date of the payment in in YYYYMMDD format that will take place in the future.

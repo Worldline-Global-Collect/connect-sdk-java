@@ -13,6 +13,8 @@ public class PaymentProduct {
 
     private String acquirerCountry;
 
+    private Boolean allowsClickToPay;
+
     private Boolean allowsInstallments;
 
     private Boolean allowsRecurring;
@@ -24,6 +26,8 @@ public class PaymentProduct {
     private Boolean autoTokenized;
 
     private Boolean canBeIframed;
+
+    private ClickToPayConfiguration clickToPayConfiguration;
 
     private Boolean deviceFingerprintEnabled;
 
@@ -85,6 +89,28 @@ public class PaymentProduct {
      */
     public void setAcquirerCountry(String value) {
         this.acquirerCountry = value;
+    }
+
+    /**
+     * Indicates if the product supports Click to Pay: 
+     * <ul>
+     * <li>true - This payment supports Click to Pay</li>
+     * <li>false - This payment does not support Click to Pay</li>
+     * </ul>
+     */
+    public Boolean getAllowsClickToPay() {
+        return allowsClickToPay;
+    }
+
+    /**
+     * Indicates if the product supports Click to Pay: 
+     * <ul>
+     * <li>true - This payment supports Click to Pay</li>
+     * <li>false - This payment does not support Click to Pay</li>
+     * </ul>
+     */
+    public void setAllowsClickToPay(Boolean value) {
+        this.allowsClickToPay = value;
     }
 
     /**
@@ -209,6 +235,20 @@ public class PaymentProduct {
      */
     public void setCanBeIframed(Boolean value) {
         this.canBeIframed = value;
+    }
+
+    /**
+     * Object containing the configuration parameters for each scheme supporting Click to Pay for the provided country and currency combination. These parameters initialize SRC System SDK for the scheme. This object is only returned for card products with allowsClickToPay set to true.
+     */
+    public ClickToPayConfiguration getClickToPayConfiguration() {
+        return clickToPayConfiguration;
+    }
+
+    /**
+     * Object containing the configuration parameters for each scheme supporting Click to Pay for the provided country and currency combination. These parameters initialize SRC System SDK for the scheme. This object is only returned for card products with allowsClickToPay set to true.
+     */
+    public void setClickToPayConfiguration(ClickToPayConfiguration value) {
+        this.clickToPayConfiguration = value;
     }
 
     /**

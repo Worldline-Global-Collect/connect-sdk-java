@@ -23,19 +23,13 @@ public class OrderReferences {
      * Descriptive text that is used towards to customer, either during an online checkout at a third party and/or on the statement of the customer. For card transactions this is usually referred to as a Soft Descriptor. The maximum allowed length varies per card acquirer:
      * <ul class="paragraph-width"><li>AIB - 22 characters
      * <li>American Express - 25 characters
-     * <li>Atos Origin BNP - 15 characters
-     * <li>Barclays - 25 characters
-     * <li>Catella - 22 characters
-     * <li>CBA - 20 characters
-     * <li>Elavon - 25 characters
-     * <li>First Data - 25 characters
+     * <li>Bambora - 22 characters
+     * <li>First Data APAC and AUS - 25 characters
+     * <li>Chase - not supported
      * <li>INICIS (INIPAY) - 22-30 characters
-     * <li>JCB - 25 characters
-     * <li>Merchant Solutions - 22-25 characters
-     * <li>Payvision (EU &amp; HK) - 25 characters
-     * <li>SEB Euroline - 22 characters
-     * <li>Sub1 Argentina - 15 characters
-     * <li>Wells Fargo - 25 characters
+     * <li>Lidio - 30 characters
+     * <li>Worldline TAP UK - 22 characters
+     * <li>Worldline TAP EU - 22 characters
      * </ul>
      * Note that we advise you to use 22 characters as the max length as beyond this our experience is that issuers will start to truncate. We currently also only allow per API call overrides for AIB and Barclays<br>
      * For alternative payment products the maximum allowed length varies per payment product:
@@ -44,12 +38,9 @@ public class OrderReferences {
      * <li>802 Nordea ePayment Finland - 234 characters
      * <li>809 iDeal - 32 characters
      * <li>840 PayPal - 127 characters
-     * <li>841 WebMoney - 175 characters
-     * <li>849 Yandex - 64 characters
      * <li>861 Alipay - 256 characters
      * <li>863 WeChat Pay - 32 characters
-     * <li>880 BOKU - 20 characters
-     * <li>8580 Qiwi - 255 characters
+     * <li>900 Wero - 50 characters
      * <li>1504 Konbini - 80 characters
      * </ul>
      * All other payment products don't support a descriptor.
@@ -62,19 +53,13 @@ public class OrderReferences {
      * Descriptive text that is used towards to customer, either during an online checkout at a third party and/or on the statement of the customer. For card transactions this is usually referred to as a Soft Descriptor. The maximum allowed length varies per card acquirer:
      * <ul class="paragraph-width"><li>AIB - 22 characters
      * <li>American Express - 25 characters
-     * <li>Atos Origin BNP - 15 characters
-     * <li>Barclays - 25 characters
-     * <li>Catella - 22 characters
-     * <li>CBA - 20 characters
-     * <li>Elavon - 25 characters
-     * <li>First Data - 25 characters
+     * <li>Bambora - 22 characters
+     * <li>First Data APAC and AUS - 25 characters
+     * <li>Chase - not supported
      * <li>INICIS (INIPAY) - 22-30 characters
-     * <li>JCB - 25 characters
-     * <li>Merchant Solutions - 22-25 characters
-     * <li>Payvision (EU &amp; HK) - 25 characters
-     * <li>SEB Euroline - 22 characters
-     * <li>Sub1 Argentina - 15 characters
-     * <li>Wells Fargo - 25 characters
+     * <li>Lidio - 30 characters
+     * <li>Worldline TAP UK - 22 characters
+     * <li>Worldline TAP EU - 22 characters
      * </ul>
      * Note that we advise you to use 22 characters as the max length as beyond this our experience is that issuers will start to truncate. We currently also only allow per API call overrides for AIB and Barclays<br>
      * For alternative payment products the maximum allowed length varies per payment product:
@@ -83,12 +68,9 @@ public class OrderReferences {
      * <li>802 Nordea ePayment Finland - 234 characters
      * <li>809 iDeal - 32 characters
      * <li>840 PayPal - 127 characters
-     * <li>841 WebMoney - 175 characters
-     * <li>849 Yandex - 64 characters
      * <li>861 Alipay - 256 characters
      * <li>863 WeChat Pay - 32 characters
-     * <li>880 BOKU - 20 characters
-     * <li>8580 Qiwi - 255 characters
+     * <li>900 Wero - 50 characters
      * <li>1504 Konbini - 80 characters
      * </ul>
      * All other payment products don't support a descriptor.
