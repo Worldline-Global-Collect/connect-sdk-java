@@ -6,7 +6,7 @@
 package com.worldline.connect.sdk.java.v1.domain;
 
 /**
- * Please find below specific input fields for payment product 809 (iDeal)
+ * Please find below specific input fields for payment product 809 (iDEAL | Wero)
  */
 public class RedirectPaymentProduct809SpecificInput {
 

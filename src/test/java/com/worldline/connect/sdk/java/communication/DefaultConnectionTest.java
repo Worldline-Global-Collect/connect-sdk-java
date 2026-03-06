@@ -969,9 +969,7 @@ class DefaultConnectionTest {
             Matcher requestMatcher = requestPattern.matcher(normalizeLineBreaks(requestMessage));
             assertTrue(requestMatcher.matches(), "request message '" + requestMessage + "' does not match pattern " + requestPattern);
 
-            String requestId = requestMatcher.group(1);
-
-            return requestId;
+            return requestMatcher.group(1);
         }
 
         private String assertResponse(String responseMessage, String resourcePrefix) throws IOException {

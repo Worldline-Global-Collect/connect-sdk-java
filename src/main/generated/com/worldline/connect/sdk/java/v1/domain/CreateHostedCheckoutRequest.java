@@ -156,14 +156,14 @@ public class CreateHostedCheckoutRequest {
     }
 
     /**
-     * Object containing the specific input details for payments that involve redirects to 3rd parties to complete, like iDeal and PayPal
+     * Object containing the specific input details for payments that involve redirects to 3rd parties to complete, like iDEAL | Wero and PayPal
      */
     public RedirectPaymentMethodSpecificInputBase getRedirectPaymentMethodSpecificInput() {
         return redirectPaymentMethodSpecificInput;
     }
 
     /**
-     * Object containing the specific input details for payments that involve redirects to 3rd parties to complete, like iDeal and PayPal
+     * Object containing the specific input details for payments that involve redirects to 3rd parties to complete, like iDEAL | Wero and PayPal
      */
     public void setRedirectPaymentMethodSpecificInput(RedirectPaymentMethodSpecificInputBase value) {
         this.redirectPaymentMethodSpecificInput = value;

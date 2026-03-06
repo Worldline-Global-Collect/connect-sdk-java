@@ -62,14 +62,14 @@ public class RedirectPaymentMethodSpecificInput extends AbstractRedirectPaymentM
     }
 
     /**
-     * Object containing specific input required for Dutch iDeal payments (Payment product ID 809)
+     * Object containing specific input required for Dutch iDEAL | Wero payments (Payment product ID 809)
      */
     public RedirectPaymentProduct809SpecificInput getPaymentProduct809SpecificInput() {
         return paymentProduct809SpecificInput;
     }
 
     /**
-     * Object containing specific input required for Dutch iDeal payments (Payment product ID 809)
+     * Object containing specific input required for Dutch iDEAL | Wero payments (Payment product ID 809)
      */
     public void setPaymentProduct809SpecificInput(RedirectPaymentProduct809SpecificInput value) {
         this.paymentProduct809SpecificInput = value;

@@ -202,14 +202,14 @@ public class CreatePaymentRequest {
     }
 
     /**
-     * Object containing the specific input details for payments that involve redirects to 3rd parties to complete, like iDeal and PayPal
+     * Object containing the specific input details for payments that involve redirects to 3rd parties to complete, like iDEAL | Wero and PayPal
      */
     public RedirectPaymentMethodSpecificInput getRedirectPaymentMethodSpecificInput() {
         return redirectPaymentMethodSpecificInput;
     }
 
     /**
-     * Object containing the specific input details for payments that involve redirects to 3rd parties to complete, like iDeal and PayPal
+     * Object containing the specific input details for payments that involve redirects to 3rd parties to complete, like iDEAL | Wero and PayPal
      */
     public void setRedirectPaymentMethodSpecificInput(RedirectPaymentMethodSpecificInput value) {
         this.redirectPaymentMethodSpecificInput = value;

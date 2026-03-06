@@ -36,7 +36,7 @@ public class OrderReferences {
      * <ul class="paragraph-width"><li>402 e-Przelewy - 30 characters
      * <li>404 INICIS - 80 characters
      * <li>802 Nordea ePayment Finland - 234 characters
-     * <li>809 iDeal - 32 characters
+     * <li>809 iDEAL | Wero - 32 characters
      * <li>840 PayPal - 127 characters
      * <li>861 Alipay - 256 characters
      * <li>863 WeChat Pay - 32 characters
@@ -66,7 +66,7 @@ public class OrderReferences {
      * <ul class="paragraph-width"><li>402 e-Przelewy - 30 characters
      * <li>404 INICIS - 80 characters
      * <li>802 Nordea ePayment Finland - 234 characters
-     * <li>809 iDeal - 32 characters
+     * <li>809 iDEAL | Wero - 32 characters
      * <li>840 PayPal - 127 characters
      * <li>861 Alipay - 256 characters
      * <li>863 WeChat Pay - 32 characters

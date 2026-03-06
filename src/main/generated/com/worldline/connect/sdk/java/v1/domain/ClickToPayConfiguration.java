@@ -10,9 +10,25 @@ package com.worldline.connect.sdk.java.v1.domain;
  */
 public class ClickToPayConfiguration {
 
+    private ClickToPayDisplayHints displayHints;
+
     private ClickToPayConfigurationMastercard mastercard;
 
     private ClickToPayConfigurationVisa visa;
+
+    /**
+     * Object containing Click to Pay logo display hints
+     */
+    public ClickToPayDisplayHints getDisplayHints() {
+        return displayHints;
+    }
+
+    /**
+     * Object containing Click to Pay logo display hints
+     */
+    public void setDisplayHints(ClickToPayDisplayHints value) {
+        this.displayHints = value;
+    }
 
     /**
      * Scheme onboarding value returned for the card products supporting Click to Pay with Mastercard.
