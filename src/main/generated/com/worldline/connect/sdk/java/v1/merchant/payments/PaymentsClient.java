@@ -559,6 +559,61 @@ public class PaymentsClient extends ApiResource {
     }
 
     /**
+     * Resource /{merchantId}/payments/{paymentId}/finalizecapture
+     * - <a href="https://apireference.connect.worldline-solutions.com/s2sapi/v1/en_US/java/payments/finalizecapture.html">Finalize capture</a>
+     *
+     * @param paymentId String
+     * @return PaymentResponse
+     * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
+     * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
+     * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
+     *            or there was a conflict (HTTP status code 404, 409 or 410)
+     * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
+     *            the Worldline Global Collect platform was unable to process a message from a downstream partner/acquirer,
+     *            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)
+     * @throws ApiException if the Worldline Global Collect platform returned any other error
+     */
+    public PaymentResponse finalizecapture(String paymentId) {
+        return finalizecapture(paymentId, null);
+    }
+
+    /**
+     * Resource /{merchantId}/payments/{paymentId}/finalizecapture
+     * - <a href="https://apireference.connect.worldline-solutions.com/s2sapi/v1/en_US/java/payments/finalizecapture.html">Finalize capture</a>
+     *
+     * @param paymentId String
+     * @param context CallContext
+     * @return PaymentResponse
+     * @throws IdempotenceException if an idempotent request caused a conflict (HTTP status code 409)
+     * @throws ValidationException if the request was not correct and couldn't be processed (HTTP status code 400)
+     * @throws AuthorizationException if the request was not allowed (HTTP status code 403)
+     * @throws ReferenceException if an object was attempted to be referenced that doesn't exist or has been removed,
+     *            or there was a conflict (HTTP status code 404, 409 or 410)
+     * @throws PlatformException if something went wrong at the Worldline Global Collect platform,
+     *            the Worldline Global Collect platform was unable to process a message from a downstream partner/acquirer,
+     *            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)
+     * @throws ApiException if the Worldline Global Collect platform returned any other error
+     */
+    public PaymentResponse finalizecapture(String paymentId, CallContext context) {
+        Map<String, String> pathContext = new TreeMap<>();
+        pathContext.put("paymentId", paymentId);
+        String uri = instantiateUri("/v1/{merchantId}/payments/{paymentId}/finalizecapture", pathContext);
+        try {
+            return communicator.post(
+                    uri,
+                    getClientHeaders(),
+                    null,
+                    null,
+                    PaymentResponse.class,
+                    context);
+        } catch (ResponseException e) {
+            final Class<?> errorType = ErrorResponse.class;
+            final Object errorObject = communicator.getMarshaller().unmarshal(e.getBody(), errorType);
+            throw EXCEPTION_FACTORY.createException(e.getStatusCode(), e.getBody(), errorObject, context);
+        }
+    }
+
+    /**
      * Resource /{merchantId}/payments/{paymentId}/cancelapproval
      * - <a href="https://apireference.connect.worldline-solutions.com/s2sapi/v1/en_US/java/payments/cancelapproval.html">Undo capture payment</a>
      *

@@ -7,6 +7,8 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class CashPaymentMethodSpecificInput extends AbstractCashPaymentMethodSpecificInput {
 
+    private CashPaymentProduct1502SpecificInput paymentProduct1502SpecificInput;
+
     @SuppressWarnings("deprecation")
     private CashPaymentProduct1503SpecificInput paymentProduct1503SpecificInput;
 
@@ -24,7 +26,23 @@ public class CashPaymentMethodSpecificInput extends AbstractCashPaymentMethodSpe
 
     private CashPaymentProduct1524SpecificInput paymentProduct1524SpecificInput;
 
+    private CashPaymentProduct1525SpecificInput paymentProduct1525SpecificInput;
+
     private CashPaymentProduct1526SpecificInput paymentProduct1526SpecificInput;
+
+    /**
+     * Object that holds the specific data for OXXO Pay in Mexico (payment product 1502)
+     */
+    public CashPaymentProduct1502SpecificInput getPaymentProduct1502SpecificInput() {
+        return paymentProduct1502SpecificInput;
+    }
+
+    /**
+     * Object that holds the specific data for OXXO Pay in Mexico (payment product 1502)
+     */
+    public void setPaymentProduct1502SpecificInput(CashPaymentProduct1502SpecificInput value) {
+        this.paymentProduct1502SpecificInput = value;
+    }
 
     /**
      * Object that holds the specific data for Boleto Bancario in Brazil (payment product 1503)
@@ -142,6 +160,20 @@ public class CashPaymentMethodSpecificInput extends AbstractCashPaymentMethodSpe
      */
     public void setPaymentProduct1524SpecificInput(CashPaymentProduct1524SpecificInput value) {
         this.paymentProduct1524SpecificInput = value;
+    }
+
+    /**
+     * Object that holds the specific data for PagoEfectivo in Peru (payment product 1525)
+     */
+    public CashPaymentProduct1525SpecificInput getPaymentProduct1525SpecificInput() {
+        return paymentProduct1525SpecificInput;
+    }
+
+    /**
+     * Object that holds the specific data for PagoEfectivo in Peru (payment product 1525)
+     */
+    public void setPaymentProduct1525SpecificInput(CashPaymentProduct1525SpecificInput value) {
+        this.paymentProduct1525SpecificInput = value;
     }
 
     /**
