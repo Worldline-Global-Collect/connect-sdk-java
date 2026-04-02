@@ -7,6 +7,8 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class HostedCheckoutSpecificInput {
 
+    private Boolean allowClickToPay;
+
     private Boolean isRecurring;
 
     private String locale;
@@ -26,6 +28,34 @@ public class HostedCheckoutSpecificInput {
     private Boolean validateShoppingCart;
 
     private String variant;
+
+    /**
+     * Controls whether the Click to Pay flow is initiated.
+     *  
+     * <ul>
+     * <li>true: initiate the Click to Pay user experience.</li>
+     * <li>false: do not initiate the Click to Pay user experience.</li>
+     * </ul>
+     *  
+     *  Note: Effective only if you are onboarded to use Click to Pay.
+     */
+    public Boolean getAllowClickToPay() {
+        return allowClickToPay;
+    }
+
+    /**
+     * Controls whether the Click to Pay flow is initiated.
+     *  
+     * <ul>
+     * <li>true: initiate the Click to Pay user experience.</li>
+     * <li>false: do not initiate the Click to Pay user experience.</li>
+     * </ul>
+     *  
+     *  Note: Effective only if you are onboarded to use Click to Pay.
+     */
+    public void setAllowClickToPay(Boolean value) {
+        this.allowClickToPay = value;
+    }
 
     /**
      * <ul class="paragraph-width"><li>true - Only payment products that support recurring payments will be shown. Any transactions created will also be tagged as being a first of a recurring sequence.

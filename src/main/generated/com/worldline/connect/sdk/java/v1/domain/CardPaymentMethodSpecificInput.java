@@ -9,6 +9,8 @@ public class CardPaymentMethodSpecificInput extends AbstractCardPaymentMethodSpe
 
     private Card card;
 
+    private ClickToPayInput clickToPay;
+
     private ExternalCardholderAuthenticationData externalCardholderAuthenticationData;
 
     private Boolean isRecurring;
@@ -33,6 +35,20 @@ public class CardPaymentMethodSpecificInput extends AbstractCardPaymentMethodSpe
      */
     public void setCard(Card value) {
         this.card = value;
+    }
+
+    /**
+     * Object holding data that is required to process card transaction with Click to Pay.
+     */
+    public ClickToPayInput getClickToPay() {
+        return clickToPay;
+    }
+
+    /**
+     * Object holding data that is required to process card transaction with Click to Pay.
+     */
+    public void setClickToPay(ClickToPayInput value) {
+        this.clickToPay = value;
     }
 
     /**

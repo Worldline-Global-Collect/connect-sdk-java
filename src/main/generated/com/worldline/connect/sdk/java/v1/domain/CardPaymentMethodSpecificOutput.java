@@ -14,6 +14,8 @@ public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecif
 
     private CardEssentials card;
 
+    private Boolean clickToPayUsed;
+
     private CardFraudResults fraudResults;
 
     private String initialSchemeTransactionId;
@@ -56,6 +58,20 @@ public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecif
      */
     public void setCard(CardEssentials value) {
         this.card = value;
+    }
+
+    /**
+     * Indicates if a Click to Pay token was used during the payment.
+     */
+    public Boolean getClickToPayUsed() {
+        return clickToPayUsed;
+    }
+
+    /**
+     * Indicates if a Click to Pay token was used during the payment.
+     */
+    public void setClickToPayUsed(Boolean value) {
+        this.clickToPayUsed = value;
     }
 
     /**
