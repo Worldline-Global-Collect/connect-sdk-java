@@ -17,6 +17,8 @@ public class PaymentProduct {
 
     private Boolean allowsInstallments;
 
+    private Boolean allowsMultiplePartialCaptures;
+
     private Boolean allowsRecurring;
 
     private Boolean allowsTokenization;
@@ -133,6 +135,28 @@ public class PaymentProduct {
      */
     public void setAllowsInstallments(Boolean value) {
         this.allowsInstallments = value;
+    }
+
+    /**
+     * Indicates if the payment product supports multiple partial captures
+     * <ul class="paragraph-width">
+     * <li>true - This payment product supports multiple partial captures
+     * <li>false - This payment payment does not support multiple partial captures
+     * </ul>
+     */
+    public Boolean getAllowsMultiplePartialCaptures() {
+        return allowsMultiplePartialCaptures;
+    }
+
+    /**
+     * Indicates if the payment product supports multiple partial captures
+     * <ul class="paragraph-width">
+     * <li>true - This payment product supports multiple partial captures
+     * <li>false - This payment payment does not support multiple partial captures
+     * </ul>
+     */
+    public void setAllowsMultiplePartialCaptures(Boolean value) {
+        this.allowsMultiplePartialCaptures = value;
     }
 
     /**
