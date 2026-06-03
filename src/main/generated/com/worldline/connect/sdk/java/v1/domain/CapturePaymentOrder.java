@@ -11,7 +11,7 @@ public class CapturePaymentOrder {
 
     private CapturePaymentOrderReferences references;
 
-    private Shipping shipping;
+    private CapturePaymentShipping shipping;
 
     /**
      * Object containing additional input on the order
@@ -44,14 +44,14 @@ public class CapturePaymentOrder {
     /**
      * Object containing shipping related data
      */
-    public Shipping getShipping() {
+    public CapturePaymentShipping getShipping() {
         return shipping;
     }
 
     /**
      * Object containing shipping related data
      */
-    public void setShipping(Shipping value) {
+    public void setShipping(CapturePaymentShipping value) {
         this.shipping = value;
     }
 }
