@@ -12,13 +12,31 @@ import java.util.List;
  */
 public class GetIINDetailsResponse {
 
+    private String binProductType;
+
     private List<IINDetail> coBrands;
 
     private String countryCode;
 
     private Boolean isAllowedInContext;
 
+    private String issuerName;
+
     private Integer paymentProductId;
+
+    /**
+     * Indicates the type or segments of consumer's BIN is issued. It helps to offer targeted benefits to the consumers, and helps to request exemption for additional authentications. The possible values are: <ul><li>CONSUMER</li><li>COMMERCIAL</li><li>VIRTUAL</li><li>ALL</li><li>OTHER</li></ul>
+     */
+    public String getBinProductType() {
+        return binProductType;
+    }
+
+    /**
+     * Indicates the type or segments of consumer's BIN is issued. It helps to offer targeted benefits to the consumers, and helps to request exemption for additional authentications. The possible values are: <ul><li>CONSUMER</li><li>COMMERCIAL</li><li>VIRTUAL</li><li>ALL</li><li>OTHER</li></ul>
+     */
+    public void setBinProductType(String value) {
+        this.binProductType = value;
+    }
 
     /**
      * Populated only if the card has multiple brands.
@@ -66,6 +84,20 @@ public class GetIINDetailsResponse {
      */
     public void setIsAllowedInContext(Boolean value) {
         this.isAllowedInContext = value;
+    }
+
+    /**
+     * The name of the card issuer associated with the card.
+     */
+    public String getIssuerName() {
+        return issuerName;
+    }
+
+    /**
+     * The name of the card issuer associated with the card.
+     */
+    public void setIssuerName(String value) {
+        this.issuerName = value;
     }
 
     /**
