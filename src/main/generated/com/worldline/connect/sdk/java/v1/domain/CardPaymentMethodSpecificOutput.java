@@ -24,6 +24,8 @@ public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecif
 
     private Boolean networkTokenUsed;
 
+    private String originalTransactionLinkId;
+
     private String paymentAccountReference;
 
     private String schemeTransactionId;
@@ -31,6 +33,8 @@ public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecif
     private ThreeDSecureResults threeDSecureResults;
 
     private String token;
+
+    private String transactionLinkId;
 
     /**
      * Card Authorization code as returned by the acquirer
@@ -131,6 +135,20 @@ public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecif
     }
 
     /**
+     * The unique Mastercard transactionLinkId of the initial transaction. Strongly advised to be submitted for any merchantInitiated (unscheduledCardOnFileRequestor) or recurring transaction (recurringPaymentSequenceIndicator set to recurring or in case of a last recurring transaction to last).<br><br>If the originalTransactionLinkId is empty, we will, where possible, apply the best available match.
+     */
+    public String getOriginalTransactionLinkId() {
+        return originalTransactionLinkId;
+    }
+
+    /**
+     * The unique Mastercard transactionLinkId of the initial transaction. Strongly advised to be submitted for any merchantInitiated (unscheduledCardOnFileRequestor) or recurring transaction (recurringPaymentSequenceIndicator set to recurring or in case of a last recurring transaction to last).<br><br>If the originalTransactionLinkId is empty, we will, where possible, apply the best available match.
+     */
+    public void setOriginalTransactionLinkId(String value) {
+        this.originalTransactionLinkId = value;
+    }
+
+    /**
      * A unique reference to the primary account number. Payment Account Reference provides a consolidated view of transactions associated with a PAN and its affiliated tokens, making it easier to identify customers and their associated transactions across payment channels.
      */
     public String getPaymentAccountReference() {
@@ -184,5 +202,19 @@ public class CardPaymentMethodSpecificOutput extends AbstractPaymentMethodSpecif
      */
     public void setToken(String value) {
         this.token = value;
+    }
+
+    /**
+     * The unique Mastercard transactionLinkId of this transaction.<br>Should be stored by you for a first cardholderInitiated (unscheduledCardOnFileRequestor) or zero-value authorization transaction.<br><br>Use this value as the originalTransactionLinkId for any subsequent merchantInitiated (unscheduledCardOnFileRequestor) or recurring transaction (recurringPaymentSequenceIndicator set to recurring or in case of a last recurring transaction to last).
+     */
+    public String getTransactionLinkId() {
+        return transactionLinkId;
+    }
+
+    /**
+     * The unique Mastercard transactionLinkId of this transaction.<br>Should be stored by you for a first cardholderInitiated (unscheduledCardOnFileRequestor) or zero-value authorization transaction.<br><br>Use this value as the originalTransactionLinkId for any subsequent merchantInitiated (unscheduledCardOnFileRequestor) or recurring transaction (recurringPaymentSequenceIndicator set to recurring or in case of a last recurring transaction to last).
+     */
+    public void setTransactionLinkId(String value) {
+        this.transactionLinkId = value;
     }
 }

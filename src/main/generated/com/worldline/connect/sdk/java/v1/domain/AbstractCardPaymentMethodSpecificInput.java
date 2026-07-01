@@ -15,6 +15,8 @@ public class AbstractCardPaymentMethodSpecificInput extends AbstractPaymentMetho
 
     private String initialSchemeTransactionId;
 
+    private String originalTransactionLinkId;
+
     private CardRecurrenceDetails recurring;
 
     private String recurringPaymentSequenceIndicator;
@@ -67,6 +69,14 @@ public class AbstractCardPaymentMethodSpecificInput extends AbstractPaymentMetho
 
     public void setInitialSchemeTransactionId(String value) {
         this.initialSchemeTransactionId = value;
+    }
+
+    public String getOriginalTransactionLinkId() {
+        return originalTransactionLinkId;
+    }
+
+    public void setOriginalTransactionLinkId(String value) {
+        this.originalTransactionLinkId = value;
     }
 
     public CardRecurrenceDetails getRecurring() {

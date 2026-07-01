@@ -13,6 +13,8 @@ public class AbstractMobilePaymentMethodSpecificInput extends AbstractPaymentMet
 
     private String initialSchemeTransactionId;
 
+    private String originalTransactionLinkId;
+
     private CardRecurrenceDetails recurring;
 
     private Boolean requiresApproval;
@@ -49,6 +51,14 @@ public class AbstractMobilePaymentMethodSpecificInput extends AbstractPaymentMet
 
     public void setInitialSchemeTransactionId(String value) {
         this.initialSchemeTransactionId = value;
+    }
+
+    public String getOriginalTransactionLinkId() {
+        return originalTransactionLinkId;
+    }
+
+    public void setOriginalTransactionLinkId(String value) {
+        this.originalTransactionLinkId = value;
     }
 
     public CardRecurrenceDetails getRecurring() {

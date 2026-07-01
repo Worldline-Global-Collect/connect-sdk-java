@@ -15,6 +15,8 @@ public class MobilePaymentMethodSpecificOutput extends AbstractPaymentMethodSpec
 
     private String network;
 
+    private String originalTransactionLinkId;
+
     private MobilePaymentData paymentData;
 
     private String schemeTransactionId;
@@ -22,6 +24,8 @@ public class MobilePaymentMethodSpecificOutput extends AbstractPaymentMethodSpec
     private ThreeDSecureResults threeDSecureResults;
 
     private String token;
+
+    private String transactionLinkId;
 
     /**
      * Card Authorization code as returned by the acquirer
@@ -80,6 +84,20 @@ public class MobilePaymentMethodSpecificOutput extends AbstractPaymentMethodSpec
     }
 
     /**
+     * The unique Mastercard transactionLinkId of the initial transaction. Strongly advised to be submitted for any merchantInitiated (unscheduledCardOnFileRequestor) or recurring transaction (recurringPaymentSequenceIndicator set to recurring or in case of a last recurring transaction to last).<br><br>If the originalTransactionLinkId is empty, we will, where possible, apply the best available match.
+     */
+    public String getOriginalTransactionLinkId() {
+        return originalTransactionLinkId;
+    }
+
+    /**
+     * The unique Mastercard transactionLinkId of the initial transaction. Strongly advised to be submitted for any merchantInitiated (unscheduledCardOnFileRequestor) or recurring transaction (recurringPaymentSequenceIndicator set to recurring or in case of a last recurring transaction to last).<br><br>If the originalTransactionLinkId is empty, we will, where possible, apply the best available match.
+     */
+    public void setOriginalTransactionLinkId(String value) {
+        this.originalTransactionLinkId = value;
+    }
+
+    /**
      * Object containing payment details
      */
     public MobilePaymentData getPaymentData() {
@@ -133,5 +151,19 @@ public class MobilePaymentMethodSpecificOutput extends AbstractPaymentMethodSpec
      */
     public void setToken(String value) {
         this.token = value;
+    }
+
+    /**
+     * The unique Mastercard transactionLinkId of this transaction.<br>Should be stored by you for a first cardholderInitiated (unscheduledCardOnFileRequestor) or zero-value authorization transaction.<br><br>Use this value as the originalTransactionLinkId for any subsequent merchantInitiated (unscheduledCardOnFileRequestor) or recurring transaction (recurringPaymentSequenceIndicator set to recurring or in case of a last recurring transaction to last).
+     */
+    public String getTransactionLinkId() {
+        return transactionLinkId;
+    }
+
+    /**
+     * The unique Mastercard transactionLinkId of this transaction.<br>Should be stored by you for a first cardholderInitiated (unscheduledCardOnFileRequestor) or zero-value authorization transaction.<br><br>Use this value as the originalTransactionLinkId for any subsequent merchantInitiated (unscheduledCardOnFileRequestor) or recurring transaction (recurringPaymentSequenceIndicator set to recurring or in case of a last recurring transaction to last).
+     */
+    public void setTransactionLinkId(String value) {
+        this.transactionLinkId = value;
     }
 }
