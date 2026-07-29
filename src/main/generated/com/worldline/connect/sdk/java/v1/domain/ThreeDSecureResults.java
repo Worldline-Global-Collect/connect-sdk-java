@@ -51,14 +51,14 @@ public class ThreeDSecureResults {
     }
 
     /**
-     * Exemption code from Carte Bancaire (130) (unknown possible values so far -free format)
+     * Exemption code from Cartes Bancaires (130) (unknown possible values so far -free format)
      */
     public String getAppliedExemption() {
         return appliedExemption;
     }
 
     /**
-     * Exemption code from Carte Bancaire (130) (unknown possible values so far -free format)
+     * Exemption code from Cartes Bancaires (130) (unknown possible values so far -free format)
      */
     public void setAppliedExemption(String value) {
         this.appliedExemption = value;
@@ -135,14 +135,14 @@ public class ThreeDSecureResults {
     }
 
     /**
-     * Global score calculated by the Carte Bancaire (130) Scoring platform. Possible values from 0 to 99
+     * Global score calculated by the Cartes Bancaires (130) Scoring platform. Possible values from 0 to 99
      */
     public Integer getSchemeRiskScore() {
         return schemeRiskScore;
     }
 
     /**
-     * Global score calculated by the Carte Bancaire (130) Scoring platform. Possible values from 0 to 99
+     * Global score calculated by the Cartes Bancaires (130) Scoring platform. Possible values from 0 to 99
      */
     public void setSchemeRiskScore(Integer value) {
         this.schemeRiskScore = value;

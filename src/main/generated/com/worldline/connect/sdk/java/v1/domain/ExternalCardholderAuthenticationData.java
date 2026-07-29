@@ -167,14 +167,14 @@ public class ExternalCardholderAuthenticationData {
     }
 
     /**
-     * Global score calculated by the Carte Bancaire (130) Scoring platform. Possible values from 0 to 99.
+     * Global score calculated by the Cartes Bancaires (130) Scoring platform. Possible values from 0 to 99.
      */
     public Integer getSchemeRiskScore() {
         return schemeRiskScore;
     }
 
     /**
-     * Global score calculated by the Carte Bancaire (130) Scoring platform. Possible values from 0 to 99.
+     * Global score calculated by the Cartes Bancaires (130) Scoring platform. Possible values from 0 to 99.
      */
     public void setSchemeRiskScore(Integer value) {
         this.schemeRiskScore = value;

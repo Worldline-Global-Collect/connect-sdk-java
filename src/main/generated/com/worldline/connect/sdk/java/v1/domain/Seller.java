@@ -206,6 +206,7 @@ public class Seller {
      * <li>citizen-ship
      * <li>col-identity-card
      * <li>alien-registration
+     * <li>rfc
      * </ul>
      */
     public String getType() {
@@ -229,6 +230,7 @@ public class Seller {
      * <li>citizen-ship
      * <li>col-identity-card
      * <li>alien-registration
+     * <li>rfc
      * </ul>
      */
     public void setType(String value) {

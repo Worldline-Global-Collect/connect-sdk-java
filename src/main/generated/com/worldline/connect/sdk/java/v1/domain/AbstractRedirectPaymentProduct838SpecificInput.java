@@ -7,23 +7,23 @@ package com.worldline.connect.sdk.java.v1.domain;
 
 public class AbstractRedirectPaymentProduct838SpecificInput {
 
-    private String interoperabilityData;
+    private String networkData;
 
-    private String interoperabilityToken;
+    private String networkSessionToken;
 
-    public String getInteroperabilityData() {
-        return interoperabilityData;
+    public String getNetworkData() {
+        return networkData;
     }
 
-    public void setInteroperabilityData(String value) {
-        this.interoperabilityData = value;
+    public void setNetworkData(String value) {
+        this.networkData = value;
     }
 
-    public String getInteroperabilityToken() {
-        return interoperabilityToken;
+    public String getNetworkSessionToken() {
+        return networkSessionToken;
     }
 
-    public void setInteroperabilityToken(String value) {
-        this.interoperabilityToken = value;
+    public void setNetworkSessionToken(String value) {
+        this.networkSessionToken = value;
     }
 }
