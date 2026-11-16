@@ -60,14 +60,14 @@ public class CardPayoutMethodSpecificInput extends AbstractPayoutMethodSpecificI
     }
 
     /**
-     * ID of the token that holds previously stored card data.<br> If both the token and card are provided, then the card takes precedence over the token.
+     * ID of the token that holds previously stored card data.<br> 
      */
     public String getToken() {
         return token;
     }
 
     /**
-     * ID of the token that holds previously stored card data.<br> If both the token and card are provided, then the card takes precedence over the token.
+     * ID of the token that holds previously stored card data.<br> 
      */
     public void setToken(String value) {
         this.token = value;

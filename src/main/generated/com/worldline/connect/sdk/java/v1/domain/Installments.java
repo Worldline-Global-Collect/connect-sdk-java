@@ -125,7 +125,7 @@ public class Installments {
     }
 
     /**
-     * The number of installments in which this transaction will be paid, which can be used for card payments at supported acquirers, or with specific payment products. Only used with some acquirers. In case you send in the details of this object, only the payment products (or  combination of card products and acquirers) that support installments will be shown on the MyCheckout hosted payment pages. If this property is not provided the customer will not see details on the installment plan in a HostedCheckout.<br>
+     * The number of installments in which this transaction will be paid, which can be used for card payments at supported acquirers, or with specific payment products. In case you send in the details of this object, only the payment products (or ) that support installments will be shown on the MyCheckout hosted payment pages.<br>
      * For the payment product IDs BC Card (paymentProductId 8590), Hana Card (paymentProductId 8591), Hyundai Card (paymentProductId 8592), KB Card (paymentProductId 8593), Lotte Card (paymentProductId 8594), NH Card (paymentProductId 8595), Samsung Card (paymentProductId 8596) and Shinhan Card (paymentProductId 8597), there is a maximum of 12 installments.
      */
     public Long getNumberOfInstallments() {
@@ -133,7 +133,7 @@ public class Installments {
     }
 
     /**
-     * The number of installments in which this transaction will be paid, which can be used for card payments at supported acquirers, or with specific payment products. Only used with some acquirers. In case you send in the details of this object, only the payment products (or  combination of card products and acquirers) that support installments will be shown on the MyCheckout hosted payment pages. If this property is not provided the customer will not see details on the installment plan in a HostedCheckout.<br>
+     * The number of installments in which this transaction will be paid, which can be used for card payments at supported acquirers, or with specific payment products. In case you send in the details of this object, only the payment products (or ) that support installments will be shown on the MyCheckout hosted payment pages.<br>
      * For the payment product IDs BC Card (paymentProductId 8590), Hana Card (paymentProductId 8591), Hyundai Card (paymentProductId 8592), KB Card (paymentProductId 8593), Lotte Card (paymentProductId 8594), NH Card (paymentProductId 8595), Samsung Card (paymentProductId 8596) and Shinhan Card (paymentProductId 8597), there is a maximum of 12 installments.
      */
     public void setNumberOfInstallments(Long value) {

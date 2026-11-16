@@ -13,6 +13,7 @@
         <module name="MissingOverride"/>
         <module name="PackageAnnotation"/>
         <module name="SuppressWarnings"/>
+        <module name="SuppressWarningsHolder"/>
 
         <!-- Block Checks -->
         <module name="AvoidNestedBlocks"/>
@@ -198,6 +199,8 @@
         <module name="WhitespaceAround">
             <property name="ignoreEnhancedForColon" value="false"/>
         </module>
+
+        <module name="SuppressionCommentFilter"/>
     </module>
 
     <!-- Miscellaneous -->
@@ -210,10 +213,12 @@
         <property name="eachLine" value="true"/>
     </module>
 
-    <!-- Disable name checks for generated code -->
+    <module name="SuppressWarningsFilter" />
+
+    <!-- Disable name and Javadoc style checks for generated code -->
     <module name="SuppressionSingleFilter">
         <property name="files" value="src[\\/]main[\\/]generated[\\/].*"/>
-        <property name="checks" value="MemberName|MethodName"/>
+        <property name="checks" value="MemberName|MethodName|JavadocStyle"/>
     </module>
 
     <!-- Allow unused variables in examples -->

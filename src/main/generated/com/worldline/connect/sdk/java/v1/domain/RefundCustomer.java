@@ -62,8 +62,9 @@ public class RefundCustomer {
      * <ul class="paragraph-width">
      * <li>Argentina - Consumer (DNI) with a length of 7 or 8 digits
      * <li>Argentina - Company (CUIT) with a length of 11 digits
-     * <li>Brazil - Consumer (CPF) with a length of 11 digits
-     * <li>Brazil - Company (CNPJ) with a length of 14 digits
+     * <li>Brazil - Individual (CPF): 11 digits. May include dots and a hyphen; maximum length is 14 characters
+     * <li>Brazil - Company (CNPJ): 14 characters, numeric or alphanumeric. May include dots, a hyphen and a slash; maximum length is 18 characters
+     * <li>Brazil - Formatted CPF and CNPJ values are accepted and normalized before validation when customer.address.countryCode is BR. For other country codes, fiscal numbers are validated without Brazilian normalization. For alphanumeric CNPJ, check digits are validated after converting each character to a numeric value (ASCII code - 48)
      * <li>Chile - Consumer (RUT) with a length of 9 digits
      * <li>Colombia - Consumer (NIT) with a length of 8, 9 or 10 digits
      * <li>Denmark - Consumer (CPR-nummer or personnummer) with a length of 10 digits
@@ -89,8 +90,9 @@ public class RefundCustomer {
      * <ul class="paragraph-width">
      * <li>Argentina - Consumer (DNI) with a length of 7 or 8 digits
      * <li>Argentina - Company (CUIT) with a length of 11 digits
-     * <li>Brazil - Consumer (CPF) with a length of 11 digits
-     * <li>Brazil - Company (CNPJ) with a length of 14 digits
+     * <li>Brazil - Individual (CPF): 11 digits. May include dots and a hyphen; maximum length is 14 characters
+     * <li>Brazil - Company (CNPJ): 14 characters, numeric or alphanumeric. May include dots, a hyphen and a slash; maximum length is 18 characters
+     * <li>Brazil - Formatted CPF and CNPJ values are accepted and normalized before validation when customer.address.countryCode is BR. For other country codes, fiscal numbers are validated without Brazilian normalization. For alphanumeric CNPJ, check digits are validated after converting each character to a numeric value (ASCII code - 48)
      * <li>Chile - Consumer (RUT) with a length of 9 digits
      * <li>Colombia - Consumer (NIT) with a length of 8, 9 or 10 digits
      * <li>Denmark - Consumer (CPR-nummer or personnummer) with a length of 10 digits

@@ -197,9 +197,6 @@ public class Shipping {
      * <li>overnight = For overnight deliveries</li>
      * <li>2-day-or-more = For two day or more delivery time for payments that are processed by the GlobalCollect platform</li>
      * <li>2-day-or-more = For two day or more delivery time for payments that are processed by the Ogone platform</li>
-     * <li>priority = For prioritized deliveries for payments that are processed by the WL Online Payment Acceptance platform</li>
-     * <li>ground = For deliveries via ground for payments that are processed by the WL Online Payment Acceptance platform</li>
-     * <li>to-store = For deliveries to a store for payments that are processed by the WL Online Payment Acceptance platform</li>
      * </ul>
      */
     public String getType() {
@@ -213,9 +210,6 @@ public class Shipping {
      * <li>overnight = For overnight deliveries</li>
      * <li>2-day-or-more = For two day or more delivery time for payments that are processed by the GlobalCollect platform</li>
      * <li>2-day-or-more = For two day or more delivery time for payments that are processed by the Ogone platform</li>
-     * <li>priority = For prioritized deliveries for payments that are processed by the WL Online Payment Acceptance platform</li>
-     * <li>ground = For deliveries via ground for payments that are processed by the WL Online Payment Acceptance platform</li>
-     * <li>to-store = For deliveries to a store for payments that are processed by the WL Online Payment Acceptance platform</li>
      * </ul>
      */
     public void setType(String value) {

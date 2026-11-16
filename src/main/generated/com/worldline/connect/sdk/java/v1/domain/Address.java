@@ -24,14 +24,14 @@ public class Address {
     private String zip;
 
     /**
-     * Additional address information. The additionalInfo is truncated after 10 characters for payments, refunds or payouts that are processed by the WL Online Payment Acceptance platform
+     * Additional address information.
      */
     public String getAdditionalInfo() {
         return additionalInfo;
     }
 
     /**
-     * Additional address information. The additionalInfo is truncated after 10 characters for payments, refunds or payouts that are processed by the WL Online Payment Acceptance platform
+     * Additional address information.
      */
     public void setAdditionalInfo(String value) {
         this.additionalInfo = value;
@@ -68,14 +68,14 @@ public class Address {
     }
 
     /**
-     * House number. The houseNumber is truncated after 10 characters for payments, refunds or payouts that are processed by the WL Online Payment Acceptance platform
+     * House number.
      */
     public String getHouseNumber() {
         return houseNumber;
     }
 
     /**
-     * House number. The houseNumber is truncated after 10 characters for payments, refunds or payouts that are processed by the WL Online Payment Acceptance platform
+     * House number.
      */
     public void setHouseNumber(String value) {
         this.houseNumber = value;
@@ -97,7 +97,7 @@ public class Address {
 
     /**
      * ISO 3166-2 alpha-3 state code<br>
-     * Notes:<br><ul class="paragraph-width"><li>The maximum length for 3-D Secure version 2 is AN3 for payments that are processed by the GlobalCollect platform</li><li>The maximum length for paymentProductId 1503 (Boleto) is AN2 for payments that are processed by the GlobalCollect platform</li><li>The maximum length is 3 for payments that are processed by the WL Online Payment Acceptance platform</li></ul>
+     * Notes:<br><ul class="paragraph-width"><li>The maximum length for 3-D Secure version 2 is AN3 for payments that are processed by the GlobalCollect platform</li><li>The maximum length for paymentProductId 1503 (Boleto) is AN2 for payments that are processed by the GlobalCollect platform</li></ul>
      */
     public String getStateCode() {
         return stateCode;
@@ -105,7 +105,7 @@ public class Address {
 
     /**
      * ISO 3166-2 alpha-3 state code<br>
-     * Notes:<br><ul class="paragraph-width"><li>The maximum length for 3-D Secure version 2 is AN3 for payments that are processed by the GlobalCollect platform</li><li>The maximum length for paymentProductId 1503 (Boleto) is AN2 for payments that are processed by the GlobalCollect platform</li><li>The maximum length is 3 for payments that are processed by the WL Online Payment Acceptance platform</li></ul>
+     * Notes:<br><ul class="paragraph-width"><li>The maximum length for 3-D Secure version 2 is AN3 for payments that are processed by the GlobalCollect platform</li><li>The maximum length for paymentProductId 1503 (Boleto) is AN2 for payments that are processed by the GlobalCollect platform</li></ul>
      */
     public void setStateCode(String value) {
         this.stateCode = value;

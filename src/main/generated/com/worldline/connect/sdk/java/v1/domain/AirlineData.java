@@ -256,14 +256,14 @@ public class AirlineData {
     }
 
     /**
-     * Total number of passengers in the party. If the the property numberInParty is not present, then the number of passengers will be used on the WL Online Payment Acceptance Platform.
+     * Total number of passengers in the party.
      */
     public Integer getNumberInParty() {
         return numberInParty;
     }
 
     /**
-     * Total number of passengers in the party. If the the property numberInParty is not present, then the number of passengers will be used on the WL Online Payment Acceptance Platform.
+     * Total number of passengers in the party.
      */
     public void setNumberInParty(Integer value) {
         this.numberInParty = value;

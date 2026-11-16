@@ -42,14 +42,14 @@ public class FindPaymentsParams implements ParamRequest {
     }
 
     /**
-     * Your unique transaction reference to filter on. The maximum length is 52 characters for payments that are processed by WL Online Payment Acceptance platform.
+     * Your unique transaction reference to filter on.
      */
     public String getMerchantReference() {
         return merchantReference;
     }
 
     /**
-     * Your unique transaction reference to filter on. The maximum length is 52 characters for payments that are processed by WL Online Payment Acceptance platform.
+     * Your unique transaction reference to filter on.
      */
     public void setMerchantReference(String value) {
         this.merchantReference = value;

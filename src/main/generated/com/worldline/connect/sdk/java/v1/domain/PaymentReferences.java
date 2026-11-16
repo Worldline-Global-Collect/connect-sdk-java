@@ -9,6 +9,8 @@ public class PaymentReferences {
 
     private String merchantCaptureReference;
 
+    private String merchantCustomerId;
+
     private Long merchantOrderId;
 
     private String merchantReference;
@@ -35,6 +37,20 @@ public class PaymentReferences {
      */
     public void setMerchantCaptureReference(String value) {
         this.merchantCaptureReference = value;
+    }
+
+    /**
+     * Your identifier for the customer. It can be used as a search criteria in the GlobalCollect Payment Console and is also included in the GlobalCollect report files. It is used in the fraud-screening process for payments on the Ogone Payment Platform.
+     */
+    public String getMerchantCustomerId() {
+        return merchantCustomerId;
+    }
+
+    /**
+     * Your identifier for the customer. It can be used as a search criteria in the GlobalCollect Payment Console and is also included in the GlobalCollect report files. It is used in the fraud-screening process for payments on the Ogone Payment Platform.
+     */
+    public void setMerchantCustomerId(String value) {
+        this.merchantCustomerId = value;
     }
 
     /**
